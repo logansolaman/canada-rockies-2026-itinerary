@@ -320,6 +320,12 @@ hotels={
     {"name":"Airbnb Kamloops search","type":"vacation rental","why":"Search a suite with parking and a kitchen.","url":"https://www.airbnb.com/kamloops-canada/stays","book":"https://www.airbnb.com/kamloops-canada/stays"},
     {"name":"Cozy King with private patio and barrel sauna","type":"Airbnb private suite","why":"Search result shows a verified Kamloops suite with king bed, full kitchen, free parking, laundry, private patio, fire table and private barrel sauna. Exact dates and price still need checking.","url":"https://www.airbnb.ca/rooms/1038384976094405586","book":"https://www.airbnb.ca/rooms/1038384976094405586"}
   ],
+  "golden":[
+    {"name":"Tourism Golden accommodation search","type":"town accommodation directory","why":"Use the local directory to compare Golden hotels, lodges and guesthouses for the confirmed 27 Sep overnight.","url":"https://www.tourismgolden.com/where-to-stay","book":"https://www.tourismgolden.com/where-to-stay"},
+    {"name":"Golden hotel search","type":"town hotel","why":"Practical Golden base with access to the Trans-Canada and Kicking Horse River walks.","url":"https://www.tourismgolden.com/","book":"https://www.google.com/travel/search?q=Golden%20BC%20hotel"},
+    {"name":"Airbnb Golden search","type":"vacation rental","why":"Search a private suite or cabin with parking and a kitchen for the one-night stop.","url":"https://www.airbnb.com/golden-canada/stays","book":"https://www.airbnb.com/golden-canada/stays"},
+    {"name":"Wild Wood Cabins: Deer Crossing","type":"Airbnb cabin","why":"Current research candidate near Golden; verify exact 27 Sep dates, price, road access and cancellation terms.","url":"https://www.airbnb.ca/rooms/18427652","book":"https://www.airbnb.ca/rooms/18427652"}
+  ],
   "canmore":[
     {"name":"Canmore Rocky Mountain Inn","type":"economy hotel","why":"Value-oriented Canmore base with easy highway access.","url":"https://www.canmoreinn.com/","book":"https://www.google.com/travel/search?q=Canmore%20Rocky%20Mountain%20Inn"},
     {"name":"Blackstone Mountain Lodge","type":"suite hotel","why":"Kitchen-style rooms and resort amenities for a multi-night base.","url":"https://www.blackstonemountainlodge.com/","book":"https://www.google.com/travel/search?q=Blackstone%20Mountain%20Lodge%20Canmore"},
