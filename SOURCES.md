@@ -52,6 +52,9 @@ The itinerary is a planning artifact, not a live booking feed. These are the sou
 
 ## Airbnb shortlist (research candidates, not reservations)
 
+- Kamloops, Golden, and Canmore are now separate bases in the opening road sequence.
+- Golden is a confirmed one-night stop in the revised plan, not merely a contingency option.
+
 These were found during a current Airbnb search pass. Airbnb availability and pricing are date-sensitive; verify 23 Sep–7 Oct 2026 dates, total price, cleaning/service fees, cancellation policy, parking, stairs, and the host's registration details before booking.
 
 - Vancouver Coal Harbour search: <https://www.airbnb.com/coal-harbour-vancouver-canada/stays/condos>
@@ -66,7 +69,7 @@ These were found during a current Airbnb search pass. Airbnb availability and pr
 - Golden Wild Wood Cabins alternative: <https://www.airbnb.ca/rooms/18427652>
 - Golden Moonraker Mountain Mökki alternative: <https://www.airbnb.ca/rooms/22587142>
 
-The current plan does **not** add a Golden night or a second cabin block: Golden options are contingency choices only, preserving the user's two-night cabin constraint.
+The current plan now **includes one Golden night on 27 Sep**; Golden accommodation options are no longer contingency-only. The two-night cabin constraint remains unchanged.
 
 
 24. DriveBC: <https://www.drivebc.ca/>

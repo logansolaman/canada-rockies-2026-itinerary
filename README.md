@@ -11,18 +11,21 @@ All flight times are local to the relevant airport. Day plans now start at **08:
 
 ## Updated plan
 
-- Vancouver: three front-end days plus **Vancouver city on 5-6 Oct**, with the final night positioned around the 14:10 YVR departure
+- Vancouver: **23-26 Sep 2026** (three nights), then Vancouver city again on 5-7 Oct
+- Kamloops: **26-27 Sep 2026** (one night)
+- Golden: **27-28 Sep 2026** (one night)
+- Canmore: **from 28 Sep 2026** as the main economical Rockies base
 - McArthurGlen Designer Outlet Vancouver Airport is the only outlet
 - Canmore is the main economical Rockies base
 - Exactly two cabin nights: 30 September and 1 October
 - Jasper gets one recommended overnight after the Icefields Parkway
 - Return routing is now **Canmore → Revelstoke on 4 Oct → Vancouver city on 5 Oct**
-- Restaurants are organized by Vancouver, Whistler, Canmore, Banff, the cabin zone and Jasper
+- Restaurants are organized by Vancouver, Whistler, **Golden**, Canmore, Banff, the cabin zone and Jasper
 
 ## What is included
 
 - Vancouver, McArthurGlen Designer Outlet, Sea-to-Sky Highway and Whistler stop
-- Kamloops and Revelstoke road overnights
+- Kamloops, Golden and Revelstoke road overnights
 - Canmore base, Banff, Lake Louise, Moraine Lake and Yoho
 - Two cabin nights at Baker Creek or Storm Mountain
 - Icefields Parkway and Jasper overnight
@@ -44,8 +47,8 @@ Then visit <http://localhost:8000>.
 ## Important assumptions
 
 - Dates are **23 Sep 2026 to 7 Oct 2026 inclusive**. Flight times are now confirmed as listed above.
-- The route is now: Vancouver city (23-25 Sep) → Kamloops (26 Sep) → Canmore (27 Sep-3 Oct) → Revelstoke (4 Oct) → Vancouver city (5-6 Oct) → YVR (7 Oct).
-- The plan is ambitious. Day 4 Vancouver to Kamloops via Whistler, Day 5 Kamloops to Canmore and Day 14 Revelstoke to Vancouver are long transfer days.
+- The route is now: Vancouver city (23-25 Sep nights) → Kamloops (26 Sep night) → Golden (27 Sep night) → Canmore from 28 Sep → Revelstoke (4 Oct) → Vancouver city (5-6 Oct) → YVR (7 Oct).
+- The plan is ambitious. Day 4 Vancouver to Kamloops via Whistler, Day 5 Kamloops to Golden, Day 6 Golden to Canmore, and the final Revelstoke to Vancouver transfer are long or weather-sensitive road days.
 - Accommodation cards are candidates, not reservations. Prices, inventory, cancellation terms and seasonal opening must be checked for the exact dates.
 - Airbnb links are search links or current search-result candidates, not endorsements or confirmed availability.
 - Route times are planning estimates without live traffic, weather, construction or stop time.
@@ -54,8 +57,8 @@ Then visit <http://localhost:8000>.
 ## Recommended lodging strategy
 
 1. **Vancouver:** stay downtown for the first three nights; use a Vancouver or Richmond / YVR hotel for the final night depending on flight logistics.
-2. **Kamloops and Revelstoke:** practical hotels or suites for the road legs.
-3. **Canmore:** the main economical base from 27 Sep to 5 Oct. Ask whether luggage can be held during the cabin stay.
+2. **Kamloops and Golden:** practical one-night road bases on 26 Sep and 27 Sep respectively, splitting the west-to-east transfer before Canmore.
+3. **Canmore:** the main economical base from 28 Sep to 5 Oct. Ask whether luggage can be held during the cabin stay.
 4. **Cabins:** exactly two nights, 30 Sep and 1 Oct. Baker Creek is the strongest all-round base; Storm Mountain is the romantic, unplugged splurge.
 5. **Jasper:** one night is recommended after the Icefields Parkway. Avoid forcing a same-day return to Canmore unless weather or inventory requires it.
 6. **McArthurGlen:** use it on arrival only if energy allows, and on 6 Oct / departure eve as the safer final shopping window. Do not schedule shopping before the 14:10 international departure on 7 Oct.
@@ -79,5 +82,5 @@ Then visit <http://localhost:8000>.
 - `README.md` - trip assumptions, confirmed flights and booking checklist
 - `SOURCES.md` - source ledger, Airbnb shortlist and verification notes
 - `scripts/build.py` - original deterministic data generator
-- `scripts/update_plan.py` - updated plan generator
-- `scripts/apply_flight_and_wake_update.py` - applies confirmed flights and the 08:00-start change
+- `scripts/update_plan.py` - current trip plan generator; includes the 26 Sep Vancouver → Kamloops, 27 Sep Kamloops → Golden, and 28 Sep Golden → Canmore change
+- `scripts/confirm_vancouver_return_update.py` - historical helper retained for provenance; do not run after the current plan generator

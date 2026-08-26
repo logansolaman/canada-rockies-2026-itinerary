@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Move the Rockies return so Vancouver city is reached on 5 Oct 2026."""
+"""Historical helper for the Vancouver-return revision; use update_plan.py for the current itinerary."""
 import json
 from pathlib import Path
 

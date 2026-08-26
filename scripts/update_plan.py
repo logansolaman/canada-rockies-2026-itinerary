@@ -92,42 +92,42 @@ D.append(make_day("Day 4 · Vancouver to Kamloops via Whistler", "2026-09-26", "
 ("21:00","Sleep","Recover after the longest transfer so far.","rest"),
 ("22:00","Sleep","Overnight recovery.","rest"),
 ("23:00","Sleep","Overnight recovery.","rest")])))
-D.append(make_day("Day 5 · Kamloops to Canmore", "2026-09-27", "Canmore", "Kamloops → Revelstoke → Golden → Canmore", "Reach the economical main base. This is a transfer day, not a sightseeing marathon.", "Canmore", x([
-("06:00","Breakfast + check-out","Fuel and check the Trans-Canada conditions.","travel"),
-("07:00","Depart Kamloops","Start the eastbound leg.","travel"),
+D.append(make_day("Day 5 · Kamloops to Golden", "2026-09-27", "Golden", "Kamloops → Revelstoke → Rogers Pass → Golden", "Use Golden as the dedicated mountain stopover rather than rushing all the way to Canmore.", "Golden", x([
+("06:00","Breakfast + check-out","Fuel and check the Trans-Canada conditions before leaving Kamloops.","travel"),
+("07:00","Depart Kamloops","Start the eastbound leg toward Revelstoke.","travel"),
 ("08:00","Shuswap / Salmon Arm","Coffee and short rest stop.","stop"),
 ("09:00","Continue to Revelstoke","Lake and mountain scenery.","travel"),
 ("10:00","Revelstoke stop","Fuel, coffee and optional railway museum if timing allows.","stop"),
 ("11:00","Rogers Pass direction","Continue through the mountain corridor.","travel"),
-("12:00","Packed lunch / pass stop","Use a safe designated stop.","food"),
-("13:00","Golden area","Fuel and stretch.","stop"),
-("14:00","Golden to Yoho / Lake Louise","Short scenic transfer.","travel"),
-("15:00","Continue to Canmore","Keep arrival buffer.","travel"),
-("16:00","Canmore check-in","Main economical base begins.","travel"),
-("17:00","Canmore groceries / walk","Set up the base for several nights.","explore"),
-("18:00","Dinner","The Trough, Communitea Café or Rocky Mountain Flatbread.","food"),
-("19:00","Dinner","Local Canmore evening.","food"),
-("20:00","Plan Banff day","Park pass, gondola and parking plan.","plan"),
-("21:00","Sleep","Canmore base.","rest"),
+("12:00","Packed lunch / pass stop","Use a safe designated stop and check road conditions.","food"),
+("13:00","Rogers Pass / Glacier area","Short viewpoint or visitor-centre stop if open and timing allows.","explore"),
+("14:00","Drive to Golden","Keep the afternoon transfer comfortable.","travel"),
+("15:00","Golden check-in","Settle into the dedicated Golden overnight.","travel"),
+("16:00","Golden town / Kicking Horse River","Easy walk and mountain-town orientation.","explore"),
+("17:00","Golden rest","Protect the next day's transfer to Canmore.","rest"),
+("18:00","Golden dinner","Choose a nearby Golden restaurant after checking current hours.","food"),
+("19:00","Dinner","Keep the evening local and unhurried.","food"),
+("20:00","Plan Golden to Canmore","Check Yoho access, weather, fuel and the Canmore check-in.","plan"),
+("21:00","Sleep","Golden overnight.","rest"),
 ("22:00","Sleep","Overnight recovery.","rest"),
 ("23:00","Sleep","Overnight recovery.","rest")])))
-D.append(make_day("Day 6 · Banff town and gondola", "2026-09-28", "Canmore", "Canmore → Banff town → Banff Gondola → Bow Falls → Vermilion Lakes", "Use Canmore as the base and keep one local Banff loop.", "Canmore", x([
-("06:00","Breakfast","Check BanffNow, weather and parking.","food"),
-("07:00","Drive Canmore to Banff","Short local transfer, allow parking time.","travel"),
-("08:00","Banff town","Coffee, visitor centre and early walk.","explore"),
-("09:00","Banff Gondola","Use only if operating and tickets are secured.","explore"),
-("10:00","Banff Gondola summit","Boardwalk and mountain views.","explore"),
-("11:00","Return to town","Allow queue time.","travel"),
-("12:00","Lunch","The Bison or Park Distillery.","food"),
-("13:00","Banff Avenue","Shops and galleries.","explore"),
-("14:00","Bow Falls","Short viewpoint.","explore"),
-("15:00","Vermilion Lakes","Drive and sunset scouting.","explore"),
-("16:00","Vermilion Lakes","Stay for light if weather is good.","explore"),
-("17:00","Return Canmore","Avoid a late parking scramble.","travel"),
-("18:00","Dinner","Canmore restaurant or cook at the rental.","food"),
-("19:00","Dinner","Slow base night.","food"),
-("20:00","Lake Louise shuttle prep","Confirm reservation, Park and Ride and pass.","plan"),
-("21:00","Sleep","Early lake day tomorrow.","rest"),
+D.append(make_day("Day 6 · Golden to Canmore", "2026-09-28", "Canmore", "Golden → Yoho / Emerald Lake option → Lake Louise → Canmore", "Move into Canmore for the economical Rockies base; keep Yoho stops flexible around weather and access.", "Canmore", x([
+("06:00","Breakfast + check-out","Fuel and confirm Yoho, Lake Louise and Trans-Canada conditions.","travel"),
+("07:00","Depart Golden","Eastbound toward Yoho and Lake Louise.","travel"),
+("08:00","Yoho / Field area","Coffee and a short scenic stop if conditions allow.","stop"),
+("09:00","Emerald Lake option","Use only if access, parking and daylight fit; otherwise continue toward Lake Louise.","explore"),
+("10:00","Emerald Lake / Yoho option","Keep this as a flexible stop, not a fixed reservation.","explore"),
+("11:00","Drive toward Lake Louise","Allow road and parking buffer.","travel"),
+("12:00","Lake Louise village / lunch","Quick lunch and fuel before the final leg.","food"),
+("13:00","Lake Louise lakeshore option","Only a brief visit if parking and time permit; the dedicated lake day remains 29 Sep.","explore"),
+("14:00","Drive to Canmore","Shorter final transfer with arrival buffer.","travel"),
+("15:00","Canmore check-in","Main economical base begins.","travel"),
+("16:00","Canmore groceries / walk","Set up the base for the Rockies portion.","explore"),
+("17:00","Rest","Recover after the Golden transfer.","rest"),
+("18:00","Dinner","The Trough, Communitea Café or Rocky Mountain Flatbread.","food"),
+("19:00","Dinner","Local Canmore evening.","food"),
+("20:00","Lake Louise shuttle prep","Confirm reservation, Park and Ride and pass for the 29 Sep lake day.","plan"),
+("21:00","Sleep","Canmore overnight.","rest"),
 ("22:00","Sleep","Overnight recovery.","rest"),
 ("23:00","Sleep","Overnight recovery.","rest")])))
 D.append(make_day("Day 7 · Lake Louise, Moraine Lake and Yoho", "2026-09-29", "Canmore", "Canmore → Lake Louise Park and Ride → Lake Louise / Moraine Lake → Emerald Lake", "One reservation-led lake day. Keep Emerald Lake as the flex choice, not a guarantee.", "Canmore", x([
@@ -372,6 +372,9 @@ restaurants={
   "Whistler":[
     {"name":"Tourism Whistler dining search","type":"restaurant directory","note":"Choose a mountain-view or village restaurant after the actual road plan is fixed.","url":"https://www.whistler.com/restaurants/"}
   ],
+  "Golden":[
+    {"name":"Golden town dining search","type":"restaurant directory","note":"Choose a nearby dinner for the 27 Sep overnight after checking current opening hours.","url":"https://www.tourismgolden.com/food-drink"}
+  ],
   "Canmore":[
     {"name":"The Trough Dining Co.","type":"Canadian","note":"Romantic Canmore dinner candidate.","url":"https://www.thetrough.ca/"},
     {"name":"Communitea Café","type":"café","note":"Casual breakfast / lunch candidate.","url":"https://www.communiteacafe.ca/"},
@@ -396,29 +399,32 @@ restaurants={
 
 old=json.loads(DATA.read_text(encoding='utf-8'))
 payload={
-  "meta": {"title":"Canada Rockies · Vancouver + Canmore base loop", "start":"2026-09-23", "end":"2026-10-07", "travelers":2, "currency":"CAD", "assumption":"Updated plan: Vancouver is 4-5 days total across the front and back; McArthurGlen is the only outlet; Canmore is the main economical Rockies base; cabin stay is exactly two nights. Exact flight times and booking inventory are not supplied."},
+  "meta": {"title":"Canada Rockies · Vancouver + Kamloops + Golden + Canmore base loop", "start":"2026-09-23", "end":"2026-10-07", "travelers":2, "currency":"CAD", "flights":[{"flight":"CX814","date":"2026-09-23","from":"Hong Kong (HKG)","depart":"11:05","to":"Vancouver (YVR)","arrive":"07:40","duration":"11h 35m","note":"Arrival time is local Vancouver time."},{"flight":"CX867","date":"2026-10-07","from":"Vancouver (YVR)","depart":"14:10","to":"Hong Kong (HKG)","arrive":"19:20 on 8 Oct","duration":"14h 10m elapsed local-time conversion","note":"Arrival is the next calendar day in Hong Kong."}], "assumption":"Updated: Vancouver nights 23-25 Sep; Kamloops night 26 Sep; Golden night 27 Sep; Canmore begins 28 Sep as the main economical Rockies base; exactly two cabin nights remain 30 Sep and 1 Oct; Vancouver city is reached on 5 Oct; 6 Oct is a full Vancouver city / McArthurGlen day; CX867 departs YVR 14:10 on 7 Oct 2026."},
   "route":[
-    {"name":"Vancouver","date":"23-25 Sep + 6 Oct","km":"city / airport","stay":"Vancouver, then Richmond or Vancouver","color":"#7dd3fc"},
-    {"name":"Whistler / Sea-to-Sky","date":"26 Sep","km":"122 km from Vancouver","stay":"scenic stop, not required overnight","color":"#a7f3d0"},
-    {"name":"Kamloops","date":"26 Sep","km":"interior overnight","stay":"Kamloops hotel","color":"#fde68a"},
-    {"name":"Canmore","date":"27 Sep-5 Oct","km":"main Rockies base","stay":"4-5 economical nights total","color":"#86efac"},
+    {"name":"Vancouver","date":"23-26 Sep + 5-7 Oct","km":"city / airport","stay":"Vancouver city base","color":"#7dd3fc"},
+    {"name":"Sea-to-Sky","date":"26 Sep","km":"scenic transfer","stay":"day route to Kamloops","color":"#a7f3d0"},
+    {"name":"Kamloops","date":"26-27 Sep","km":"interior overnight","stay":"Kamloops hotel","color":"#fde68a"},
+    {"name":"Golden","date":"27-28 Sep","km":"mountain stopover","stay":"Golden hotel / rental","color":"#fca5a5"},
+    {"name":"Canmore","date":"28 Sep-5 Oct","km":"main Rockies base","stay":"economical base","color":"#86efac"},
     {"name":"Cabin zone","date":"30 Sep-2 Oct","km":"two nights","stay":"Baker Creek or Storm Mountain","color":"#c4b5fd"},
-    {"name":"Jasper","date":"2-3 Oct","km":"340 km via Parkway","stay":"0-1 night, recommended 1","color":"#93c5fd"},
-    {"name":"Revelstoke","date":"5 Oct","km":"return overnight","stay":"practical road hotel","color":"#fdba74"},
-    {"name":"YVR","date":"6-7 Oct","km":"airport finish","stay":"Richmond / YVR if needed","color":"#f0abfc"}
+    {"name":"Jasper","date":"2-3 Oct","km":"via Icefields Parkway","stay":"Jasper overnight","color":"#93c5fd"},
+    {"name":"Revelstoke","date":"4-5 Oct","km":"return overnight","stay":"practical road hotel","color":"#fdba74"},
+    {"name":"Vancouver city","date":"5-7 Oct","km":"city finish","stay":"downtown hotel","color":"#f0abfc"},
+    {"name":"Departure","date":"7 Oct","km":"airport day","stay":"CX867","color":"#f9a8d4"}
   ],
   "days":D,
   "hotels":hotels,
   "restaurants":restaurants,
   "route_legs":[
-    {"from":"Vancouver","to":"Kamloops via Whistler","distance":"about 420 km","time":"long day with stops","note":"Scenic Sea-to-Sky start, then interior overnight."},
-    {"from":"Kamloops","to":"Canmore","distance":"about 560 km","time":"long transfer","note":"Revelstoke, Golden and Yoho are stop candidates, not guaranteed attractions."},
+    {"from":"Vancouver","to":"Kamloops via Sea-to-Sky","distance":"about 420 km","time":"long day with stops","note":"Scenic 26 Sep transfer; Kamloops is the overnight base."},
+    {"from":"Kamloops","to":"Golden","distance":"about 310 km","time":"4-5 h with stops","note":"27 Sep transfer through Revelstoke and Rogers Pass; Golden is the overnight base."},
+    {"from":"Golden","to":"Canmore","distance":"about 140 km baseline","time":"2-3 h with Yoho stops","note":"28 Sep transfer; Emerald Lake / Yoho are flexible stops, not guaranteed attractions."},
     {"from":"Canmore","to":"Banff","distance":"about 25 km","time":"20-30 min baseline","note":"Canmore is the main economical base; parking and park-pass logistics still matter."},
     {"from":"Canmore","to":"Lake Louise","distance":"about 80 km","time":"1 h baseline","note":"Moraine Lake requires reserved shuttle or licensed access."},
     {"from":"Lake Louise","to":"Jasper","distance":"about 230 km scenic road","time":"full day with stops","note":"Icefields Parkway is the attraction, not a simple transfer."},
     {"from":"Jasper","to":"Canmore","distance":"about 300 km baseline","time":"full transfer day","note":"Keep Maligne Lake optional to avoid an unsafe late return."},
-    {"from":"Canmore","to":"Revelstoke","distance":"about 285 km","time":"4-6 h with stops","note":"Trans-Canada return through Yoho and Rogers Pass."},
-    {"from":"Revelstoke","to":"Vancouver","distance":"about 565 km","time":"full transfer day","note":"Final Vancouver night is a buffer, not a sightseeing race."}
+    {"from":"Canmore","to":"Revelstoke","distance":"about 285 km","time":"4-6 h with stops","note":"4 Oct return overnight through Yoho and Rogers Pass."},
+    {"from":"Revelstoke","to":"Vancouver city","distance":"about 565 km","time":"full transfer day","note":"Arrive and sleep in Vancouver city on 5 Oct."}
   ],
   "sources":old.get('sources',[])
 }
