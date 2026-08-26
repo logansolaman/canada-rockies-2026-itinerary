@@ -5,7 +5,30 @@
     "end": "2026-10-07",
     "travelers": 2,
     "currency": "CAD",
-    "assumption": "Updated plan: Vancouver is 4-5 days total across the front and back; McArthurGlen is the only outlet; Canmore is the main economical Rockies base; cabin stay is exactly two nights. Exact flight times and booking inventory are not supplied."
+    "assumption": "Updated with confirmed flights: CX814 HKG 11:05 to YVR 07:40 on 23 Sep 2026 (11h35m); CX867 YVR 14:10 to HKG 19:20 on 8 Oct 2026. Daily plan begins at 08:00.",
+    "wake_time": "08:00",
+    "flights": [
+      {
+        "flight": "CX814",
+        "date": "2026-09-23",
+        "from": "Hong Kong (HKG)",
+        "depart": "11:05",
+        "to": "Vancouver (YVR)",
+        "arrive": "07:40",
+        "duration": "11h 35m",
+        "note": "Arrival time is local Vancouver time."
+      },
+      {
+        "flight": "CX867",
+        "date": "2026-10-07",
+        "from": "Vancouver (YVR)",
+        "depart": "14:10",
+        "to": "Hong Kong (HKG)",
+        "arrive": "19:20 on 8 Oct",
+        "duration": "14h 10m elapsed local-time conversion",
+        "note": "Arrival is the next calendar day in Hong Kong."
+      }
+    ]
   },
   "route": [
     {
@@ -70,38 +93,26 @@
       "date": "2026-09-23",
       "label": "Day 1 · Arrival in Vancouver",
       "base": "Vancouver",
-      "route": "YVR → McArthurGlen → downtown hotel",
-      "focus": "Arrive gently, use the airport outlet only if the flight and energy cooperate.",
+      "route": "CX814 · HKG 11:05 → YVR 07:40 · airport arrival → McArthurGlen → Vancouver hotel",
+      "focus": "Land at 07:40, clear the airport properly, then shop only if the flight and energy cooperate.",
       "overnight": "Vancouver",
       "blocks": [
         {
-          "time": "06:00",
-          "title": "Arrival buffer",
-          "detail": "Flight time was not supplied. Use this as immigration, baggage and jet-lag buffer.",
-          "kind": "travel"
-        },
-        {
-          "time": "07:00",
-          "title": "YVR arrival",
-          "detail": "Collect bags, get a SIM/eSIM if needed and confirm hotel / rental-car timing.",
-          "kind": "travel"
-        },
-        {
           "time": "08:00",
-          "title": "Transfer to McArthurGlen or hotel",
-          "detail": "The outlet is beside YVR. Store luggage only with a service confirmed in advance.",
+          "title": "YVR arrival, immigration and bags",
+          "detail": "CX814 is scheduled to arrive at 07:40 local time. Allow immigration, baggage, customs and a first coffee.",
           "kind": "travel"
         },
         {
           "time": "09:00",
-          "title": "Outlet opening buffer",
-          "detail": "Confirm current hours on the official plan-your-visit page before committing.",
-          "kind": "shop"
+          "title": "Transfer / luggage plan",
+          "detail": "Take the Canada Line or hotel transfer. Store luggage only with a service confirmed in advance.",
+          "kind": "travel"
         },
         {
           "time": "10:00",
           "title": "McArthurGlen Designer Outlet",
-          "detail": "The only outlet in this plan. Keep the first visit to 2 hours and protect baggage capacity.",
+          "detail": "The only outlet in this plan. Keep the visit short and protect baggage capacity; skip it if arrival is delayed.",
           "kind": "shop"
         },
         {
@@ -192,18 +203,6 @@
       "focus": "The classic city day, paced as a walkable sequence.",
       "overnight": "Vancouver",
       "blocks": [
-        {
-          "time": "06:00",
-          "title": "Slow breakfast",
-          "detail": "Start without a hard reservation.",
-          "kind": "food"
-        },
-        {
-          "time": "07:00",
-          "title": "Stanley Park seawall",
-          "detail": "Walk or rent bikes if weather is good.",
-          "kind": "walk"
-        },
         {
           "time": "08:00",
           "title": "Stanley Park",
@@ -311,18 +310,6 @@
       "overnight": "Vancouver",
       "blocks": [
         {
-          "time": "06:00",
-          "title": "Breakfast",
-          "detail": "Check weather and choose one North Shore headline activity.",
-          "kind": "food"
-        },
-        {
-          "time": "07:00",
-          "title": "Transit to North Shore",
-          "detail": "Leave early for easier access.",
-          "kind": "travel"
-        },
-        {
           "time": "08:00",
           "title": "Capilano Suspension Bridge or Grouse",
           "detail": "Choose one. Do not stack both unless you want a long day.",
@@ -428,18 +415,6 @@
       "focus": "Start the road trip with the scenic corridor, then make a practical interior overnight.",
       "overnight": "Kamloops",
       "blocks": [
-        {
-          "time": "06:00",
-          "title": "Breakfast + check-out",
-          "detail": "Leave city hotel; keep bags organized for the first road day.",
-          "kind": "travel"
-        },
-        {
-          "time": "07:00",
-          "title": "Collect rental car",
-          "detail": "Inspect vehicle, tires, insurance and roadside assistance.",
-          "kind": "travel"
-        },
         {
           "time": "08:00",
           "title": "Drive to Horseshoe Bay",
@@ -547,18 +522,6 @@
       "overnight": "Canmore",
       "blocks": [
         {
-          "time": "06:00",
-          "title": "Breakfast + check-out",
-          "detail": "Fuel and check the Trans-Canada conditions.",
-          "kind": "travel"
-        },
-        {
-          "time": "07:00",
-          "title": "Depart Kamloops",
-          "detail": "Start the eastbound leg.",
-          "kind": "travel"
-        },
-        {
           "time": "08:00",
           "title": "Shuswap / Salmon Arm",
           "detail": "Coffee and short rest stop.",
@@ -664,18 +627,6 @@
       "focus": "Use Canmore as the base and keep one local Banff loop.",
       "overnight": "Canmore",
       "blocks": [
-        {
-          "time": "06:00",
-          "title": "Breakfast",
-          "detail": "Check BanffNow, weather and parking.",
-          "kind": "food"
-        },
-        {
-          "time": "07:00",
-          "title": "Drive Canmore to Banff",
-          "detail": "Short local transfer, allow parking time.",
-          "kind": "travel"
-        },
         {
           "time": "08:00",
           "title": "Banff town",
@@ -783,18 +734,6 @@
       "overnight": "Canmore",
       "blocks": [
         {
-          "time": "06:00",
-          "title": "Breakfast + depart",
-          "detail": "Early start from Canmore.",
-          "kind": "travel"
-        },
-        {
-          "time": "07:00",
-          "title": "Lake Louise Park and Ride",
-          "detail": "Arrive for the reserved shuttle window.",
-          "kind": "travel"
-        },
-        {
           "time": "08:00",
           "title": "Shuttle / access",
           "detail": "Moraine Lake Road is closed to personal vehicles. Use confirmed shuttle or licensed operator.",
@@ -900,18 +839,6 @@
       "focus": "Start the two-night romantic cabin experience.",
       "overnight": "Baker Creek by Basecamp or Storm Mountain Lodge",
       "blocks": [
-        {
-          "time": "06:00",
-          "title": "Breakfast + check-out Canmore",
-          "detail": "Pack only the cabin bag and keep the Canmore base booking details.",
-          "kind": "travel"
-        },
-        {
-          "time": "07:00",
-          "title": "Drive Bow Valley Parkway",
-          "detail": "Check road access and wildlife conditions.",
-          "kind": "travel"
-        },
         {
           "time": "08:00",
           "title": "Johnston Canyon",
@@ -1019,18 +946,6 @@
       "overnight": "Baker Creek by Basecamp or Storm Mountain Lodge",
       "blocks": [
         {
-          "time": "06:00",
-          "title": "Cabin breakfast",
-          "detail": "Self-serve only at Baker Creek; Storm Mountain has no kitchen.",
-          "kind": "food"
-        },
-        {
-          "time": "07:00",
-          "title": "Slow cabin morning",
-          "detail": "Fire, coffee and mountain light.",
-          "kind": "rest"
-        },
-        {
           "time": "08:00",
           "title": "Short nature walk",
           "detail": "Use lodge grounds or a confirmed nearby trail.",
@@ -1136,18 +1051,6 @@
       "focus": "Make the Parkway the main event. Stay in Jasper if possible; do not force a same-day return to Canmore.",
       "overnight": "Jasper hotel / lodge",
       "blocks": [
-        {
-          "time": "06:00",
-          "title": "Breakfast + check-out",
-          "detail": "Fuel and pack lunch before the mountain road.",
-          "kind": "travel"
-        },
-        {
-          "time": "07:00",
-          "title": "Depart cabin",
-          "detail": "Early light and wildlife awareness.",
-          "kind": "travel"
-        },
         {
           "time": "08:00",
           "title": "Bow Lake",
@@ -1255,18 +1158,6 @@
       "overnight": "Canmore",
       "blocks": [
         {
-          "time": "06:00",
-          "title": "Breakfast + bulletin check",
-          "detail": "Confirm roads, weather and Jasper attraction status.",
-          "kind": "plan"
-        },
-        {
-          "time": "07:00",
-          "title": "Pyramid Lake",
-          "detail": "Short sunrise option.",
-          "kind": "explore"
-        },
-        {
           "time": "08:00",
           "title": "Patricia Lake",
           "detail": "Short scenic stop.",
@@ -1372,18 +1263,6 @@
       "focus": "A deliberately lower-mileage base day after Jasper.",
       "overnight": "Canmore",
       "blocks": [
-        {
-          "time": "06:00",
-          "title": "Slow breakfast",
-          "detail": "No hard departure.",
-          "kind": "food"
-        },
-        {
-          "time": "07:00",
-          "title": "Canmore walk",
-          "detail": "Bow River, town and mountain views.",
-          "kind": "walk"
-        },
         {
           "time": "08:00",
           "title": "Canmore cafés",
@@ -1491,18 +1370,6 @@
       "overnight": "Revelstoke",
       "blocks": [
         {
-          "time": "06:00",
-          "title": "Breakfast + check-out",
-          "detail": "Fuel and confirm DriveBC.",
-          "kind": "travel"
-        },
-        {
-          "time": "07:00",
-          "title": "Depart Canmore",
-          "detail": "Trans-Canada west.",
-          "kind": "travel"
-        },
-        {
           "time": "08:00",
           "title": "Banff / Yoho viewpoint",
           "detail": "Choose one short stop.",
@@ -1604,22 +1471,10 @@
       "date": "2026-10-06",
       "label": "Day 14 · Revelstoke to Vancouver",
       "base": "Vancouver / Richmond",
-      "route": "Revelstoke → Kamloops → Hope → Vancouver / Richmond",
-      "focus": "Return to Vancouver for the fifth city day and a relaxed pre-flight night.",
+      "route": "Revelstoke → Vancouver / Richmond → McArthurGlen",
+      "focus": "Return to the YVR area, then use the final evening for the outlet only if the drive and rental-car timing cooperate.",
       "overnight": "Vancouver or Richmond",
       "blocks": [
-        {
-          "time": "06:00",
-          "title": "Breakfast + check-out",
-          "detail": "Start early. Fuel first.",
-          "kind": "travel"
-        },
-        {
-          "time": "07:00",
-          "title": "Depart Revelstoke",
-          "detail": "Check DriveBC.",
-          "kind": "travel"
-        },
         {
           "time": "08:00",
           "title": "Sicamous / Salmon Arm",
@@ -1676,20 +1531,20 @@
         },
         {
           "time": "17:00",
-          "title": "Vancouver / Richmond check-in",
-          "detail": "Settle luggage.",
-          "kind": "travel"
+          "title": "McArthurGlen evening option",
+          "detail": "After hotel / rental-car logistics, use this as the safer final outlet window. Skip if the drive is late.",
+          "kind": "shop"
         },
         {
           "time": "18:00",
-          "title": "Final Vancouver dinner",
-          "detail": "Blue Water, Elisa, Kissa Tanto, ARC or a close airport option.",
-          "kind": "food"
+          "title": "McArthurGlen final shop",
+          "detail": "Keep purchases within airline baggage limits and confirm current hours before going.",
+          "kind": "shop"
         },
         {
           "time": "19:00",
-          "title": "Dinner",
-          "detail": "One final meal, no cross-city rush.",
+          "title": "Dinner near YVR / Richmond",
+          "detail": "Stay near the hotel; do not cross the metro area.",
           "kind": "food"
         },
         {
@@ -1722,117 +1577,105 @@
       "date": "2026-10-07",
       "label": "Day 15 · McArthurGlen and departure",
       "base": "YVR",
-      "route": "Vancouver / Richmond → McArthurGlen → YVR",
-      "focus": "Use the outlet only if the actual flight leaves a real airport buffer.",
-      "overnight": "Departure",
+      "route": "YVR departure · CX867 14:10 → HKG 19:20 on 8 Oct",
+      "focus": "Use the morning for a calm airport departure. The 14:10 international flight requires a real check-in and security buffer.",
+      "overnight": "CX867 in flight",
       "blocks": [
         {
-          "time": "06:00",
-          "title": "Flight buffer",
-          "detail": "Actual flight time was not supplied. Check terminal and airline guidance.",
-          "kind": "travel"
-        },
-        {
-          "time": "07:00",
+          "time": "08:00",
           "title": "Breakfast",
-          "detail": "Hotel breakfast / airport plan.",
+          "detail": "Hotel breakfast and final weather / flight check.",
           "kind": "food"
         },
         {
-          "time": "08:00",
-          "title": "Pack and check out",
-          "detail": "Use confirmed luggage storage. Do not leave bags unattended in a car.",
-          "kind": "travel"
-        },
-        {
           "time": "09:00",
-          "title": "Transfer to McArthurGlen",
-          "detail": "Canada Line or short drive.",
+          "title": "Pack and check out",
+          "detail": "Confirm luggage, receipts and hotel storage. Do not leave bags unattended in a car.",
           "kind": "travel"
         },
         {
           "time": "10:00",
-          "title": "McArthurGlen final shop",
-          "detail": "Check current hours. Set a hard departure cutoff.",
-          "kind": "shop"
+          "title": "Transfer to YVR",
+          "detail": "Return the rental car if not already returned, or take the confirmed hotel / airport transfer.",
+          "kind": "travel"
         },
         {
           "time": "11:00",
-          "title": "Final shopping hour",
-          "detail": "No second outlet or Tsawwassen detour.",
-          "kind": "shop"
+          "title": "CX867 check-in and bags",
+          "detail": "Be at the airport with a proper international-departure buffer before the scheduled 14:10 departure.",
+          "kind": "travel"
         },
         {
           "time": "12:00",
-          "title": "Lunch / return to YVR",
-          "detail": "Allow more time than the map suggests.",
-          "kind": "food"
+          "title": "Security and immigration",
+          "detail": "Complete airport formalities; no attraction is scheduled after this point.",
+          "kind": "travel"
         },
         {
           "time": "13:00",
-          "title": "YVR check-in",
-          "detail": "Bags, receipts and security buffer.",
+          "title": "Gate buffer",
+          "detail": "Water, final purchases and boarding buffer.",
           "kind": "travel"
         },
         {
           "time": "14:00",
-          "title": "Airport buffer",
-          "detail": "Security and immigration.",
+          "title": "CX867 departure buffer",
+          "detail": "Scheduled departure is 14:10 local Vancouver time.",
           "kind": "travel"
         },
         {
           "time": "15:00",
-          "title": "Airport buffer",
-          "detail": "Flight time unknown. Keep open.",
+          "title": "CX867 in flight",
+          "detail": "Return flight to Hong Kong.",
           "kind": "travel"
         },
         {
           "time": "16:00",
-          "title": "Departure buffer",
-          "detail": "Do not schedule attractions here.",
+          "title": "CX867 in flight",
+          "detail": "Return flight to Hong Kong.",
           "kind": "travel"
         },
         {
           "time": "17:00",
-          "title": "Flight buffer",
-          "detail": "Adjust to the actual departure.",
+          "title": "CX867 in flight",
+          "detail": "Return flight to Hong Kong.",
           "kind": "travel"
         },
         {
           "time": "18:00",
-          "title": "Departure",
-          "detail": "Use actual flight time.",
+          "title": "CX867 in flight",
+          "detail": "Return flight to Hong Kong.",
           "kind": "travel"
         },
         {
           "time": "19:00",
-          "title": "Departure",
-          "detail": "Use actual flight time.",
+          "title": "CX867 in flight",
+          "detail": "Scheduled arrival is 19:20 on 8 Oct Hong Kong time.",
           "kind": "travel"
         },
         {
           "time": "20:00",
-          "title": "Departure",
-          "detail": "Use actual flight time.",
-          "kind": "travel"
+          "title": "Arrival recovery",
+          "detail": "Hong Kong arrival is the next calendar day, 8 Oct 2026.",
+          "kind": "rest"
         },
         {
           "time": "21:00",
-          "title": "Departure",
-          "detail": "Use actual flight time.",
-          "kind": "travel"
+          "title": "Arrival recovery",
+          "detail": "Trip complete.",
+          "kind": "rest"
         },
         {
           "time": "22:00",
-          "title": "Departure",
-          "detail": "Use actual flight time.",
-          "kind": "travel"
+          "title": "Arrival recovery",
+          "detail": "Trip complete.",
+          "kind": "rest"
         },
         {
           "time": "23:00",
-          "title": "Departure",
-          "detail": "Use actual flight time.",
-          "kind": "travel"
+          "title": "Arrival recovery",
+          "detail": "Trip complete.",
+          "kind": "rest"
         }
       ]
     }
