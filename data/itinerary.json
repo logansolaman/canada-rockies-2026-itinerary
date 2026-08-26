@@ -5,7 +5,7 @@
     "end": "2026-10-07",
     "travelers": 2,
     "currency": "CAD",
-    "assumption": "Updated with confirmed flights: CX814 HKG 11:05 to YVR 07:40 on 23 Sep 2026 (11h35m); CX867 YVR 14:10 to HKG 19:20 on 8 Oct 2026. Daily plan begins at 08:00.",
+    "assumption": "Updated: wake/start 08:00; CX814 HKG 11:05 to YVR 07:40 on 23 Sep 2026; Vancouver city is reached on 5 Oct 2026; 6 Oct is a full Vancouver city / McArthurGlen day; CX867 departs YVR 14:10 on 7 Oct 2026 and arrives HKG 19:20 on 8 Oct.",
     "wake_time": "08:00",
     "flights": [
       {
@@ -33,16 +33,16 @@
   "route": [
     {
       "name": "Vancouver",
-      "date": "23-25 Sep + 6 Oct",
+      "date": "23-25 Sep + 5-7 Oct",
       "km": "city / airport",
-      "stay": "Vancouver, then Richmond or Vancouver",
+      "stay": "Vancouver city base",
       "color": "#7dd3fc"
     },
     {
       "name": "Whistler / Sea-to-Sky",
       "date": "26 Sep",
       "km": "122 km from Vancouver",
-      "stay": "scenic stop, not required overnight",
+      "stay": "scenic stop",
       "color": "#a7f3d0"
     },
     {
@@ -54,38 +54,45 @@
     },
     {
       "name": "Canmore",
-      "date": "27 Sep-5 Oct",
+      "date": "27 Sep-3 Oct",
       "km": "main Rockies base",
-      "stay": "4-5 economical nights total",
+      "stay": "economical base",
       "color": "#86efac"
     },
     {
       "name": "Cabin zone",
-      "date": "30 Sep-2 Oct",
+      "date": "30 Sep-1 Oct",
       "km": "two nights",
       "stay": "Baker Creek or Storm Mountain",
       "color": "#c4b5fd"
     },
     {
       "name": "Jasper",
-      "date": "2-3 Oct",
-      "km": "340 km via Parkway",
-      "stay": "0-1 night, recommended 1",
+      "date": "2 Oct",
+      "km": "via Icefields Parkway",
+      "stay": "Jasper overnight",
       "color": "#93c5fd"
     },
     {
       "name": "Revelstoke",
-      "date": "5 Oct",
+      "date": "4 Oct",
       "km": "return overnight",
       "stay": "practical road hotel",
       "color": "#fdba74"
     },
     {
-      "name": "YVR",
-      "date": "6-7 Oct",
-      "km": "airport finish",
-      "stay": "Richmond / YVR if needed",
+      "name": "Vancouver city",
+      "date": "5-6 Oct",
+      "km": "city finish",
+      "stay": "downtown hotel",
       "color": "#f0abfc"
+    },
+    {
+      "name": "Departure",
+      "date": "7 Oct",
+      "km": "YVR airport",
+      "stay": "CX867",
+      "color": "#f9a8d4"
     }
   ],
   "days": [
@@ -1257,94 +1264,94 @@
     },
     {
       "date": "2026-10-04",
-      "label": "Day 12 · Canmore / Banff recovery",
-      "base": "Canmore",
-      "route": "Canmore → optional Banff / local loop",
-      "focus": "A deliberately lower-mileage base day after Jasper.",
-      "overnight": "Canmore",
+      "label": "Day 12 · Canmore to Revelstoke",
+      "base": "Revelstoke",
+      "route": "Canmore → Golden → Rogers Pass → Revelstoke",
+      "focus": "Begin the return early enough to make Vancouver city on 5 October without a single punishing final drive.",
+      "overnight": "Revelstoke",
       "blocks": [
         {
           "time": "08:00",
-          "title": "Canmore cafés",
-          "detail": "Easy morning.",
-          "kind": "food"
-        },
-        {
-          "time": "09:00",
-          "title": "Canmore shops / galleries",
-          "detail": "Local day.",
-          "kind": "explore"
-        },
-        {
-          "time": "10:00",
-          "title": "Banff option",
-          "detail": "Drive to Banff only if energy is good.",
+          "title": "Breakfast + check-out",
+          "detail": "Fuel, check DriveBC and pack the vehicle.",
           "kind": "travel"
         },
         {
+          "time": "09:00",
+          "title": "Depart Canmore",
+          "detail": "Begin the westbound Trans-Canada return.",
+          "kind": "travel"
+        },
+        {
+          "time": "10:00",
+          "title": "Yoho / Field stop",
+          "detail": "Choose one short viewpoint or coffee stop.",
+          "kind": "stop"
+        },
+        {
           "time": "11:00",
-          "title": "Banff Avenue or Bow Falls",
-          "detail": "One easy Banff stop.",
-          "kind": "explore"
+          "title": "Continue toward Golden",
+          "detail": "Keep the day moving; avoid adding a long hike.",
+          "kind": "travel"
         },
         {
           "time": "12:00",
-          "title": "Lunch",
-          "detail": "The Bison, Park Distillery or Canmore fallback.",
+          "title": "Golden lunch + fuel",
+          "detail": "Take a proper break and refuel.",
           "kind": "food"
         },
         {
           "time": "13:00",
-          "title": "Rest / Upper Hot Springs",
-          "detail": "Choose recovery over another attraction.",
-          "kind": "rest"
+          "title": "Golden to Rogers Pass",
+          "detail": "Mountain transfer; check conditions before the pass.",
+          "kind": "travel"
         },
         {
           "time": "14:00",
-          "title": "Rest",
-          "detail": "Flexible.",
-          "kind": "rest"
+          "title": "Rogers Pass viewpoint",
+          "detail": "Short stop if weather and parking allow.",
+          "kind": "explore"
         },
         {
           "time": "15:00",
-          "title": "Canmore return",
-          "detail": "Coffee or local shopping.",
+          "title": "Rogers Pass to Revelstoke",
+          "detail": "Continue toward the overnight base.",
           "kind": "travel"
         },
         {
           "time": "16:00",
-          "title": "Canmore",
-          "detail": "Laundry and packing.",
-          "kind": "plan"
+          "title": "Revelstoke check-in",
+          "detail": "Arrive with daylight and reset.",
+          "kind": "travel"
         },
         {
           "time": "17:00",
-          "title": "Hotel reset",
-          "detail": "Prepare for the return road.",
-          "kind": "rest"
+          "title": "Revelstoke riverfront / coffee",
+          "detail": "Easy local walk only.",
+          "kind": "explore"
         },
         {
           "time": "18:00",
           "title": "Dinner",
-          "detail": "Canmore dinner.",
+          "detail": "Choose a nearby Revelstoke restaurant.",
           "kind": "food"
         },
         {
           "time": "19:00",
           "title": "Dinner",
-          "detail": "Keep the last Rockies evening easy.",
+          "detail": "Early meal before the Vancouver transfer.",
           "kind": "food"
         },
         {
           "time": "20:00",
-          "title": "Pack for Revelstoke",
-          "detail": "Check DriveBC and reserve road stop.",
+          "title": "Flight and road check",
+          "detail": "Check DriveBC, rental return, hotel and CX867 details.",
           "kind": "plan"
         },
         {
           "time": "21:00",
           "title": "Sleep",
-          "detail": "Return drive begins tomorrow.",
+          "detail": "Protect tomorrow's full transfer.",
           "kind": "rest"
         },
         {
@@ -1363,94 +1370,94 @@
     },
     {
       "date": "2026-10-05",
-      "label": "Day 13 · Canmore to Revelstoke",
-      "base": "Revelstoke",
-      "route": "Canmore → Banff / Yoho → Golden → Rogers Pass → Revelstoke",
-      "focus": "Start the two-day return to Vancouver with a practical mountain overnight.",
-      "overnight": "Revelstoke",
+      "label": "Day 13 · Revelstoke to Vancouver city",
+      "base": "Vancouver",
+      "route": "Revelstoke → Kamloops → Hope → Vancouver city",
+      "focus": "Complete the return transfer and sleep in Vancouver city on 5 October.",
+      "overnight": "Vancouver city",
       "blocks": [
         {
           "time": "08:00",
-          "title": "Banff / Yoho viewpoint",
-          "detail": "Choose one short stop.",
-          "kind": "stop"
-        },
-        {
-          "time": "09:00",
-          "title": "Field / Golden",
-          "detail": "Coffee and fuel.",
-          "kind": "stop"
-        },
-        {
-          "time": "10:00",
-          "title": "Golden to Rogers Pass",
-          "detail": "Mountain transfer.",
+          "title": "Breakfast + check-out",
+          "detail": "Fuel and confirm DriveBC before leaving.",
           "kind": "travel"
         },
         {
+          "time": "09:00",
+          "title": "Depart Revelstoke",
+          "detail": "Start the long westbound transfer.",
+          "kind": "travel"
+        },
+        {
+          "time": "10:00",
+          "title": "Sicamous / Salmon Arm stop",
+          "detail": "Coffee, fuel and stretch.",
+          "kind": "stop"
+        },
+        {
           "time": "11:00",
-          "title": "Rogers Pass",
-          "detail": "Short viewpoint or visitor centre if open.",
-          "kind": "explore"
+          "title": "Continue west",
+          "detail": "No major detours today.",
+          "kind": "travel"
         },
         {
           "time": "12:00",
-          "title": "Packed lunch",
-          "detail": "Protect the afternoon arrival.",
+          "title": "Kamloops-area lunch",
+          "detail": "Use a practical road stop.",
           "kind": "food"
         },
         {
           "time": "13:00",
-          "title": "Drive to Revelstoke",
-          "detail": "Continue west.",
+          "title": "Coquihalla / Highway 5",
+          "detail": "Check weather and construction conditions.",
           "kind": "travel"
         },
         {
           "time": "14:00",
-          "title": "Revelstoke check-in",
-          "detail": "Early arrival target.",
+          "title": "Continue toward Hope",
+          "detail": "Keep the Vancouver arrival target in view.",
           "kind": "travel"
         },
         {
           "time": "15:00",
-          "title": "Riverfront / town",
-          "detail": "Coffee and walk.",
-          "kind": "explore"
+          "title": "Hope / rest stop",
+          "detail": "Stretch and refuel.",
+          "kind": "stop"
         },
         {
           "time": "16:00",
-          "title": "Revelstoke town",
-          "detail": "Souvenir / grocery hour.",
-          "kind": "explore"
+          "title": "Fraser Valley to Vancouver",
+          "detail": "Metro traffic buffer begins.",
+          "kind": "travel"
         },
         {
           "time": "17:00",
-          "title": "Rest",
-          "detail": "Prepare for the long final transfer.",
-          "kind": "rest"
+          "title": "Vancouver city arrival",
+          "detail": "Check in downtown; return the car only if that matches the rental plan.",
+          "kind": "travel"
         },
         {
           "time": "18:00",
-          "title": "Dinner",
-          "detail": "Revelstoke town dinner.",
-          "kind": "food"
+          "title": "Hotel reset",
+          "detail": "Shower, unpack and settle into the city base.",
+          "kind": "rest"
         },
         {
           "time": "19:00",
-          "title": "Dinner",
-          "detail": "Early meal.",
+          "title": "Dinner in Vancouver city",
+          "detail": "Stay near the hotel; no airport-area detour.",
           "kind": "food"
         },
         {
           "time": "20:00",
-          "title": "Route and flight check",
-          "detail": "DriveBC, rental return and flight timing.",
-          "kind": "plan"
+          "title": "City evening",
+          "detail": "Short waterfront walk or rest.",
+          "kind": "walk"
         },
         {
           "time": "21:00",
           "title": "Sleep",
-          "detail": "Last road night.",
+          "detail": "You are back in Vancouver city tonight.",
           "kind": "rest"
         },
         {
@@ -1469,94 +1476,94 @@
     },
     {
       "date": "2026-10-06",
-      "label": "Day 14 · Revelstoke to Vancouver",
-      "base": "Vancouver / Richmond",
-      "route": "Revelstoke → Vancouver / Richmond → McArthurGlen",
-      "focus": "Return to the YVR area, then use the final evening for the outlet only if the drive and rental-car timing cooperate.",
-      "overnight": "Vancouver or Richmond",
+      "label": "Day 14 · Vancouver city + McArthurGlen",
+      "base": "Vancouver",
+      "route": "Vancouver city → McArthurGlen Designer Outlet → Vancouver city",
+      "focus": "A proper Vancouver city day before the international departure; outlet is placed here instead of departure morning.",
+      "overnight": "Vancouver city",
       "blocks": [
         {
           "time": "08:00",
-          "title": "Sicamous / Salmon Arm",
-          "detail": "Coffee and fuel.",
-          "kind": "stop"
+          "title": "Breakfast",
+          "detail": "Start the final full day without a hard rush.",
+          "kind": "food"
         },
         {
           "time": "09:00",
-          "title": "Continue west",
-          "detail": "No major detours today.",
-          "kind": "travel"
+          "title": "Stanley Park / seawall",
+          "detail": "Easy walk or cycle, weather permitting.",
+          "kind": "walk"
         },
         {
           "time": "10:00",
-          "title": "Kamloops area",
-          "detail": "Rest stop and fuel.",
-          "kind": "stop"
+          "title": "Stanley Park / Coal Harbour",
+          "detail": "Finish the waterfront loop.",
+          "kind": "walk"
         },
         {
           "time": "11:00",
-          "title": "Coquihalla / Highway 5",
-          "detail": "Weather and construction check.",
+          "title": "Transfer to McArthurGlen",
+          "detail": "Canada Line or car transfer; confirm current hours.",
           "kind": "travel"
         },
         {
           "time": "12:00",
-          "title": "Lunch stop",
-          "detail": "Keep it efficient.",
-          "kind": "food"
+          "title": "McArthurGlen Designer Outlet",
+          "detail": "Final shopping window with baggage limits in mind.",
+          "kind": "shop"
         },
         {
           "time": "13:00",
-          "title": "Continue toward Hope",
-          "detail": "Traffic buffer.",
-          "kind": "travel"
+          "title": "McArthurGlen lunch / shopping",
+          "detail": "Keep receipts and avoid an oversized final purchase.",
+          "kind": "shop"
         },
         {
           "time": "14:00",
-          "title": "Hope / rest",
-          "detail": "Stretch and fuel.",
-          "kind": "stop"
+          "title": "Return to Vancouver city",
+          "detail": "Return downtown with plenty of time before dinner.",
+          "kind": "travel"
         },
         {
           "time": "15:00",
-          "title": "Fraser Valley to Vancouver",
-          "detail": "Expect metro traffic.",
-          "kind": "travel"
+          "title": "Hotel reset",
+          "detail": "Pack and separate checked / carry-on items.",
+          "kind": "rest"
         },
         {
           "time": "16:00",
-          "title": "Return rental car or hotel",
-          "detail": "Choose based on the departure time and hotel location.",
-          "kind": "travel"
+          "title": "Waterfront / neighbourhood walk",
+          "detail": "Optional final Vancouver stroll.",
+          "kind": "walk"
         },
         {
           "time": "17:00",
-          "title": "McArthurGlen evening option",
-          "detail": "After hotel / rental-car logistics, use this as the safer final outlet window. Skip if the drive is late.",
-          "kind": "shop"
+          "title": "Final dinner planning",
+          "detail": "Blue Water, Elisa, Kissa Tanto, ARC or a nearby choice.",
+          "kind": "plan"
         },
         {
           "time": "18:00",
-          "title": "McArthurGlen final shop",
-          "detail": "Keep purchases within airline baggage limits and confirm current hours before going.",
-          "kind": "shop"
+          "title": "Final Vancouver dinner",
+          "detail": "Stay in the city rather than crossing to YVR.",
+          "kind": "food"
         },
         {
           "time": "19:00",
-          "title": "Dinner near YVR / Richmond",
-          "detail": "Stay near the hotel; do not cross the metro area.",
+          "title": "Dinner",
+          "detail": "Slow final evening.",
           "kind": "food"
         },
         {
           "time": "20:00",
-          "title": "Baggage and receipts",
-          "detail": "Separate outlet items and confirm airline limits.",
+          "title": "Pack for CX867",
+          "detail": "Confirm airport transfer, rental return and baggage.",
           "kind": "plan"
         },
         {
           "time": "21:00",
           "title": "Sleep",
-          "detail": "Final night in Canada.",
+          "detail": "Early departure preparation.",
           "kind": "rest"
         },
         {
@@ -2153,21 +2160,21 @@
       "to": "Canmore",
       "distance": "about 300 km baseline",
       "time": "full transfer day",
-      "note": "Keep Maligne Lake optional to avoid an unsafe late return."
+      "note": "Return to Canmore on 3 Oct, then begin the westbound return on 4 Oct."
     },
     {
       "from": "Canmore",
       "to": "Revelstoke",
       "distance": "about 285 km",
       "time": "4-6 h with stops",
-      "note": "Trans-Canada return through Yoho and Rogers Pass."
+      "note": "4 Oct return overnight through Yoho and Rogers Pass."
     },
     {
       "from": "Revelstoke",
-      "to": "Vancouver",
+      "to": "Vancouver city",
       "distance": "about 565 km",
       "time": "full transfer day",
-      "note": "Final Vancouver night is a buffer, not a sightseeing race."
+      "note": "Arrive and sleep in Vancouver city on 5 Oct."
     }
   ],
   "sources": [

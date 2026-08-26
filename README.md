@@ -11,12 +11,12 @@ All flight times are local to the relevant airport. Day plans now start at **08:
 
 ## Updated plan
 
-- Vancouver: three front-end days plus a final Vancouver / Richmond night, about 4 days total including arrival and departure buffers
+- Vancouver: three front-end days plus **Vancouver city on 5-6 Oct**, with the final night positioned around the 14:10 YVR departure
 - McArthurGlen Designer Outlet Vancouver Airport is the only outlet
 - Canmore is the main economical Rockies base
 - Exactly two cabin nights: 30 September and 1 October
 - Jasper gets one recommended overnight after the Icefields Parkway
-- Revelstoke is the practical return-leg overnight
+- Return routing is now **Canmore → Revelstoke on 4 Oct → Vancouver city on 5 Oct**
 - Restaurants are organized by Vancouver, Whistler, Canmore, Banff, the cabin zone and Jasper
 
 ## What is included
@@ -44,8 +44,8 @@ Then visit <http://localhost:8000>.
 ## Important assumptions
 
 - Dates are **23 Sep 2026 to 7 Oct 2026 inclusive**. Flight times are now confirmed as listed above.
-- The route assumes a rental car is collected after the Vancouver city stay and returned near YVR.
-- The plan is ambitious. Day 4 Vancouver to Kamloops via Whistler and Day 5 Kamloops to Canmore are long transfer days. Day 14 Revelstoke to Vancouver is also a full transfer day.
+- The route is now: Vancouver city (23-25 Sep) → Kamloops (26 Sep) → Canmore (27 Sep-3 Oct) → Revelstoke (4 Oct) → Vancouver city (5-6 Oct) → YVR (7 Oct).
+- The plan is ambitious. Day 4 Vancouver to Kamloops via Whistler, Day 5 Kamloops to Canmore and Day 14 Revelstoke to Vancouver are long transfer days.
 - Accommodation cards are candidates, not reservations. Prices, inventory, cancellation terms and seasonal opening must be checked for the exact dates.
 - Airbnb links are search links or current search-result candidates, not endorsements or confirmed availability.
 - Route times are planning estimates without live traffic, weather, construction or stop time.
