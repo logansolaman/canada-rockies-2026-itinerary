@@ -50,7 +50,24 @@ The itinerary is a planning artifact, not a live booking feed. These are the sou
 22. Columbia Icefield Discovery Centre / Skywalk: <https://www.columbiaicefieldsskywalk.com>
 23. Mount Revelstoke and Glacier National Park planning should be checked through Parks Canada before travel: <https://parks.canada.ca/pn-np/bc/revelstoke/visit> and <https://parks.canada.ca/pn-np/bc/glacier/visit>
 
-## Live conditions to check
+## Airbnb shortlist (research candidates, not reservations)
+
+These were found during a current Airbnb search pass. Airbnb availability and pricing are date-sensitive; verify 23 Sep–7 Oct 2026 dates, total price, cleaning/service fees, cancellation policy, parking, stairs, and the host's registration details before booking.
+
+- Vancouver Coal Harbour search: <https://www.airbnb.com/coal-harbour-vancouver-canada/stays/condos>
+- Kamloops, Cozy King with private patio and barrel sauna: <https://www.airbnb.ca/rooms/1038384976094405586>
+- Canmore Mountain Retreat: <https://www.airbnb.ca/rooms/972526590434794327>
+- Canmore Modern Mountain Escape 2BR: <https://www.airbnb.ca/rooms/919785469808320998>
+- Baker Creek Queen Cabin: <https://www.airbnb.com/rooms/648505177741965692>
+- Jasper apartment search: <https://www.airbnb.ca/jasper-canada/stays/apartments>
+- Jasper East Gates Cedar Suite: <https://www.airbnb.ca/rooms/27761749>
+- Revelstoke Revelation Retreat Townhouse: <https://www.airbnb.ca/rooms/46141195>
+- Revelstoke Big Deck penthouse: <https://www.airbnb.ca/rooms/859400628190813161>
+- Golden Wild Wood Cabins alternative: <https://www.airbnb.ca/rooms/18427652>
+- Golden Moonraker Mountain Mökki alternative: <https://www.airbnb.ca/rooms/22587142>
+
+The current plan does **not** add a Golden night or a second cabin block: Golden options are contingency choices only, preserving the user's two-night cabin constraint.
+
 
 24. DriveBC: <https://www.drivebc.ca/>
 25. BC highway route and conditions: <https://www2.gov.bc.ca/gov/content/transportation/driving-and-cycling/traveller-information/routes-and-driving-conditions>

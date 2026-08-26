@@ -1880,6 +1880,13 @@
         "why": "Search downtown, Yaletown, Coal Harbour or Richmond by exact dates.",
         "url": "https://www.airbnb.com/vancouver-canada/stays",
         "book": "https://www.airbnb.com/vancouver-canada/stays"
+      },
+      {
+        "name": "Coal Harbour condo search",
+        "type": "Airbnb area shortlist",
+        "why": "A strong city-base brief: walkable seawall and Stanley Park, with kitchen and parking filters. Search results surface highly rated condos; verify exact dates and price.",
+        "url": "https://www.airbnb.com/coal-harbour-vancouver-canada/stays/condos",
+        "book": "https://www.airbnb.com/coal-harbour-vancouver-canada/stays/condos"
       }
     ],
     "kamloops": [
@@ -1910,6 +1917,13 @@
         "why": "Search a suite with parking and a kitchen.",
         "url": "https://www.airbnb.com/kamloops-canada/stays",
         "book": "https://www.airbnb.com/kamloops-canada/stays"
+      },
+      {
+        "name": "Cozy King with private patio and barrel sauna",
+        "type": "Airbnb private suite",
+        "why": "Search result describes a verified Kamloops suite with king bed, full kitchen, free parking, laundry, private patio, fire table and private barrel sauna. Verify exact dates and price.",
+        "url": "https://www.airbnb.ca/rooms/1038384976094405586",
+        "book": "https://www.airbnb.ca/rooms/1038384976094405586"
       }
     ],
     "canmore": [
@@ -1961,6 +1975,20 @@
         "why": "Search Canmore or Dead Man's Flats for kitchen, parking and multi-night value.",
         "url": "https://www.airbnb.com/canmore-canada/stays",
         "book": "https://www.airbnb.com/canmore-canada/stays"
+      },
+      {
+        "name": "Canmore Mountain Retreat",
+        "type": "Airbnb 1-bedroom",
+        "why": "Search result reports 5.0 overall rating, mountain view, kitchen, private patio and rooftop hot-tub access with private evening booking windows. Verify exact dates and price.",
+        "url": "https://www.airbnb.ca/rooms/972526590434794327",
+        "book": "https://www.airbnb.ca/rooms/972526590434794327"
+      },
+      {
+        "name": "Modern Mountain Escape 2BR",
+        "type": "Airbnb townhouse",
+        "why": "Search result reports 4.96 from 76 reviews, kitchen, fireplace, balcony BBQ, parking, pool and hot tub; walkable to Canmore dining and reported about 20 minutes to Banff. Verify exact dates and price.",
+        "url": "https://www.airbnb.ca/rooms/919785469808320998",
+        "book": "https://www.airbnb.ca/rooms/919785469808320998"
       }
     ],
     "cabins": [
@@ -1991,6 +2019,13 @@
         "why": "Use only if you want to trade one Canmore night for a one-night lake splurge.",
         "url": "https://crmr.com/resorts/emerald-lake/accommodations/",
         "book": "https://bookings.travelclick.com/115058"
+      },
+      {
+        "name": "Baker Creek - Queen Cabin",
+        "type": "Airbnb cabin",
+        "why": "Direct Airbnb listing at Baker Creek: two-person jacuzzi tub, river-rock fireplace, private deck, mountain views, microwave and mini-fridge. A strong match for the planned two cabin nights. Verify exact dates and price.",
+        "url": "https://www.airbnb.com/rooms/648505177741965692",
+        "book": "https://www.airbnb.com/rooms/648505177741965692"
       }
     ],
     "jasper": [
@@ -2028,6 +2063,20 @@
         "why": "Search Jasper, Hinton and Jasper Lake if town inventory is tight.",
         "url": "https://www.airbnb.com/jasper-canada/stays",
         "book": "https://www.airbnb.com/jasper-canada/stays"
+      },
+      {
+        "name": "The Bears Den - Whistlers Suite",
+        "type": "Airbnb apartment search",
+        "why": "Jasper apartment search result describes a 5.0-rated one-bedroom suite within walking distance of downtown, with mountain views, full kitchen and electric fireplace. Verify the exact listing and dates before booking.",
+        "url": "https://www.airbnb.ca/jasper-canada/stays/apartments",
+        "book": "https://www.airbnb.ca/jasper-canada/stays/apartments"
+      },
+      {
+        "name": "The Cedar Suite - Jasper East Gates",
+        "type": "Airbnb guest suite",
+        "why": "About 35 minutes from Jasper townsite near Hinton; mountain views, kitchen, free parking and BBQ. Use only if Jasper-town inventory is unavailable.",
+        "url": "https://www.airbnb.ca/rooms/27761749",
+        "book": "https://www.airbnb.ca/rooms/27761749"
       }
     ],
     "revelstoke": [
@@ -2058,6 +2107,20 @@
         "why": "Search cabins, suites or hot-tub stays near town.",
         "url": "https://www.airbnb.com/revelstoke-canada/stays",
         "book": "https://www.airbnb.com/revelstoke-canada/stays"
+      },
+      {
+        "name": "Revelation Retreat Townhouse",
+        "type": "Airbnb townhouse",
+        "why": "Search result identifies a Revelstoke townhouse with private hot tub; suitable for the return-leg recovery night if exact dates, parking and price work.",
+        "url": "https://www.airbnb.ca/rooms/46141195",
+        "book": "https://www.airbnb.ca/rooms/46141195"
+      },
+      {
+        "name": "Penthouse with Hot Tub - The Big Deck",
+        "type": "Airbnb condo",
+        "why": "Search result identifies a Revelstoke condo with hot tub and large deck; verify parking and road access.",
+        "url": "https://www.airbnb.ca/rooms/859400628190813161",
+        "book": "https://www.airbnb.ca/rooms/859400628190813161"
       }
     ],
     "yvr": [
