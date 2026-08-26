@@ -28,7 +28,8 @@
         "duration": "14h 10m elapsed local-time conversion",
         "note": "Arrival is the next calendar day in Hong Kong."
       }
-    ]
+    ],
+    "return_note": "Vancouver city is reached on 5 October 2026; 6 October is a full Vancouver city and McArthurGlen buffer day."
   },
   "route": [
     {
