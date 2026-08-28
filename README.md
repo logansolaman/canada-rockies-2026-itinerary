@@ -39,15 +39,16 @@ The Yellowhead County Airbnb's exact address should be added before departure. �
 
 ## What is included
 
-- Vancouver, McArthurGlen Designer Outlet, Sea-to-Sky Highway and Whistler stop
-- Kamloops, Golden and Revelstoke road overnights
-- Canmore base, Banff, Lake Louise, Moraine Lake and Yoho
-- Two cabin nights at Baker Creek or Storm Mountain
-- Icefields Parkway and Jasper overnight
-- Return through Canmore, Revelstoke and Vancouver / Richmond
-- Candidate hotels, cabins, motels and Airbnb search links
+- Vancouver, Clive Avenue / Collingwood, McArthurGlen and East Vancouver / Burnaby sights
+- Kamloops, Golden and Revelstoke road stops
+- Harvie Heights base for Yoho, Lake Louise and Moraine Lake
+- Bragg Creek base for the foothills and Kananaskis
+- Yellowhead County base for the Jasper / Hinton area and Icefields Parkway
+- Revelstoke and Kelowna Airbnbs on the return route
+- Dunbar Street / Dunbar-Southlands, UBC, Pacific Spirit Park and west-side Vancouver sights
+- Candidate stay notes and official planning links
 - One-hour blocks from 08:00 to 23:00
-- Restaurant candidates and official planning links
+- Restaurant candidates, driving estimates and a transparent CAD budget
 
 ## Open the itinerary
 
@@ -72,15 +73,22 @@ Then visit <http://localhost:8000>.
 
 | Category | Planning range (CAD) |
 |---|---:|
-| Fixed Airbnb stays, 8 nights | 1,600–2,800 |
-| Vancouver stays, 5 nights + Kamloops, 1 night | 1,430–2,500 |
+| Clive Avenue Airbnb · Collingwood, 3 nights | 450–780 |
+| Dunbar Street Airbnb · Dunbar-Southlands, 2 nights | 400–700 |
+| Golden Airbnb, 1 night | 180–300 |
+| Harvie Heights Airbnb, 2 nights | 440–760 |
+| Bragg Creek Airbnb, 2 nights | 440–800 |
+| Yellowhead County Airbnb, 1 night | 160–300 |
+| Revelstoke Airbnb, 1 night | 200–350 |
+| Kelowna Airbnb, 1 night | 180–320 |
+| Kamloops bridge night | 180–250 |
 | SUV rental, 11 days including estimated taxes/fees | 1,556 |
 | Gas | 529–647 |
 | Food and groceries | 1,800–3,300 |
 | Parks, attractions, parking and local transport | 600–1,200 |
-| **Estimated total, excluding flights** | **7,515–12,003** |
+| **Estimated total, excluding flights** | **7,115–11,263** |
 
-Recommended working reserve: **CAD 8,270–13,200**. Airbnb prices and the international flight fares were not provided, so this is a transparent planning range—not a booking total. Enter the actual Airbnb totals, car quote, flight fares and paid-activity prices to finalize it.
+Recommended working reserve: **CAD 7,827–12,389**. Airbnb prices and the international flight fares were not provided, so this is a transparent planning range—not a booking total. Enter the actual Airbnb totals, car quote, flight fares and paid-activity prices to finalize it.
 
 
 - Dates are **23 Sep 2026 to 7 Oct 2026 inclusive**. Flight times are confirmed as listed above.

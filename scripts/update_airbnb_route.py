@@ -374,7 +374,12 @@ x["budget"] = {
     "categories": [
         {"name": "Clive Avenue Airbnb · Collingwood", "low": 450, "high": 780, "note": "3 nights, 23–26 September; planning range CAD 150–260/night before Airbnb taxes and fees."},
         {"name": "Dunbar Street Airbnb · Dunbar-Southlands", "low": 400, "high": 700, "note": "2 nights, 5–7 October; planning range CAD 200–350/night before Airbnb taxes and fees."},
-        {"name": "Other Airbnb stays", "low": 1600, "high": 2830, "note": "8 nights: Golden, Harvie Heights, Bragg Creek, Yellowhead County, Revelstoke and Kelowna; actual booking totals not supplied."},
+        {"name": "Golden Airbnb", "low": 180, "high": 300, "note": "1 night, 27–28 September; planning range CAD 180–300/night before Airbnb taxes and fees."},
+        {"name": "Harvie Heights Airbnb", "low": 440, "high": 760, "note": "2 nights, 28–30 September; planning range CAD 220–380/night before Airbnb taxes and fees."},
+        {"name": "Bragg Creek Airbnb", "low": 440, "high": 800, "note": "2 nights, 30 September–2 October; planning range CAD 220–400/night before Airbnb taxes and fees."},
+        {"name": "Yellowhead County Airbnb", "low": 160, "high": 300, "note": "1 night, 2–3 October; planning range CAD 160–300/night before Airbnb taxes and fees; exact address may change the route."},
+        {"name": "Revelstoke Airbnb", "low": 200, "high": 350, "note": "1 night, 3–4 October; planning range CAD 200–350/night before Airbnb taxes and fees."},
+        {"name": "Kelowna Airbnb", "low": 180, "high": 320, "note": "1 night, 4–5 October; planning range CAD 180–320/night before Airbnb taxes and fees."},
         {"name": "Kamloops bridge night", "low": 180, "high": 250, "note": "1 night, 26–27 September; practical hotel/suite placeholder."},
         {"name": "Rental car", "low": 1556, "high": 1556, "note": "11 days × CAD 123/day SUV average × 1.15 tax/fee factor; actual quote may differ."},
         {"name": "Gas", "low": 529, "high": 647, "note": "About 285–317 L for 3,166 km, using BC CAD 2.05/L and Alberta CAD 1.55/L planning prices."},
