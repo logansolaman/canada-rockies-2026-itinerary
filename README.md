@@ -93,12 +93,12 @@ Recommended working reserve: **CAD 8,270–13,200**. Airbnb prices and the inter
 
 ## Recommended lodging strategy
 
-1. **Vancouver:** stay downtown for the first three nights; use a Vancouver or Richmond / YVR hotel for the final night depending on flight logistics.
-2. **Kamloops and Golden:** practical one-night road bases on 26 Sep and 27 Sep respectively, splitting the west-to-east transfer before Canmore.
-3. **Canmore:** the main economical base from 28 Sep to 5 Oct. Ask whether luggage can be held during the cabin stay.
-4. **Cabins:** exactly two nights, 30 Sep and 1 Oct. Baker Creek is the strongest all-round base; Storm Mountain is the romantic, unplugged splurge.
-5. **Jasper:** one night is recommended after the Icefields Parkway. Avoid forcing a same-day return to Canmore unless weather or inventory requires it.
-6. **McArthurGlen:** use it on arrival only if energy allows, and on 6 Oct / departure eve as the safer final shopping window. Do not schedule shopping before the 14:10 international departure on 7 Oct.
+- Vancouver: Clive Avenue / Collingwood, Vancouver (23–26 Sep); Dunbar Street / Dunbar-Southlands, Vancouver (5–7 Oct)
+- Kamloops and Golden: practical one-night road bases on 26 Sep and 27 Sep respectively.
+- Golden, Harvie Heights, Bragg Creek, Yellowhead County, Revelstoke and Kelowna: use the supplied Airbnbs exactly as the overnight anchors.
+- **Clive Avenue area:** Joyce-Collingwood SkyTrain, Central Park, Metrotown, Deer Lake / Burnaby and optional Richmond / Steveston are the nearby focus.
+- **Dunbar Street area:** Pacific Spirit Regional Park, UBC, Museum of Anthropology, Kitsilano Beach, Jericho Beach and Granville Island are the nearby focus.
+- McArthurGlen is optional on arrival and is not the main final-day plan; do not schedule shopping before the 14:10 international departure on 7 Oct.
 
 ## Booking checklist
 

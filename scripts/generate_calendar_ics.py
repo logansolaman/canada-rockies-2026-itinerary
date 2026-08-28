@@ -6,7 +6,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data" / "itinerary.json"
-OUT = Path.home() / "Desktop" / "canada-rockies-2026-hourly.ics"
+OUT = Path.home() / "Desktop" / "canada-rockies-2026-apple-calendar.ics"
 
 payload = json.loads(DATA.read_text(encoding="utf-8"))
 meta = payload["meta"]

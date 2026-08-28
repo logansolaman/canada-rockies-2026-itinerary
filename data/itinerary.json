@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "Canada Rockies · Vancouver + fixed Airbnb route",
+    "title": "Canada Rockies · fixed Airbnb route + Vancouver neighbourhood bases",
     "start": "2026-09-23",
     "end": "2026-10-07",
     "travelers": 2,
@@ -27,16 +27,16 @@
         "note": "Arrival is the next calendar day in Hong Kong."
       }
     ],
-    "assumption": "Route rebuilt around the supplied Airbnb bases. The one-night Kamloops stop on 26 Sep bridges the first Vancouver stay and Golden; Yellowhead County is treated as a Jasper/Hinton-area base. The 3 Oct Yellowhead County → Revelstoke day is intentionally a long scenic transfer and must be shortened if weather, daylight or road conditions deteriorate.",
+    "assumption": "Route rebuilt around the supplied Airbnb bases and exact Vancouver neighbourhoods. The one-night Kamloops stop on 26 Sep bridges the first Vancouver stay and Golden. Yellowhead County is treated as a Jasper/Hinton-area base; its exact Airbnb address may change the 2–3 Oct driving times. Clive Avenue is treated as the Joyce-Collingwood / East Vancouver area and Dunbar Street as Dunbar-Southlands; exact addresses are still needed for door-to-door routing.",
     "wake_time": "08:00",
-    "lodging_note": "Fixed stays supplied by the travelers: Golden 27–28 Sep; Harvie Heights 28–30 Sep; Bragg Creek 30 Sep–2 Oct; Yellowhead County 2–3 Oct; Revelstoke 3–4 Oct; Kelowna 4–5 Oct. Vancouver is used for the first three nights and final two nights."
+    "lodging_note": "Fixed stays supplied by the travelers: Clive Avenue, Collingwood / Joyce-Collingwood, Vancouver from 23–26 Sep; Golden 27–28 Sep; Harvie Heights 28–30 Sep; Bragg Creek 30 Sep–2 Oct; Yellowhead County 2–3 Oct; Revelstoke 3–4 Oct; Kelowna 4–5 Oct; Dunbar Street, Dunbar-Southlands, Vancouver from 5–7 Oct."
   },
   "route": [
     {
-      "name": "Vancouver",
-      "date": "23–26 Sep + 5–7 Oct",
-      "km": "city / airport",
-      "stay": "first 3 nights + final 2 nights",
+      "name": "Vancouver · Clive Avenue",
+      "date": "23–26 Sep",
+      "km": "East Vancouver",
+      "stay": "first 3 nights",
       "color": "#7dd3fc"
     },
     {
@@ -89,6 +89,13 @@
       "color": "#c4b5fd"
     },
     {
+      "name": "Vancouver · Dunbar Street",
+      "date": "5–7 Oct",
+      "km": "Dunbar-Southlands",
+      "stay": "final 2 nights",
+      "color": "#f0abfc"
+    },
+    {
       "name": "Departure",
       "date": "7 Oct",
       "km": "airport day",
@@ -99,11 +106,11 @@
   "days": [
     {
       "date": "2026-09-23",
-      "label": "Day 1 · Arrival in Vancouver",
-      "base": "Vancouver",
-      "route": "CX814 · HKG 11:05 → YVR 07:40 · airport arrival → Vancouver",
-      "focus": "Arrive gently, settle into the first Vancouver base and only shop if energy and baggage logistics allow.",
-      "overnight": "Vancouver Airbnb / hotel",
+      "label": "Day 1 · Arrival in Vancouver · Clive Avenue",
+      "base": "Clive Avenue, Joyce-Collingwood",
+      "route": "CX814 · HKG 11:05 → YVR 07:40 · YVR → Clive Avenue",
+      "focus": "Arrive gently and settle into the first Airbnb in East Vancouver's Joyce-Collingwood area. Keep the first afternoon close to home.",
+      "overnight": "Clive Avenue Airbnb · Joyce-Collingwood",
       "blocks": [
         {
           "time": "08:00",
@@ -113,14 +120,14 @@
         },
         {
           "time": "09:00",
-          "title": "Transfer / luggage plan",
-          "detail": "Take the Canada Line or confirmed hotel transfer. Keep luggage secure.",
+          "title": "Transfer to Clive Avenue",
+          "detail": "Take the Canada Line to Joyce-Collingwood or a taxi/rideshare. The Airbnb is near Joyce Station; keep luggage secure.",
           "kind": "travel"
         },
         {
           "time": "10:00",
           "title": "McArthurGlen option",
-          "detail": "Use only if arrival is smooth; keep the visit short and protect baggage capacity.",
+          "detail": "Use only if arrival is smooth; it is on the way from YVR but do not force shopping after a long flight.",
           "kind": "shop"
         },
         {
@@ -131,8 +138,8 @@
         },
         {
           "time": "12:00",
-          "title": "Transfer to Vancouver stay",
-          "detail": "Head to the first three-night Vancouver base.",
+          "title": "Continue to Clive Avenue",
+          "detail": "Head to the first three-night Airbnb in the Collingwood / Joyce-Collingwood area.",
           "kind": "travel"
         },
         {
@@ -149,15 +156,15 @@
         },
         {
           "time": "15:00",
-          "title": "Easy waterfront walk",
-          "detail": "Coal Harbour, English Bay or the nearest calm neighbourhood option.",
+          "title": "Collingwood neighbourhood walk",
+          "detail": "Walk around Joyce-Collingwood, or rest at the Airbnb if needed.",
           "kind": "walk"
         },
         {
           "time": "16:00",
-          "title": "Free / recover",
-          "detail": "Do not over-program arrival day.",
-          "kind": "rest"
+          "title": "Central Park / Metrotown option",
+          "detail": "Only if alert: Central Park is close and Metrotown is a practical nearby outing.",
+          "kind": "explore"
         },
         {
           "time": "17:00",
@@ -205,71 +212,71 @@
     },
     {
       "date": "2026-09-24",
-      "label": "Day 2 · Vancouver highlights",
-      "base": "Vancouver",
-      "route": "Stanley Park → Granville Island → Gastown",
-      "focus": "Use the first full day for Vancouver's classic waterfront and market sequence.",
-      "overnight": "Vancouver Airbnb / hotel",
+      "label": "Day 2 · East Vancouver and downtown",
+      "base": "Clive Avenue, Joyce-Collingwood",
+      "route": "Joyce-Collingwood → Central Park / Metrotown → Gastown → Stanley Park → Joyce-Collingwood",
+      "focus": "Use the SkyTrain from Joyce-Collingwood to make the downtown day easy without moving the Airbnb.",
+      "overnight": "Clive Avenue Airbnb · Joyce-Collingwood",
       "blocks": [
         {
           "time": "08:00",
-          "title": "Breakfast",
-          "detail": "Start at the agreed 08:00 wake-up time.",
+          "title": "Breakfast near Joyce-Collingwood",
+          "detail": "Start locally and use the SkyTrain rather than driving downtown.",
           "kind": "food"
         },
         {
           "time": "09:00",
-          "title": "Stanley Park seawall",
-          "detail": "Walk or rent bikes if weather is good.",
+          "title": "Joyce-Collingwood / Central Park",
+          "detail": "Easy neighbourhood start or Central Park walk.",
           "kind": "walk"
         },
         {
           "time": "10:00",
-          "title": "Stanley Park",
-          "detail": "Totem poles, forest paths and Coal Harbour edge.",
+          "title": "Metrotown",
+          "detail": "Shopping, coffee and a practical rainy-day option close to the Airbnb.",
           "kind": "explore"
         },
         {
           "time": "11:00",
-          "title": "Stanley Park",
-          "detail": "Finish a comfortable loop; do not force the entire seawall.",
-          "kind": "walk"
+          "title": "Metrotown / lunch",
+          "detail": "Keep the morning close to home.",
+          "kind": "food"
         },
         {
           "time": "12:00",
-          "title": "Granville Island transfer",
-          "detail": "Allow transit and queue time.",
+          "title": "SkyTrain to Waterfront",
+          "detail": "Use Joyce Station for the direct Expo Line ride downtown.",
           "kind": "travel"
         },
         {
           "time": "13:00",
-          "title": "Granville Island Public Market",
-          "detail": "Market browsing and lunch.",
-          "kind": "food"
-        },
-        {
-          "time": "14:00",
-          "title": "Granville Island",
-          "detail": "Studios, shops and waterfront.",
-          "kind": "explore"
-        },
-        {
-          "time": "15:00",
-          "title": "False Creek / Yaletown",
-          "detail": "Aquabus or an easy walk if energy is good.",
-          "kind": "walk"
-        },
-        {
-          "time": "16:00",
           "title": "Gastown",
           "detail": "Water Street, galleries and historic streets.",
           "kind": "explore"
         },
         {
-          "time": "17:00",
+          "time": "14:00",
           "title": "Canada Place",
-          "detail": "Return toward the stay before dinner.",
+          "detail": "Waterfront views and harbour walk.",
           "kind": "walk"
+        },
+        {
+          "time": "15:00",
+          "title": "Stanley Park",
+          "detail": "Walk the eastern seawall or use a bike rental.",
+          "kind": "walk"
+        },
+        {
+          "time": "16:00",
+          "title": "Stanley Park / Coal Harbour",
+          "detail": "Finish a comfortable loop; do not force the entire seawall.",
+          "kind": "explore"
+        },
+        {
+          "time": "17:00",
+          "title": "Return to Joyce-Collingwood",
+          "detail": "SkyTrain back before dinner.",
+          "kind": "travel"
         },
         {
           "time": "18:00",
@@ -311,64 +318,64 @@
     },
     {
       "date": "2026-09-25",
-      "label": "Day 3 · Vancouver North Shore",
-      "base": "Vancouver",
-      "route": "Downtown → Capilano or Grouse Mountain → Kitsilano",
-      "focus": "Keep the third Vancouver day local and flexible before picking up the car.",
-      "overnight": "Vancouver Airbnb / hotel",
+      "label": "Day 3 · East Vancouver, Burnaby and Richmond",
+      "base": "Clive Avenue, Joyce-Collingwood",
+      "route": "Joyce-Collingwood → Central Park / Metrotown → Richmond or waterfront → Joyce-Collingwood",
+      "focus": "Use the final Clive Avenue day for nearby East Vancouver and Burnaby sights, with an optional Richmond stop before the road trip.",
+      "overnight": "Clive Avenue Airbnb · Joyce-Collingwood",
       "blocks": [
         {
           "time": "08:00",
-          "title": "Breakfast",
-          "detail": "Check weather before committing to the North Shore.",
+          "title": "Breakfast near Joyce-Collingwood",
+          "detail": "Start locally and check weather.",
           "kind": "food"
         },
         {
           "time": "09:00",
-          "title": "Transit to North Shore",
-          "detail": "Use SeaBus or the planned transfer.",
-          "kind": "travel"
+          "title": "Central Park",
+          "detail": "Easy walk close to the Airbnb; use Metrotown as the rainy-day alternative.",
+          "kind": "walk"
         },
         {
           "time": "10:00",
-          "title": "Capilano or Grouse",
-          "detail": "Choose one headline attraction, not both.",
+          "title": "Metrotown / Burnaby",
+          "detail": "Shopping and coffee, or continue to Deer Lake Park if weather is comfortable.",
           "kind": "explore"
         },
         {
           "time": "11:00",
-          "title": "North Shore attraction",
-          "detail": "Continue the chosen activity.",
+          "title": "Deer Lake Park option",
+          "detail": "Easy lake loop, Burnaby Village Museum or Shadbolt Centre if open.",
           "kind": "explore"
         },
         {
           "time": "12:00",
-          "title": "North Shore lunch",
-          "detail": "Lonsdale Quay or a nearby option.",
+          "title": "Lunch near Metrotown",
+          "detail": "Keep this East Vancouver / Burnaby day practical.",
           "kind": "food"
         },
         {
           "time": "13:00",
-          "title": "Return downtown",
-          "detail": "Build a transfer buffer.",
+          "title": "Richmond option",
+          "detail": "Optional Canada Line trip to Richmond Centre or Steveston; skip if you prefer a slower day.",
           "kind": "travel"
         },
         {
           "time": "14:00",
-          "title": "Kitsilano or English Bay",
-          "detail": "Beach, café or rest.",
-          "kind": "walk"
+          "title": "Steveston village option",
+          "detail": "Historic fishing village and waterfront if the Richmond option is chosen.",
+          "kind": "explore"
         },
         {
           "time": "15:00",
-          "title": "Easy city afternoon",
-          "detail": "Keep this deliberately light.",
-          "kind": "walk"
+          "title": "Return to Clive Avenue",
+          "detail": "Allow transit time and rest before the road trip.",
+          "kind": "travel"
         },
         {
           "time": "16:00",
-          "title": "Hotel reset",
-          "detail": "Prepare for the road start tomorrow.",
+          "title": "Airbnb reset",
+          "detail": "Prepare the car plan and luggage.",
           "kind": "rest"
         },
         {
@@ -417,10 +424,10 @@
     },
     {
       "date": "2026-09-26",
-      "label": "Day 4 · Vancouver to Kamloops via Sea-to-Sky",
+      "label": "Day 4 · Clive Avenue to Kamloops via Sea-to-Sky",
       "base": "Kamloops",
-      "route": "Vancouver → Horseshoe Bay → Squamish → Whistler → Pemberton → Kamloops",
-      "focus": "Take the scenic Sea-to-Sky and Duffey Lake route, accepting that this is a long transfer day.",
+      "route": "Clive Avenue, Joyce-Collingwood → Horseshoe Bay → Squamish → Whistler → Pemberton → Kamloops",
+      "focus": "Take the scenic Sea-to-Sky and Duffey Lake route from East Vancouver, accepting that this is a long transfer day.",
       "overnight": "Kamloops hotel",
       "blocks": [
         {
@@ -1371,11 +1378,11 @@
     },
     {
       "date": "2026-10-05",
-      "label": "Day 13 · Kelowna to Vancouver",
-      "base": "Vancouver",
-      "route": "Kelowna → Merritt → Coquihalla → Vancouver",
-      "focus": "Return to Vancouver for the final two nights, using the fastest sensible route and protecting the evening.",
-      "overnight": "Vancouver Airbnb / hotel",
+      "label": "Day 13 · Kelowna to Dunbar Street",
+      "base": "Dunbar Street, Dunbar-Southlands",
+      "route": "Kelowna → Merritt → Coquihalla → Vancouver → Dunbar Street",
+      "focus": "Return to the final Dunbar Street Airbnb for two nights. Keep the evening close to the neighbourhood after the long transfer.",
+      "overnight": "Dunbar Street Airbnb · Dunbar-Southlands",
       "blocks": [
         {
           "time": "08:00",
@@ -1428,19 +1435,19 @@
         {
           "time": "16:00",
           "title": "Vancouver arrival",
-          "detail": "Head to the final two-night Vancouver base.",
+          "detail": "Head to the final Dunbar Street Airbnb in Vancouver's west side.",
           "kind": "travel"
         },
         {
           "time": "17:00",
-          "title": "Vancouver check-in",
-          "detail": "Settle into the final Vancouver stay.",
+          "title": "Dunbar Street Airbnb check-in",
+          "detail": "Settle into the final two-night stay.",
           "kind": "travel"
         },
         {
           "time": "18:00",
-          "title": "Dinner nearby",
-          "detail": "Keep the evening local after the transfer.",
+          "title": "Dinner near Dunbar / Kerrisdale",
+          "detail": "Keep the evening close after the transfer.",
           "kind": "food"
         },
         {
@@ -1477,11 +1484,11 @@
     },
     {
       "date": "2026-10-06",
-      "label": "Day 14 · Vancouver final city day",
-      "base": "Vancouver",
-      "route": "Vancouver city → optional McArthurGlen → waterfront",
-      "focus": "Keep the last full day flexible and city-based; do not create a long excursion before the international departure.",
-      "overnight": "Vancouver Airbnb / hotel",
+      "label": "Day 14 · Dunbar, UBC and Vancouver final day",
+      "base": "Dunbar Street, Dunbar-Southlands",
+      "route": "Dunbar Street → Pacific Spirit Park / UBC → Kitsilano or Granville Island → Dunbar Street",
+      "focus": "Use the final full day for the west-side places that are genuinely near the Airbnb, with McArthurGlen kept as an optional logistics stop rather than the main plan.",
+      "overnight": "Dunbar Street Airbnb · Dunbar-Southlands",
       "blocks": [
         {
           "time": "08:00",
@@ -1491,50 +1498,50 @@
         },
         {
           "time": "09:00",
-          "title": "Vancouver neighbourhood",
-          "detail": "Choose a nearby café or market.",
-          "kind": "explore"
-        },
-        {
-          "time": "10:00",
-          "title": "McArthurGlen option",
-          "detail": "Use this safer shopping window only if luggage and current hours work.",
-          "kind": "shop"
-        },
-        {
-          "time": "11:00",
-          "title": "McArthurGlen / Richmond",
-          "detail": "Keep purchases within airline baggage limits.",
-          "kind": "shop"
-        },
-        {
-          "time": "12:00",
-          "title": "Lunch",
-          "detail": "Stay near the chosen area.",
+          "title": "Dunbar / Kerrisdale breakfast",
+          "detail": "Start close to the Airbnb with a café or groceries.",
           "kind": "food"
         },
         {
-          "time": "13:00",
-          "title": "Waterfront or Granville Island",
-          "detail": "One easy city option.",
+          "time": "10:00",
+          "title": "Pacific Spirit Regional Park",
+          "detail": "Easy forest walk; choose a short loop and check trail conditions.",
+          "kind": "walk"
+        },
+        {
+          "time": "11:00",
+          "title": "UBC campus",
+          "detail": "Walk the campus and grounds near the Museum of Anthropology.",
           "kind": "explore"
         },
         {
+          "time": "12:00",
+          "title": "Museum of Anthropology option",
+          "detail": "Paid indoor option; check current hours and admission before going.",
+          "kind": "explore"
+        },
+        {
+          "time": "13:00",
+          "title": "Lunch at UBC / West Point Grey",
+          "detail": "Keep lunch near the west side.",
+          "kind": "food"
+        },
+        {
           "time": "14:00",
-          "title": "Waterfront",
-          "detail": "Keep the afternoon unhurried.",
+          "title": "Kitsilano Beach / Jericho Beach",
+          "detail": "Easy shoreline and mountain-view walk.",
           "kind": "walk"
         },
         {
           "time": "15:00",
-          "title": "Coffee / souvenirs",
-          "detail": "Final purchases and receipts.",
-          "kind": "shop"
+          "title": "Granville Island option",
+          "detail": "Choose Granville Island only if you want one final market outing.",
+          "kind": "explore"
         },
         {
           "time": "16:00",
-          "title": "Return to stay",
-          "detail": "Pack everything before dinner.",
+          "title": "Return to Dunbar",
+          "detail": "Pack and rest before the airport day.",
           "kind": "travel"
         },
         {
@@ -1546,7 +1553,7 @@
         {
           "time": "18:00",
           "title": "Final Vancouver dinner",
-          "detail": "Choose somewhere close to the stay.",
+          "detail": "Choose Dunbar, Kerrisdale or Kitsilano rather than crossing the city.",
           "kind": "food"
         },
         {
@@ -1583,9 +1590,9 @@
     },
     {
       "date": "2026-10-07",
-      "label": "Day 15 · Vancouver departure",
+      "label": "Day 15 · Dunbar Street to Vancouver departure",
       "base": "YVR",
-      "route": "Vancouver → YVR · CX867 14:10 → HKG 19:20 on 8 Oct",
+      "route": "Dunbar Street, Dunbar-Southlands → YVR · CX867 14:10 → HKG 19:20 on 8 Oct",
       "focus": "Keep the departure day calm. The 14:10 international flight gets a real airport buffer; no attraction is scheduled after check-in.",
       "overnight": "CX867 in flight",
       "blocks": [
@@ -1691,53 +1698,9 @@
   "hotels": {
     "vancouver": [
       {
-        "name": "Fairmont Pacific Rim",
-        "type": "city hotel",
-        "why": "Downtown splurge near waterfront, Gastown and Stanley Park.",
-        "url": "https://www.fairmont.com/pacific-rim-vancouver/",
-        "book": "https://www.google.com/travel/search?q=Fairmont%20Pacific%20Rim%20Vancouver"
-      },
-      {
-        "name": "Rosewood Hotel Georgia",
-        "type": "city hotel",
-        "why": "Historic downtown luxury close to the city core.",
-        "url": "https://www.rosewoodhotels.com/en/hotel-georgia-vancouver",
-        "book": "https://www.google.com/travel/search?q=Rosewood%20Hotel%20Georgia%20Vancouver"
-      },
-      {
-        "name": "OPUS Vancouver",
-        "type": "boutique hotel",
-        "why": "Yaletown base with restaurants and compact city access.",
-        "url": "https://www.opushotel.com/",
-        "book": "https://www.google.com/travel/search?q=OPUS%20Vancouver"
-      },
-      {
-        "name": "Loden Hotel",
-        "type": "boutique hotel",
-        "why": "Quiet downtown boutique option with waterfront access.",
-        "url": "https://www.lodenvancouver.com/",
-        "book": "https://www.google.com/travel/search?q=Loden%20Hotel%20Vancouver"
-      },
-      {
-        "name": "Paradox Hotel Vancouver",
-        "type": "city hotel",
-        "why": "Central full-service option for the front and final city stays.",
-        "url": "https://www.paradoxtoronto.com/vancouver/",
-        "book": "https://www.google.com/travel/search?q=Paradox%20Hotel%20Vancouver"
-      },
-      {
-        "name": "Airbnb Vancouver search",
-        "type": "vacation rental",
-        "why": "Search downtown, Yaletown, Coal Harbour or Richmond by exact dates.",
-        "url": "https://www.airbnb.com/vancouver-canada/stays",
-        "book": "https://www.airbnb.com/vancouver-canada/stays"
-      },
-      {
-        "name": "Coal Harbour condo search",
-        "type": "Airbnb area shortlist",
-        "why": "A good city-base brief: walkable seawall and Stanley Park, kitchen, and parking filters. The search currently surfaces highly rated condos, but exact dates and price must be checked.",
-        "url": "https://www.airbnb.com/coal-harbour-vancouver-canada/stays/condos",
-        "book": "https://www.airbnb.com/coal-harbour-vancouver-canada/stays/condos"
+        "name": "Clive Avenue Airbnb · Collingwood",
+        "type": "fixed Airbnb stay",
+        "why": "Fixed first stay, 23–26 September. Joyce-Collingwood base near Joyce Station, Central Park and Metrotown."
       }
     ],
     "kamloops": [
@@ -1986,6 +1949,20 @@
         "name": "Your Airbnb · Kelowna",
         "type": "fixed Airbnb stay",
         "why": "Fixed stay supplied by the travelers for 4–5 October."
+      }
+    ],
+    "clive-avenue": [
+      {
+        "name": "Clive Avenue Airbnb · Collingwood",
+        "type": "fixed Airbnb stay",
+        "why": "Fixed first stay, 23–26 September. Exact address should be used for door-to-door directions."
+      }
+    ],
+    "dunbar-street": [
+      {
+        "name": "Dunbar Street Airbnb · Dunbar-Southlands",
+        "type": "fixed Airbnb stay",
+        "why": "Fixed final stay, 5–7 October. West-side base near UBC, Pacific Spirit Park and Kitsilano."
       }
     ]
   },
@@ -2358,7 +2335,7 @@
   ],
   "budget": {
     "currency": "CAD",
-    "scope": "Estimated for 2 travelers; international flights are excluded because their fares are not in the itinerary data. Airbnb prices were not supplied, so their line is a planning range, not a booking quote.",
+    "scope": "Estimated for 2 travelers; international flights are excluded because their fares are not in the itinerary data. Airbnb prices were not supplied, so each lodging line is a planning range, not a booking quote.",
     "assumptions": {
       "total_driving_km": 3166,
       "intercity_driving_km": 2716,
@@ -2372,20 +2349,33 @@
       "rental_tax_and_fees_factor": 1.15,
       "food_per_person_per_day_cad": "60–110",
       "airbnb_nights": 8,
-      "non_airbnb_nights": 6
+      "vancouver_nights": 5,
+      "kamloops_nights": 1
     },
     "categories": [
       {
-        "name": "Airbnb stays",
-        "low": 1600,
-        "high": 2800,
-        "note": "8 nights; placeholder CAD 200–350/night until the six booking totals are entered."
+        "name": "Clive Avenue Airbnb · Collingwood",
+        "low": 450,
+        "high": 780,
+        "note": "3 nights, 23–26 September; planning range CAD 150–260/night before Airbnb taxes and fees."
       },
       {
-        "name": "Vancouver + Kamloops stays",
-        "low": 1430,
-        "high": 2500,
-        "note": "5 Vancouver nights plus 1 Kamloops night; placeholder CAD 250–450 and CAD 180–250/night respectively."
+        "name": "Dunbar Street Airbnb · Dunbar-Southlands",
+        "low": 400,
+        "high": 700,
+        "note": "2 nights, 5–7 October; planning range CAD 200–350/night before Airbnb taxes and fees."
+      },
+      {
+        "name": "Other Airbnb stays",
+        "low": 1600,
+        "high": 2830,
+        "note": "8 nights: Golden, Harvie Heights, Bragg Creek, Yellowhead County, Revelstoke and Kelowna; actual booking totals not supplied."
+      },
+      {
+        "name": "Kamloops bridge night",
+        "low": 180,
+        "high": 250,
+        "note": "1 night, 26–27 September; practical hotel/suite placeholder."
       },
       {
         "name": "Rental car",
@@ -2413,10 +2403,10 @@
       }
     ],
     "totals": {
-      "low": 7515,
-      "high": 12003,
-      "recommended_reserve_low": 8270,
-      "recommended_reserve_high": 13200
+      "low": 7115,
+      "high": 11263,
+      "recommended_reserve_low": 7827,
+      "recommended_reserve_high": 12389
     },
     "note": "The 10% reserve is for fuel-price movement, parking, taxes/cleaning fees, weather detours and small unplanned costs. Add the actual Airbnb totals and international-flight fares for a final booked-trip total."
   },

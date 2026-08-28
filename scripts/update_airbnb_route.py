@@ -38,16 +38,16 @@ def day(date, label, base, route, focus, overnight, items):
 
 def build_days():
     d = []
-    d.append(day("2026-09-23", "Day 1 · Arrival in Vancouver", "Vancouver", "CX814 · HKG 11:05 → YVR 07:40 · airport arrival → Vancouver", "Arrive gently, settle into the first Vancouver base and only shop if energy and baggage logistics allow.", "Vancouver Airbnb / hotel", [
+    d.append(day("2026-09-23", "Day 1 · Arrival in Vancouver · Clive Avenue", "Clive Avenue, Joyce-Collingwood", "CX814 · HKG 11:05 → YVR 07:40 · YVR → Clive Avenue", "Arrive gently and settle into the first Airbnb in East Vancouver's Joyce-Collingwood area. Keep the first afternoon close to home.", "Clive Avenue Airbnb · Joyce-Collingwood", [
         ("08:00", "YVR arrival, immigration and bags", "CX814 is scheduled to arrive at 07:40 local time. Allow immigration, baggage, customs and a first coffee.", "travel"),
-        ("09:00", "Transfer / luggage plan", "Take the Canada Line or confirmed hotel transfer. Keep luggage secure.", "travel"),
-        ("10:00", "McArthurGlen option", "Use only if arrival is smooth; keep the visit short and protect baggage capacity.", "shop"),
+        ("09:00", "Transfer to Clive Avenue", "Take the Canada Line to Joyce-Collingwood or a taxi/rideshare. The Airbnb is near Joyce Station; keep luggage secure.", "travel"),
+        ("10:00", "McArthurGlen option", "Use only if arrival is smooth; it is on the way from YVR but do not force shopping after a long flight.", "shop"),
         ("11:00", "Coffee / light lunch", "Keep the first meal easy and nearby.", "food"),
-        ("12:00", "Transfer to Vancouver stay", "Head to the first three-night Vancouver base.", "travel"),
+        ("12:00", "Continue to Clive Avenue", "Head to the first three-night Airbnb in the Collingwood / Joyce-Collingwood area.", "travel"),
         ("13:00", "Luggage drop / check-in", "Ask about early check-in or leave bags securely.", "rest"),
         ("14:00", "Jet-lag reset", "Shower, nap and hydrate. No sightseeing obligation.", "rest"),
-        ("15:00", "Easy waterfront walk", "Coal Harbour, English Bay or the nearest calm neighbourhood option.", "walk"),
-        ("16:00", "Free / recover", "Do not over-program arrival day.", "rest"),
+        ("15:00", "Collingwood neighbourhood walk", "Walk around Joyce-Collingwood, or rest at the Airbnb if needed.", "walk"),
+        ("16:00", "Central Park / Metrotown option", "Only if alert: Central Park is close and Metrotown is a practical nearby outing.", "explore"),
         ("17:00", "Dinner nearby", "Choose somewhere close to the stay.", "food"),
         ("18:00", "Dinner", "Keep the first evening short.", "food"),
         ("19:00", "Settle in", "Confirm tomorrow's city plan and rental-car timing.", "plan"),
@@ -56,17 +56,17 @@ def build_days():
         ("22:00", "Sleep", "Overnight recovery.", "rest"),
         ("23:00", "Sleep", "Overnight recovery.", "rest"),
     ]))
-    d.append(day("2026-09-24", "Day 2 · Vancouver highlights", "Vancouver", "Stanley Park → Granville Island → Gastown", "Use the first full day for Vancouver's classic waterfront and market sequence.", "Vancouver Airbnb / hotel", [
-        ("08:00", "Breakfast", "Start at the agreed 08:00 wake-up time.", "food"),
-        ("09:00", "Stanley Park seawall", "Walk or rent bikes if weather is good.", "walk"),
-        ("10:00", "Stanley Park", "Totem poles, forest paths and Coal Harbour edge.", "explore"),
-        ("11:00", "Stanley Park", "Finish a comfortable loop; do not force the entire seawall.", "walk"),
-        ("12:00", "Granville Island transfer", "Allow transit and queue time.", "travel"),
-        ("13:00", "Granville Island Public Market", "Market browsing and lunch.", "food"),
-        ("14:00", "Granville Island", "Studios, shops and waterfront.", "explore"),
-        ("15:00", "False Creek / Yaletown", "Aquabus or an easy walk if energy is good.", "walk"),
-        ("16:00", "Gastown", "Water Street, galleries and historic streets.", "explore"),
-        ("17:00", "Canada Place", "Return toward the stay before dinner.", "walk"),
+    d.append(day("2026-09-24", "Day 2 · East Vancouver and downtown", "Clive Avenue, Joyce-Collingwood", "Joyce-Collingwood → Central Park / Metrotown → Gastown → Stanley Park → Joyce-Collingwood", "Use the SkyTrain from Joyce-Collingwood to make the downtown day easy without moving the Airbnb.", "Clive Avenue Airbnb · Joyce-Collingwood", [
+        ("08:00", "Breakfast near Joyce-Collingwood", "Start locally and use the SkyTrain rather than driving downtown.", "food"),
+        ("09:00", "Joyce-Collingwood / Central Park", "Easy neighbourhood start or Central Park walk.", "walk"),
+        ("10:00", "Metrotown", "Shopping, coffee and a practical rainy-day option close to the Airbnb.", "explore"),
+        ("11:00", "Metrotown / lunch", "Keep the morning close to home.", "food"),
+        ("12:00", "SkyTrain to Waterfront", "Use Joyce Station for the direct Expo Line ride downtown.", "travel"),
+        ("13:00", "Gastown", "Water Street, galleries and historic streets.", "explore"),
+        ("14:00", "Canada Place", "Waterfront views and harbour walk.", "walk"),
+        ("15:00", "Stanley Park", "Walk the eastern seawall or use a bike rental.", "walk"),
+        ("16:00", "Stanley Park / Coal Harbour", "Finish a comfortable loop; do not force the entire seawall.", "explore"),
+        ("17:00", "Return to Joyce-Collingwood", "SkyTrain back before dinner.", "travel"),
         ("18:00", "Dinner", "Choose one neighbourhood restaurant.", "food"),
         ("19:00", "Dinner", "Slow meal.", "food"),
         ("20:00", "Pack for road start", "Layers, snacks, documents and rental-car details.", "plan"),
@@ -74,16 +74,16 @@ def build_days():
         ("22:00", "Sleep", "Overnight recovery.", "rest"),
         ("23:00", "Sleep", "Overnight recovery.", "rest"),
     ]))
-    d.append(day("2026-09-25", "Day 3 · Vancouver North Shore", "Vancouver", "Downtown → Capilano or Grouse Mountain → Kitsilano", "Keep the third Vancouver day local and flexible before picking up the car.", "Vancouver Airbnb / hotel", [
-        ("08:00", "Breakfast", "Check weather before committing to the North Shore.", "food"),
-        ("09:00", "Transit to North Shore", "Use SeaBus or the planned transfer.", "travel"),
-        ("10:00", "Capilano or Grouse", "Choose one headline attraction, not both.", "explore"),
-        ("11:00", "North Shore attraction", "Continue the chosen activity.", "explore"),
-        ("12:00", "North Shore lunch", "Lonsdale Quay or a nearby option.", "food"),
-        ("13:00", "Return downtown", "Build a transfer buffer.", "travel"),
-        ("14:00", "Kitsilano or English Bay", "Beach, café or rest.", "walk"),
-        ("15:00", "Easy city afternoon", "Keep this deliberately light.", "walk"),
-        ("16:00", "Hotel reset", "Prepare for the road start tomorrow.", "rest"),
+    d.append(day("2026-09-25", "Day 3 · East Vancouver, Burnaby and Richmond", "Clive Avenue, Joyce-Collingwood", "Joyce-Collingwood → Central Park / Metrotown → Richmond or waterfront → Joyce-Collingwood", "Use the final Clive Avenue day for nearby East Vancouver and Burnaby sights, with an optional Richmond stop before the road trip.", "Clive Avenue Airbnb · Joyce-Collingwood", [
+        ("08:00", "Breakfast near Joyce-Collingwood", "Start locally and check weather.", "food"),
+        ("09:00", "Central Park", "Easy walk close to the Airbnb; use Metrotown as the rainy-day alternative.", "walk"),
+        ("10:00", "Metrotown / Burnaby", "Shopping and coffee, or continue to Deer Lake Park if weather is comfortable.", "explore"),
+        ("11:00", "Deer Lake Park option", "Easy lake loop, Burnaby Village Museum or Shadbolt Centre if open.", "explore"),
+        ("12:00", "Lunch near Metrotown", "Keep this East Vancouver / Burnaby day practical.", "food"),
+        ("13:00", "Richmond option", "Optional Canada Line trip to Richmond Centre or Steveston; skip if you prefer a slower day.", "travel"),
+        ("14:00", "Steveston village option", "Historic fishing village and waterfront if the Richmond option is chosen.", "explore"),
+        ("15:00", "Return to Clive Avenue", "Allow transit time and rest before the road trip.", "travel"),
+        ("16:00", "Airbnb reset", "Prepare the car plan and luggage.", "rest"),
         ("17:00", "Rental-car check", "Confirm pickup, AWD/SUV, tires and roadside cover.", "plan"),
         ("18:00", "Dinner", "Stay close to the Vancouver base.", "food"),
         ("19:00", "Dinner", "Keep the evening unhurried.", "food"),
@@ -92,7 +92,7 @@ def build_days():
         ("22:00", "Sleep", "Overnight recovery.", "rest"),
         ("23:00", "Sleep", "Overnight recovery.", "rest"),
     ]))
-    d.append(day("2026-09-26", "Day 4 · Vancouver to Kamloops via Sea-to-Sky", "Kamloops", "Vancouver → Horseshoe Bay → Squamish → Whistler → Pemberton → Kamloops", "Take the scenic Sea-to-Sky and Duffey Lake route, accepting that this is a long transfer day.", "Kamloops hotel", [
+    d.append(day("2026-09-26", "Day 4 · Clive Avenue to Kamloops via Sea-to-Sky", "Kamloops", "Clive Avenue, Joyce-Collingwood → Horseshoe Bay → Squamish → Whistler → Pemberton → Kamloops", "Take the scenic Sea-to-Sky and Duffey Lake route from East Vancouver, accepting that this is a long transfer day.", "Kamloops hotel", [
         ("08:00", "Breakfast + check out", "Keep the 08:00 start; collect the rental car afterward.", "travel"),
         ("09:00", "Collect rental car", "Inspect tires, winter-tire policy, insurance and roadside assistance.", "travel"),
         ("10:00", "Drive to Horseshoe Bay", "Begin Highway 99 with a traffic buffer.", "travel"),
@@ -254,7 +254,7 @@ def build_days():
         ("22:00", "Sleep", "Overnight recovery.", "rest"),
         ("23:00", "Sleep", "Overnight recovery.", "rest"),
     ]))
-    d.append(day("2026-10-05", "Day 13 · Kelowna to Vancouver", "Vancouver", "Kelowna → Merritt → Coquihalla → Vancouver", "Return to Vancouver for the final two nights, using the fastest sensible route and protecting the evening.", "Vancouver Airbnb / hotel", [
+    d.append(day("2026-10-05", "Day 13 · Kelowna to Dunbar Street", "Dunbar Street, Dunbar-Southlands", "Kelowna → Merritt → Coquihalla → Vancouver → Dunbar Street", "Return to the final Dunbar Street Airbnb for two nights. Keep the evening close to the neighbourhood after the long transfer.", "Dunbar Street Airbnb · Dunbar-Southlands", [
         ("08:00", "Breakfast + check out", "Leave Kelowna at 08:00 after checking Highway 5 conditions.", "travel"),
         ("09:00", "Drive toward Merritt", "Take Highway 97C / 5 as conditions allow.", "travel"),
         ("10:00", "Okanagan Connector", "Keep a fuel and weather buffer.", "travel"),
@@ -263,34 +263,34 @@ def build_days():
         ("13:00", "Lunch stop", "Use a practical highway stop.", "food"),
         ("14:00", "Continue toward Vancouver", "Traffic buffer grows near the Lower Mainland.", "travel"),
         ("15:00", "Fraser Valley", "Do not add detours today.", "travel"),
-        ("16:00", "Vancouver arrival", "Head to the final two-night Vancouver base.", "travel"),
-        ("17:00", "Vancouver check-in", "Settle into the final Vancouver stay.", "travel"),
-        ("18:00", "Dinner nearby", "Keep the evening local after the transfer.", "food"),
+        ("16:00", "Vancouver arrival", "Head to the final Dunbar Street Airbnb in Vancouver's west side.", "travel"),
+        ("17:00", "Dunbar Street Airbnb check-in", "Settle into the final two-night stay.", "travel"),
+        ("18:00", "Dinner near Dunbar / Kerrisdale", "Keep the evening close after the transfer.", "food"),
         ("19:00", "Rest", "No major sightseeing obligation.", "rest"),
         ("20:00", "Flight and outlet plan", "Confirm CX867, baggage and whether McArthurGlen fits tomorrow without risk.", "plan"),
         ("21:00", "Sleep", "Final Vancouver stay night 1 of 2.", "rest"),
         ("22:00", "Sleep", "Overnight recovery.", "rest"),
         ("23:00", "Sleep", "Overnight recovery.", "rest"),
     ]))
-    d.append(day("2026-10-06", "Day 14 · Vancouver final city day", "Vancouver", "Vancouver city → optional McArthurGlen → waterfront", "Keep the last full day flexible and city-based; do not create a long excursion before the international departure.", "Vancouver Airbnb / hotel", [
+    d.append(day("2026-10-06", "Day 14 · Dunbar, UBC and Vancouver final day", "Dunbar Street, Dunbar-Southlands", "Dunbar Street → Pacific Spirit Park / UBC → Kitsilano or Granville Island → Dunbar Street", "Use the final full day for the west-side places that are genuinely near the Airbnb, with McArthurGlen kept as an optional logistics stop rather than the main plan.", "Dunbar Street Airbnb · Dunbar-Southlands", [
         ("08:00", "Breakfast", "Normal 08:00 start in Vancouver.", "food"),
-        ("09:00", "Vancouver neighbourhood", "Choose a nearby café or market.", "explore"),
-        ("10:00", "McArthurGlen option", "Use this safer shopping window only if luggage and current hours work.", "shop"),
-        ("11:00", "McArthurGlen / Richmond", "Keep purchases within airline baggage limits.", "shop"),
-        ("12:00", "Lunch", "Stay near the chosen area.", "food"),
-        ("13:00", "Waterfront or Granville Island", "One easy city option.", "explore"),
-        ("14:00", "Waterfront", "Keep the afternoon unhurried.", "walk"),
-        ("15:00", "Coffee / souvenirs", "Final purchases and receipts.", "shop"),
-        ("16:00", "Return to stay", "Pack everything before dinner.", "travel"),
+        ("09:00", "Dunbar / Kerrisdale breakfast", "Start close to the Airbnb with a café or groceries.", "food"),
+        ("10:00", "Pacific Spirit Regional Park", "Easy forest walk; choose a short loop and check trail conditions.", "walk"),
+        ("11:00", "UBC campus", "Walk the campus and grounds near the Museum of Anthropology.", "explore"),
+        ("12:00", "Museum of Anthropology option", "Paid indoor option; check current hours and admission before going.", "explore"),
+        ("13:00", "Lunch at UBC / West Point Grey", "Keep lunch near the west side.", "food"),
+        ("14:00", "Kitsilano Beach / Jericho Beach", "Easy shoreline and mountain-view walk.", "walk"),
+        ("15:00", "Granville Island option", "Choose Granville Island only if you want one final market outing.", "explore"),
+        ("16:00", "Return to Dunbar", "Pack and rest before the airport day.", "travel"),
         ("17:00", "Luggage sort", "Confirm passports, receipts and airport transfer.", "plan"),
-        ("18:00", "Final Vancouver dinner", "Choose somewhere close to the stay.", "food"),
+        ("18:00", "Final Vancouver dinner", "Choose Dunbar, Kerrisdale or Kitsilano rather than crossing the city.", "food"),
         ("19:00", "Dinner", "Keep the final evening calm.", "food"),
         ("20:00", "Pack for CX867", "Prepare a carry-on and confirm terminal timing.", "plan"),
         ("21:00", "Sleep", "Final Vancouver night.", "rest"),
         ("22:00", "Sleep", "Overnight recovery.", "rest"),
         ("23:00", "Sleep", "Departure tomorrow.", "rest"),
     ]))
-    d.append(day("2026-10-07", "Day 15 · Vancouver departure", "YVR", "Vancouver → YVR · CX867 14:10 → HKG 19:20 on 8 Oct", "Keep the departure day calm. The 14:10 international flight gets a real airport buffer; no attraction is scheduled after check-in.", "CX867 in flight", [
+    d.append(day("2026-10-07", "Day 15 · Dunbar Street to Vancouver departure", "YVR", "Dunbar Street, Dunbar-Southlands → YVR · CX867 14:10 → HKG 19:20 on 8 Oct", "Keep the departure day calm. The 14:10 international flight gets a real airport buffer; no attraction is scheduled after check-in.", "CX867 in flight", [
         ("08:00", "Breakfast", "Hotel breakfast and final flight check.", "food"),
         ("09:00", "Pack and check out", "Confirm luggage, receipts and storage.", "travel"),
         ("10:00", "Transfer to YVR", "Return the rental car if needed or use the confirmed airport transfer.", "travel"),
@@ -313,13 +313,13 @@ def build_days():
 
 x = json.loads(DATA.read_text(encoding="utf-8"))
 x["meta"].update({
-    "title": "Canada Rockies · Vancouver + fixed Airbnb route",
+    "title": "Canada Rockies · fixed Airbnb route + Vancouver neighbourhood bases",
     "wake_time": "08:00",
-    "lodging_note": "Fixed stays supplied by the travelers: Golden 27–28 Sep; Harvie Heights 28–30 Sep; Bragg Creek 30 Sep–2 Oct; Yellowhead County 2–3 Oct; Revelstoke 3–4 Oct; Kelowna 4–5 Oct. Vancouver is used for the first three nights and final two nights.",
-    "assumption": "Route rebuilt around the supplied Airbnb bases. The one-night Kamloops stop on 26 Sep bridges the first Vancouver stay and Golden; Yellowhead County is treated as a Jasper/Hinton-area base. The 3 Oct Yellowhead County → Revelstoke day is intentionally a long scenic transfer and must be shortened if weather, daylight or road conditions deteriorate.",
+    "lodging_note": "Fixed stays supplied by the travelers: Clive Avenue, Collingwood / Joyce-Collingwood, Vancouver from 23–26 Sep; Golden 27–28 Sep; Harvie Heights 28–30 Sep; Bragg Creek 30 Sep–2 Oct; Yellowhead County 2–3 Oct; Revelstoke 3–4 Oct; Kelowna 4–5 Oct; Dunbar Street, Dunbar-Southlands, Vancouver from 5–7 Oct.",
+    "assumption": "Route rebuilt around the supplied Airbnb bases and exact Vancouver neighbourhoods. The one-night Kamloops stop on 26 Sep bridges the first Vancouver stay and Golden. Yellowhead County is treated as a Jasper/Hinton-area base; its exact Airbnb address may change the 2–3 Oct driving times. Clive Avenue is treated as the Joyce-Collingwood / East Vancouver area and Dunbar Street as Dunbar-Southlands; exact addresses are still needed for door-to-door routing.",
 })
 x["route"] = [
-    {"name": "Vancouver", "date": "23–26 Sep + 5–7 Oct", "km": "city / airport", "stay": "first 3 nights + final 2 nights", "color": "#7dd3fc"},
+    {"name": "Vancouver · Clive Avenue", "date": "23–26 Sep", "km": "East Vancouver", "stay": "first 3 nights", "color": "#7dd3fc"},
     {"name": "Kamloops", "date": "26–27 Sep", "km": "scenic road bridge", "stay": "one-night hotel", "color": "#fde68a"},
     {"name": "Golden", "date": "27–28 Sep", "km": "mountain stopover", "stay": "your Airbnb", "color": "#fca5a5"},
     {"name": "Harvie Heights", "date": "28–30 Sep", "km": "Bow Valley base", "stay": "your Airbnb", "color": "#86efac"},
@@ -327,6 +327,7 @@ x["route"] = [
     {"name": "Yellowhead County", "date": "2–3 Oct", "km": "Jasper / Hinton area", "stay": "your Airbnb", "color": "#93c5fd"},
     {"name": "Revelstoke", "date": "3–4 Oct", "km": "Trans-Canada west", "stay": "your Airbnb", "color": "#fdba74"},
     {"name": "Kelowna", "date": "4–5 Oct", "km": "Okanagan stop", "stay": "your Airbnb", "color": "#c4b5fd"},
+    {"name": "Vancouver · Dunbar Street", "date": "5–7 Oct", "km": "Dunbar-Southlands", "stay": "final 2 nights", "color": "#f0abfc"},
     {"name": "Departure", "date": "7 Oct", "km": "airport day", "stay": "CX867", "color": "#f9a8d4"},
 ]
 x["route_legs"] = [
@@ -353,7 +354,7 @@ x["driving_summary"] = {
 x["days"] = build_days()
 x["budget"] = {
     "currency": "CAD",
-    "scope": "Estimated for 2 travelers; international flights are excluded because their fares are not in the itinerary data. Airbnb prices were not supplied, so their line is a planning range, not a booking quote.",
+    "scope": "Estimated for 2 travelers; international flights are excluded because their fares are not in the itinerary data. Airbnb prices were not supplied, so each lodging line is a planning range, not a booking quote.",
     "assumptions": {
         "total_driving_km": 3166,
         "intercity_driving_km": 2716,
@@ -367,17 +368,20 @@ x["budget"] = {
         "rental_tax_and_fees_factor": 1.15,
         "food_per_person_per_day_cad": "60–110",
         "airbnb_nights": 8,
-        "non_airbnb_nights": 6
+        "vancouver_nights": 5,
+        "kamloops_nights": 1
     },
     "categories": [
-        {"name": "Airbnb stays", "low": 1600, "high": 2800, "note": "8 nights; placeholder CAD 200–350/night until the six booking totals are entered."},
-        {"name": "Vancouver + Kamloops stays", "low": 1430, "high": 2500, "note": "5 Vancouver nights plus 1 Kamloops night; placeholder CAD 250–450 and CAD 180–250/night respectively."},
+        {"name": "Clive Avenue Airbnb · Collingwood", "low": 450, "high": 780, "note": "3 nights, 23–26 September; planning range CAD 150–260/night before Airbnb taxes and fees."},
+        {"name": "Dunbar Street Airbnb · Dunbar-Southlands", "low": 400, "high": 700, "note": "2 nights, 5–7 October; planning range CAD 200–350/night before Airbnb taxes and fees."},
+        {"name": "Other Airbnb stays", "low": 1600, "high": 2830, "note": "8 nights: Golden, Harvie Heights, Bragg Creek, Yellowhead County, Revelstoke and Kelowna; actual booking totals not supplied."},
+        {"name": "Kamloops bridge night", "low": 180, "high": 250, "note": "1 night, 26–27 September; practical hotel/suite placeholder."},
         {"name": "Rental car", "low": 1556, "high": 1556, "note": "11 days × CAD 123/day SUV average × 1.15 tax/fee factor; actual quote may differ."},
         {"name": "Gas", "low": 529, "high": 647, "note": "About 285–317 L for 3,166 km, using BC CAD 2.05/L and Alberta CAD 1.55/L planning prices."},
         {"name": "Food and groceries", "low": 1800, "high": 3300, "note": "CAD 60–110 per person per day for 15 days; kitchens make the lower end more realistic."},
         {"name": "Parks, attractions, parking and local transport", "low": 600, "high": 1200, "note": "Includes a planning allowance for park access, shuttles, parking and selected paid attractions; verify reservations and fees."}
     ],
-    "totals": {"low": 7515, "high": 12003, "recommended_reserve_low": 8270, "recommended_reserve_high": 13200},
+    "totals": {"low": 7115, "high": 11263, "recommended_reserve_low": 7827, "recommended_reserve_high": 12389},
     "note": "The 10% reserve is for fuel-price movement, parking, taxes/cleaning fees, weather detours and small unplanned costs. Add the actual Airbnb totals and international-flight fares for a final booked-trip total."
 }
 x["airbnb_stays"] = [
@@ -398,6 +402,9 @@ x["sources"] = [s for s in x.get("sources", []) if s.get("id") not in {19, 20, 2
 # Keep the supplementary candidate directory, but add the fixed-base labels so
 # the site's stay selector reflects the actual plan rather than the old bases.
 for key, label, why in [
+    ("vancouver", "Clive Avenue Airbnb · Collingwood", "Fixed first stay, 23–26 September. Joyce-Collingwood base near Joyce Station, Central Park and Metrotown."),
+    ("clive-avenue", "Clive Avenue Airbnb · Collingwood", "Fixed first stay, 23–26 September. Exact address should be used for door-to-door directions."),
+    ("dunbar-street", "Dunbar Street Airbnb · Dunbar-Southlands", "Fixed final stay, 5–7 October. West-side base near UBC, Pacific Spirit Park and Kitsilano."),
     ("golden", "Your Airbnb · Golden", "Fixed stay supplied by the travelers for 27–28 September."),
     ("harvie-heights", "Your Airbnb · Harvie Heights", "Fixed stay supplied by the travelers for 28–30 September; practical Bow Valley base."),
     ("bragg-creek", "Your Airbnb · Bragg Creek", "Fixed stay supplied by the travelers for 30 September–2 October; foothills base."),
