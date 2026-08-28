@@ -321,24 +321,24 @@ x["meta"].update({
 x["route"] = [
     {"name": "Vancouver · Clive Avenue", "date": "23–26 Sep", "km": "East Vancouver", "stay": "first 3 nights", "color": "#7dd3fc"},
     {"name": "Kamloops", "date": "26–27 Sep", "km": "scenic road bridge", "stay": "one-night hotel", "color": "#fde68a"},
-    {"name": "Golden", "date": "27–28 Sep", "km": "mountain stopover", "stay": "your Airbnb", "color": "#fca5a5"},
-    {"name": "Harvie Heights", "date": "28–30 Sep", "km": "Bow Valley base", "stay": "your Airbnb", "color": "#86efac"},
-    {"name": "Bragg Creek", "date": "30 Sep–2 Oct", "km": "foothills base", "stay": "your Airbnb", "color": "#f0abfc"},
-    {"name": "Yellowhead County", "date": "2–3 Oct", "km": "Jasper / Hinton area", "stay": "your Airbnb", "color": "#93c5fd"},
-    {"name": "Revelstoke", "date": "3–4 Oct", "km": "Trans-Canada west", "stay": "your Airbnb", "color": "#fdba74"},
-    {"name": "Kelowna", "date": "4–5 Oct", "km": "Okanagan stop", "stay": "your Airbnb", "color": "#c4b5fd"},
+    {"name": "Golden", "date": "27–28 Sep", "km": "mountain stopover", "stay": "supplied booking", "color": "#fca5a5"},
+    {"name": "Harvie Heights", "date": "28–30 Sep", "km": "Bow Valley base", "stay": "supplied booking", "color": "#86efac"},
+    {"name": "Bragg Creek", "date": "30 Sep–2 Oct", "km": "foothills base", "stay": "supplied booking", "color": "#f0abfc"},
+    {"name": "Yellowhead County", "date": "2–3 Oct", "km": "Jasper / Hinton area", "stay": "supplied booking", "color": "#93c5fd"},
+    {"name": "Revelstoke", "date": "3–4 Oct", "km": "Trans-Canada west", "stay": "supplied booking", "color": "#fdba74"},
+    {"name": "Kelowna", "date": "4–5 Oct", "km": "Okanagan stop", "stay": "supplied booking", "color": "#c4b5fd"},
     {"name": "Vancouver · Dunbar Street", "date": "5–7 Oct", "km": "Dunbar-Southlands", "stay": "final 2 nights", "color": "#f0abfc"},
     {"name": "Departure", "date": "7 Oct", "km": "airport day", "stay": "CX867", "color": "#f9a8d4"},
 ]
 x["route_legs"] = [
-    {"from": "Vancouver", "to": "Kamloops", "distance": "≈450 km", "distance_km": 450, "time": "≈6 h + stops", "baseline_hours": 6.0, "planned_hours": "7–9", "estimated_liters": "41–45", "estimated_gas_cad": "84–92", "note": "Most scenic option via Sea-to-Sky, Whistler, Pemberton and Duffey Lake; weather-sensitive."},
+    {"from": "Clive Avenue / Collingwood", "to": "Kamloops", "distance": "≈450 km", "distance_km": 450, "time": "≈6 h + stops", "baseline_hours": 6.0, "planned_hours": "7–9", "estimated_liters": "41–45", "estimated_gas_cad": "84–92", "note": "From 3264 Vanness Avenue via Sea-to-Sky, Whistler, Pemberton and Duffey Lake; weather-sensitive."},
     {"from": "Kamloops", "to": "Golden", "distance": "≈360 km", "distance_km": 360, "time": "≈4 h + stops", "baseline_hours": 4.1, "planned_hours": "5–6", "estimated_liters": "32–36", "estimated_gas_cad": "58–74", "note": "Trans-Canada through Salmon Arm, Revelstoke and Rogers Pass."},
-    {"from": "Golden", "to": "Harvie Heights", "distance": "≈162 km", "distance_km": 162, "time": "≈2 h + stops", "baseline_hours": 2.0, "planned_hours": "4–6", "estimated_liters": "15–16", "estimated_gas_cad": "23–33", "note": "Use Yoho, Emerald Lake and Lake Louise as the scenic sequence; the direct drive is about 162 km."},
-    {"from": "Harvie Heights", "to": "Bragg Creek", "distance": "≈125 km", "distance_km": 125, "time": "≈1.5–2 h + stops", "baseline_hours": 1.75, "planned_hours": "3–5", "estimated_liters": "11–13", "estimated_gas_cad": "17–20", "note": "Bow Valley to the foothills; use Banff or Kananaskis as one optional stop."},
-    {"from": "Bragg Creek", "to": "Yellowhead County", "distance": "≈500 km", "distance_km": 500, "time": "≈7–8 h + stops", "baseline_hours": 6.1, "planned_hours": "8–10", "estimated_liters": "45–50", "estimated_gas_cad": "70–78", "note": "Banff, Lake Louise and the Icefields Parkway; a full scenic transfer day."},
-    {"from": "Yellowhead County", "to": "Revelstoke", "distance": "≈529 km", "distance_km": 529, "time": "≈7 h non-stop / 9–10 h scenic", "baseline_hours": 6.8, "planned_hours": "9–11", "estimated_liters": "48–53", "estimated_gas_cad": "74–109", "note": "Jasper, Icefields Parkway southbound and Rogers Pass; skip optional stops if timing slips."},
-    {"from": "Revelstoke", "to": "Kelowna", "distance": "≈200 km", "distance_km": 200, "time": "≈2.5–3 h", "baseline_hours": 2.75, "planned_hours": "3–4", "estimated_liters": "18–20", "estimated_gas_cad": "37–41", "note": "Shuswap and North Okanagan route via Sicamous and Vernon."},
-    {"from": "Kelowna", "to": "Vancouver", "distance": "≈390 km", "distance_km": 390, "time": "≈4.5–5 h + traffic", "baseline_hours": 4.75, "planned_hours": "5–7", "estimated_liters": "35–39", "estimated_gas_cad": "72–80", "note": "Highway 97C / Coquihalla; check mountain conditions and Lower Mainland traffic."},
+    {"from": "Golden", "to": "Harvie Heights", "distance": "≈162 km", "distance_km": 162, "time": "≈2 h + stops", "baseline_hours": 2.0, "planned_hours": "4–6", "estimated_liters": "15–16", "estimated_gas_cad": "23–33", "note": "818 12 Street South to 750 Harvie Heights Road via Yoho, Emerald Lake and Lake Louise."},
+    {"from": "Harvie Heights", "to": "Bragg Creek", "distance": "≈125 km", "distance_km": 125, "time": "≈1.5–2 h + stops", "baseline_hours": 1.75, "planned_hours": "3–5", "estimated_liters": "11–13", "estimated_gas_cad": "17–20", "note": "750 Harvie Heights Road to 50023 Boyce Ranch Road; Bow Valley to the foothills."},
+    {"from": "Bragg Creek", "to": "Yellowhead County", "distance": "≈500 km", "distance_km": 500, "time": "≈7–8 h + stops", "baseline_hours": 6.1, "planned_hours": "8–10", "estimated_liters": "45–50", "estimated_gas_cad": "70–78", "note": "50023 Boyce Ranch Road via Banff, Lake Louise and the Icefields Parkway to 50410 Yellowhead Highway."},
+    {"from": "Yellowhead County", "to": "Revelstoke", "distance": "≈529 km", "distance_km": 529, "time": "≈7 h non-stop / 9–10 h scenic", "baseline_hours": 6.8, "planned_hours": "9–11", "estimated_liters": "48–53", "estimated_gas_cad": "74–109", "note": "50410 Yellowhead Highway via Jasper, Icefields Parkway southbound, Lake Louise and Rogers Pass."},
+    {"from": "Revelstoke", "to": "Kelowna", "distance": "≈200 km", "distance_km": 200, "time": "≈2.5–3 h", "baseline_hours": 2.75, "planned_hours": "3–4", "estimated_liters": "18–20", "estimated_gas_cad": "37–41", "note": "1500 1 Street West via Sicamous, Armstrong and Vernon to 104 Clifton Road North."},
+    {"from": "Kelowna", "to": "Dunbar Street / Vancouver", "distance": "≈390 km", "distance_km": 390, "time": "≈4.5–5 h + traffic", "baseline_hours": 4.75, "planned_hours": "5–7", "estimated_liters": "35–39", "estimated_gas_cad": "72–80", "note": "104 Clifton Road North via Highway 97C / Coquihalla to 3540 West 37th Avenue; check mountain conditions and Lower Mainland traffic."},
 ]
 x["driving_summary"] = {
     "intercity_km": 2716,
@@ -353,15 +353,15 @@ x["driving_summary"] = {
 }
 x["days"] = build_days()
 x["vehicle_recommendation"] = {
-    "recommendation": "Toyota RAV4 Hybrid AWD",
-    "rental_class": "Toyota RAV4 Hybrid AWD or equivalent",
-    "verdict": "Best overall fit for this two-person, 15-day Rockies route: durable and practical, easier to handle than a three-row SUV, and much more economical than the large SUVs.",
+    "recommendation": "Toyota RAV4 FWD",
+    "rental_class": "Toyota RAV4 FWD or equivalent",
+    "verdict": "The booked RAV4 FWD is a sensible, economical choice for two people, but it is not as capable as AWD on snow or steep unplowed access roads. For this route, tire quality and conservative driving are essential.",
     "why": [
-        "AWD traction and compact-SUV dimensions suit mountain highways, Airbnb parking and Vancouver city driving.",
-        "Enough cargo flexibility for two travelers without paying the fuel and bulk penalty of a Highlander, CX-90, Palisade or full-size SUV.",
+        "The booked FWD RAV4 is practical for two travelers and economical, but it does not provide AWD traction on snow or steep unplowed access roads.",
+        "Its compact-SUV dimensions suit mountain highways, Airbnb parking and Vancouver city driving.",
         "Toyota's RAV4 has a strong recent reliability record; the recent model is recommended by Consumer Reports.",
-        "The hybrid AWD version is the fuel-economy choice. Official Canadian figures for the 2026 RAV4 range from about 5.5 to 6.2 L/100 km combined by grade.",
-        "The Mazda CX-90 is an excellent, safer-feeling handling alternative, but it is larger, more complex and less economical for this trip."
+        "The exact fuel type was not supplied, so the site uses the conservative gasoline FWD planning estimate of about 8.0 L/100 km.",
+        "The Mazda CX-90 is an excellent handling alternative, but it is larger, more complex and less economical for this trip."
     ],
     "ranked_alternatives": [
         {"rank": 1, "model": "Toyota Highlander Hybrid AWD", "best_for": "More luggage and maximum highway comfort", "tradeoff": "Bigger, harder to park and thirstier than the RAV4."},
@@ -376,7 +376,8 @@ x["vehicle_recommendation"] = {
         "Jeep Grand Cherokee, Ford Edge and similar larger gasoline SUVs: workable, but not as balanced as the RAV4 Hybrid AWD."
     ],
     "fuel_comparison_for_3166km": [
-        {"model": "RAV4 Hybrid AWD", "consumption": "≈5.5–6.2 L/100 km", "liters": "≈174–196 L", "fuel_cost_cad": "≈320–390"},
+        {"model": "RAV4 FWD (booked)", "consumption": "≈8.0 L/100 km planning", "liters": "≈253 L", "fuel_cost_cad": "≈420–560"},
+        {"model": "RAV4 Hybrid AWD (if upgraded)", "consumption": "≈5.5–6.2 L/100 km", "liters": "≈174–196 L", "fuel_cost_cad": "≈320–390"},
         {"model": "Highlander Hybrid AWD", "consumption": "≈6.7 L/100 km", "liters": "≈212 L", "fuel_cost_cad": "≈390–425"},
         {"model": "RAV4 gasoline AWD", "consumption": "≈8.0 L/100 km", "liters": "≈253 L", "fuel_cost_cad": "≈470–510"},
         {"model": "CX-90 Turbo AWD", "consumption": "≈9.8 L/100 km planning", "liters": "≈310 L", "fuel_cost_cad": "≈570–620"},
@@ -393,43 +394,81 @@ x["vehicle_recommendation"] = {
     "source_ids": [22, 23, 24, 25, 26, 27]
 }
 
+# Replace generic neighborhood labels with the supplied booking addresses and times.
+x["lodging_details"] = [
+    {"number": 1, "base": "Clive Avenue / Collingwood", "address": "3264 Vanness Avenue, Vancouver, BC V5R 4V3", "check_in": "2026-09-23 16:00", "check_out": "2026-09-26 10:00", "price_hkd": 6056, "price_cad": 1070.69, "note": "Joyce-Collingwood / East Vancouver. The booking address is Vanness Avenue rather than Clive Avenue."},
+    {"number": 2, "base": "Golden", "address": "818 12 Street South, Golden, BC", "check_in": "2026-09-27 16:00", "check_out": "2026-09-28 11:00", "price_hkd": 1816, "price_cad": 321.07, "note": "Rutherford House / heritage area in Golden."},
+    {"number": 3, "base": "Harvie Heights", "address": "750 Harvie Heights Road, Harvie Heights, AB T1W 2W2", "check_in": "2026-09-28 17:00", "check_out": "2026-09-30 11:00", "price_hkd": 4994, "price_cad": 882.93, "note": "Bow Valley base between Canmore and Banff."},
+    {"number": 4, "base": "Bragg Creek", "address": "50023 Boyce Ranch Road, Bragg Creek / Rocky View County, AB", "check_in": "2026-09-30 16:00", "check_out": "2026-10-02 11:00", "price_hkd": 3634, "price_cad": 642.49, "note": "Rural foothills Airbnb; allow extra time for the final approach and verify the host's directions."},
+    {"number": 5, "base": "Yellowhead County / Hinton", "address": "50410 Yellowhead Highway, Yellowhead County / Hinton, AB", "check_in": "2026-10-02 16:00", "check_out": "2026-10-03 10:00", "price_hkd": 2230, "price_cad": 394.26, "note": "Jasper Gateway Glamping area near Highway 16; exact property directions matter."},
+    {"number": 6, "base": "Revelstoke", "address": "1500 1 Street West, Revelstoke, BC V0E 2S0", "check_in": "2026-10-03 12:00", "check_out": "2026-10-04 12:00", "price_hkd": 1150, "price_cad": 203.32, "note": "Central Revelstoke address; check whether this booking is an Airbnb or an accommodation property and follow its parking instructions."},
+    {"number": 7, "base": "Kelowna / Glenmore", "address": "104 Clifton Road North, Kelowna, BC V1V 2C2", "check_in": "2026-10-04 15:00", "check_out": "2026-10-05 11:00", "price_hkd": 1694, "price_cad": 299.50, "note": "Glenmore–Clifton area, north of downtown Kelowna."},
+    {"number": 8, "base": "Dunbar-Southlands", "address": "3540 West 37th Avenue, Vancouver, BC V6N 2V8", "check_in": "2026-10-05 15:00", "check_out": "2026-10-07 11:00", "price_hkd": 4445, "price_cad": 785.87, "note": "Final Vancouver base near UBC, Pacific Spirit Park and west-side beaches."},
+]
+x["meta"]["lodging_currency"] = "HKD"
+x["meta"]["exchange_rate_hkd_to_cad"] = 0.176799
+x["meta"]["rental_car"] = {"model": "Toyota RAV4", "drivetrain": "FWD / without 4-wheel drive", "mileage": "Unlimited", "days": 14, "price_hkd": 3507, "price_cad": 620.03, "note": "User-supplied rental price; exact trim, fuel type and tire specification must be confirmed with the rental company."}
+
+# Make every calendar date display the actual booked address for that night's stay.
+from datetime import date
+for item in x["lodging_details"]:
+    start = date.fromisoformat(item["check_in"][:10])
+    end = date.fromisoformat(item["check_out"][:10])
+    for day_item in x["days"]:
+        day_date = date.fromisoformat(day_item["date"])
+        if start <= day_date < end:
+            day_item["overnight"] = f"{item['base']} · {item['address']}"
+            day_item["base"] = item["base"]
+
+# Departure day is not an accommodation night.
+x["days"][12]["base"] = "Dunbar-Southlands"
+x["days"][12]["overnight"] = "Dunbar Street Airbnb · 3540 West 37th Avenue, Vancouver, BC V6N 2V8"
+x["days"][13]["base"] = "Dunbar-Southlands"
+x["days"][13]["overnight"] = "Dunbar Street Airbnb · 3540 West 37th Avenue, Vancouver, BC V6N 2V8"
+x["days"][14]["base"] = "YVR"
+
+x["weather"] = {
+    "summary": "Late September to early October crosses several microclimates: mild/wet Vancouver, cooler Golden and the Rockies, potentially frosty or snowy high elevations, then a relatively mild but cool Kelowna and Vancouver finish. These are planning ranges, not a forecast.",
+    "locations": [
+        {"place": "Vancouver · Collingwood / Dunbar", "dates": "23–26 Sep and 5–7 Oct", "typical": "September average high about 19°C / low 11°C; October average high about 14°C / low 9°C", "pack": "Rain shell, light layers and comfortable waterproof shoes; umbrella is optional but useful."},
+        {"place": "Golden", "dates": "27–28 Sep", "typical": "September averages around 13–18°C daytime and 2–5°C overnight; October cools quickly and can approach freezing at night", "pack": "Warm mid-layer, insulated jacket, gloves and hat for mornings/evenings."},
+        {"place": "Harvie Heights / Banff / Lake Louise", "dates": "28–30 Sep", "typical": "Banff September average high/low about 16.1°C / 2.7°C; October about 10.1°C / −1.1°C. Early snow and frost are possible.", "pack": "Insulating layer, waterproof shell, traction-capable footwear and optional microspikes."},
+        {"place": "Bragg Creek / Kananaskis", "dates": "30 Sep–2 Oct", "typical": "Foothills weather can shift quickly; mornings may be frosty while sunny afternoons are comfortable.", "pack": "Layering system, rain/wind shell, gloves, warm hat and extra dry socks."},
+        {"place": "Yellowhead County / Jasper–Hinton area", "dates": "2–3 Oct", "typical": "Jasper-area September/October brings fall colours and cooler temperatures; mountain roads can be colder than Hinton or valley forecasts.", "pack": "Warm layer, gloves, hat, headlamp and vehicle emergency clothing; plan for limited cell service on the Parkway."},
+        {"place": "Revelstoke", "dates": "3–4 Oct", "typical": "September is cooler and wetter; snow is usually more likely on Mount Revelstoke's summit, and weather varies sharply by elevation.", "pack": "Waterproof shell, warm layer, waterproof footwear and dry spare socks."},
+        {"place": "Kelowna", "dates": "4–5 Oct", "typical": "October averages around 12°C daytime and 4°C overnight, with rain possible.", "pack": "Light insulated layer, rain shell, walking shoes and sun protection."},
+    ],
+    "daily_check": ["Environment Canada forecast and alerts", "DriveBC / 511 Alberta road conditions", "Parks Canada trail and facility advisories", "AQHI and wildfire notices", "Sunrise/sunset and daylight remaining before every mountain transfer"],
+    "driving_rule": "The Toyota RAV4 is FWD, not AWD. Do not continue onto a snowy or icy mountain route simply because the schedule says so; wait, reroute or use a safer transport option if conditions exceed your experience."
+}
+x["packing_checklist"] = {
+    "documents_and_phone": ["Passports and flight confirmations", "Accommodation confirmations and check-in instructions", "Rental agreement and insurance details", "Driver's licence and payment card", "Offline maps for the Icefields Parkway and rural Airbnb approaches", "Power bank, charging cables and car charger"],
+    "clothing_system": ["4–5 moisture-wicking base tops", "2 long-sleeve tops", "1 fleece or wool mid-layer", "1 lightweight insulated jacket", "1 waterproof and windproof hooded shell", "2 hiking/outdoor trousers", "1 comfortable travel trouser or jeans", "Warm hat / beanie", "Light gloves", "Neck gaiter", "7–8 pairs of socks including warm wool socks", "Sleepwear and underwear", "Compact umbrella for Vancouver"],
+    "footwear": ["Waterproof walking or hiking shoes with good tread", "Comfortable city shoes", "Optional microspikes / traction cleats for icy trails", "Optional gaiters for wet or snowy trail sections"],
+    "outdoor_and_health": ["Small daypack", "Reusable water bottles", "Headlamp", "Sunglasses", "Sunscreen and lip balm", "Basic first-aid kit and blister care", "Personal medicines and prescriptions", "Insect repellent", "Tissues / hand sanitizer", "Binoculars or camera"],
+    "car_and_emergency": ["Warm blanket or emergency bivy", "Extra water and shelf-stable snacks", "Reflective vest or flashlight", "Ice scraper / brush", "Paper towels and rubbish bags", "Basic tire-pressure check and roadside-assistance details", "Confirm spare tire or puncture kit", "Confirm 3PMSF winter-rated tires or an approved alternative before leaving the rental counter", "Do not leave luggage visible in the parked RAV4"],
+    "airbnb_items_to_confirm": ["Parking and driveway access, especially Boyce Ranch Road and rural Yellowhead County", "Heating and extra blankets", "Laundry access and detergent", "Kitchen equipment and groceries", "Check-in key / lockbox instructions", "Wi-Fi and mobile coverage", "Any wildfire, fire-ban or outdoor-fire rules"],
+    "not_needed_to_overpack": ["Heavy winter coat unless the forecast changes sharply", "Multiple formal outfits", "Large hiking gear if you are doing only short walks", "Camping equipment—the itinerary uses booked accommodations"],
+    "source_ids": [28, 29, 30, 31, 32, 33]
+}
+
+# The supplied booking totals replace placeholder lodging estimates.
 x["budget"] = {
     "currency": "CAD",
-    "scope": "Estimated for 2 travelers; international flights are excluded because their fares are not in the itinerary data. Airbnb prices were not supplied, so each lodging line is a planning range, not a booking quote.",
-    "assumptions": {
-        "total_driving_km": 3166,
-        "intercity_driving_km": 2716,
-        "local_and_sightseeing_allowance_km": 450,
-        "vehicle_consumption_l_per_100km": "9–10",
-        "fuel_price_bc_cad_per_l": 2.05,
-        "fuel_price_ab_cad_per_l": 1.55,
-        "rental_days": 11,
-        "rental_vehicle": "SUV / equivalent",
-        "rental_daily_average_cad": 123,
-        "rental_tax_and_fees_factor": 1.15,
-        "food_per_person_per_day_cad": "60–110",
-        "airbnb_nights": 8,
-        "vancouver_nights": 5,
-        "kamloops_nights": 1
-    },
+    "scope": "Estimated for 2 travelers. Eight accommodation bookings and the 14-day Toyota RAV4 rental price were supplied in HKD and converted at 1 HKD = 0.176799 CAD on the planning date. International flights are excluded because fares were not supplied.",
+    "assumptions": {"total_driving_km": 3166, "vehicle_consumption_l_per_100km": "8.0 planning", "fuel_price_blended_cad_per_l": "1.85–2.05", "food_per_person_per_day_cad": "60–110", "airbnb_and_accommodation_prices": "actual supplied booking totals"},
     "categories": [
-        {"name": "Clive Avenue Airbnb · Collingwood", "low": 450, "high": 780, "note": "3 nights, 23–26 September; planning range CAD 150–260/night before Airbnb taxes and fees."},
-        {"name": "Dunbar Street Airbnb · Dunbar-Southlands", "low": 400, "high": 700, "note": "2 nights, 5–7 October; planning range CAD 200–350/night before Airbnb taxes and fees."},
-        {"name": "Golden Airbnb", "low": 180, "high": 300, "note": "1 night, 27–28 September; planning range CAD 180–300/night before Airbnb taxes and fees."},
-        {"name": "Harvie Heights Airbnb", "low": 440, "high": 760, "note": "2 nights, 28–30 September; planning range CAD 220–380/night before Airbnb taxes and fees."},
-        {"name": "Bragg Creek Airbnb", "low": 440, "high": 800, "note": "2 nights, 30 September–2 October; planning range CAD 220–400/night before Airbnb taxes and fees."},
-        {"name": "Yellowhead County Airbnb", "low": 160, "high": 300, "note": "1 night, 2–3 October; planning range CAD 160–300/night before Airbnb taxes and fees; exact address may change the route."},
-        {"name": "Revelstoke Airbnb", "low": 200, "high": 350, "note": "1 night, 3–4 October; planning range CAD 200–350/night before Airbnb taxes and fees."},
-        {"name": "Kelowna Airbnb", "low": 180, "high": 320, "note": "1 night, 4–5 October; planning range CAD 180–320/night before Airbnb taxes and fees."},
-        {"name": "Kamloops bridge night", "low": 180, "high": 250, "note": "1 night, 26–27 September; practical hotel/suite placeholder."},
-        {"name": "Rental car", "low": 1556, "high": 1556, "note": "11 days × CAD 123/day SUV average × 1.15 tax/fee factor; actual quote may differ."},
-        {"name": "Gas", "low": 529, "high": 647, "note": "About 285–317 L for 3,166 km, using BC CAD 2.05/L and Alberta CAD 1.55/L planning prices."},
-        {"name": "Food and groceries", "low": 1800, "high": 3300, "note": "CAD 60–110 per person per day for 15 days; kitchens make the lower end more realistic."},
-        {"name": "Parks, attractions, parking and local transport", "low": 600, "high": 1200, "note": "Includes a planning allowance for park access, shuttles, parking and selected paid attractions; verify reservations and fees."}
+        {"name": "Supplied accommodation bookings", "low": 4600.13, "high": 4600.13, "note": "HKD 26,019 total across 8 bookings, converted to CAD; taxes/fees are included only if included in the amounts you supplied."},
+        {"name": "Kamloops bridge night", "low": 180, "high": 250, "note": "The supplied stays leave 26–27 September unbooked; placeholder for one practical night between Vancouver and Golden."},
+        {"name": "Toyota RAV4 rental · FWD · unlimited mileage", "low": 620.03, "high": 620.03, "note": "HKD 3,507 for 14 days, converted to CAD; confirm whether insurance, taxes and deposits are included."},
+        {"name": "Gas", "low": 420, "high": 560, "note": "FWD RAV4 planning estimate for about 3,166 km at approximately 8.0 L/100 km; mountain weather, traffic and detours can increase this."},
+        {"name": "Food and groceries", "low": 1800, "high": 3300, "note": "CAD 60–110 per person per day for 15 days; kitchen access should make the lower end achievable."},
+        {"name": "Parks, attractions, parking and local transport", "low": 600, "high": 1200, "note": "Planning allowance for park access, lake shuttle, parking and selected paid sights; verify current fees."}
     ],
-    "totals": {"low": 7115, "high": 11263, "recommended_reserve_low": 7827, "recommended_reserve_high": 12389},
-    "note": "The 10% reserve is for fuel-price movement, parking, taxes/cleaning fees, weather detours and small unplanned costs. Add the actual Airbnb totals and international-flight fares for a final booked-trip total."
+    "totals": {"low": 8220, "high": 10530, "recommended_reserve_low": 9042, "recommended_reserve_high": 11583},
+    "note": "The 10% reserve covers fuel-price movement, parking, weather detours and small unplanned costs. Add international airfare and any Airbnb charges not included in the supplied amounts."
 }
+
 x["airbnb_stays"] = [
     {"base": "Golden", "dates": "27–28 September", "note": "User-supplied fixed Airbnb."},
     {"base": "Harvie Heights", "dates": "28–30 September", "note": "User-supplied fixed Airbnb; best positioned for Banff, Lake Louise and Moraine Lake access."},
@@ -439,7 +478,7 @@ x["airbnb_stays"] = [
     {"base": "Kelowna", "dates": "4–5 October", "note": "User-supplied fixed Airbnb."},
 ]
 
-x["sources"] = [s for s in x.get("sources", []) if s.get("id") not in {19, 20, 21, 22, 23, 24, 25, 26, 27}] + [
+x["sources"] = [s for s in x.get("sources", []) if s.get("id") not in {19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34}] + [
     {"id": 19, "label": "Fuel-price planning reference · CAA / NRCan context", "url": "https://natural-resources.canada.ca/energy-facts/energy-facts/transportation-energy-use/gasoline-prices"},
     {"id": 20, "label": "Rental-car planning reference", "url": "https://ca.kayak.com/Cheap-Vancouver-Car-Rentals.6668.cars.ksp"},
     {"id": 21, "label": "Canada travel-cost planning reference", "url": "https://www.budgetyourtrip.com/canada"},
@@ -449,6 +488,13 @@ x["sources"] = [s for s in x.get("sources", []) if s.get("id") not in {19, 20, 2
     {"id": 25, "label": "British Columbia · winter tires for visitors and rentals", "url": "https://www2.gov.bc.ca/gov/content/transportation/driving-and-cycling/traveller-information/seasonal/winter-driving/visitors"},
     {"id": 26, "label": "Consumer Reports · Toyota RAV4 reliability", "url": "https://www.consumerreports.org/cars/toyota/rav4/2025/reliability/"},
     {"id": 27, "label": "Toyota Canada · 2026 Highlander specifications", "url": "https://www.toyota.ca/en/vehicles/highlander/models-specifications"},
+    {"id": 28, "label": "Environment Canada · Canadian climate normals", "url": "https://climate.weather.gc.ca/climate_normals/index_e.html"},
+    {"id": 29, "label": "Parks Canada · mountain safety and fall conditions", "url": "https://parks.canada.ca/pn-np/mtn/securiteenmontagne-mountainsafety/ete-summer"},
+    {"id": 30, "label": "Parks Canada · Banff / Lake Louise safety information", "url": "https://parks.canada.ca/pn-np/ab/banff/visit/~/-/media/09aa48b48c2b45c2baceef01630c981d.ashx"},
+    {"id": 31, "label": "Parks Canada · Jasper weather and climate", "url": "https://parks.canada.ca/pn-np/ab/jasper/visit/meteo-climate"},
+    {"id": 32, "label": "Parks Canada · Mount Revelstoke weather and climate", "url": "https://parks.canada.ca/pn-np/bc/revelstoke/visit/meteo-weather"},
+    {"id": 33, "label": "British Columbia · designated winter tire and chain routes", "url": "https://www2.gov.bc.ca/gov/content/transportation/driving-and-cycling/traveller-information/seasonal/winter-driving/winter-tire-and-chain-up-routes"},
+    {"id": 34, "label": "XE · HKD to CAD exchange rate reference", "url": "https://www.xe.com/currencyconverter/convert?Amount=1&From=HKD&To=CAD"},
 ]
 
 # Keep the supplementary candidate directory, but add the fixed-base labels so
@@ -457,12 +503,12 @@ for key, label, why in [
     ("vancouver", "Clive Avenue Airbnb · Collingwood", "Fixed first stay, 23–26 September. Joyce-Collingwood base near Joyce Station, Central Park and Metrotown."),
     ("clive-avenue", "Clive Avenue Airbnb · Collingwood", "Fixed first stay, 23–26 September. Exact address should be used for door-to-door directions."),
     ("dunbar-street", "Dunbar Street Airbnb · Dunbar-Southlands", "Fixed final stay, 5–7 October. West-side base near UBC, Pacific Spirit Park and Kitsilano."),
-    ("golden", "Your Airbnb · Golden", "Fixed stay supplied by the travelers for 27–28 September."),
-    ("harvie-heights", "Your Airbnb · Harvie Heights", "Fixed stay supplied by the travelers for 28–30 September; practical Bow Valley base."),
-    ("bragg-creek", "Your Airbnb · Bragg Creek", "Fixed stay supplied by the travelers for 30 September–2 October; foothills base."),
-    ("yellowhead-county", "Your Airbnb · Yellowhead County", "Fixed stay supplied by the travelers for 2–3 October; use the exact address for final routing."),
-    ("revelstoke", "Your Airbnb · Revelstoke", "Fixed stay supplied by the travelers for 3–4 October."),
-    ("kelowna", "Your Airbnb · Kelowna", "Fixed stay supplied by the travelers for 4–5 October."),
+    ("golden", "Your booking · Golden", "Supplied stay for 27–28 September."),
+    ("harvie-heights", "Your booking · Harvie Heights", "Supplied stay for 28–30 September; practical Bow Valley base."),
+    ("bragg-creek", "Your booking · Bragg Creek", "Supplied stay for 30 September–2 October; foothills base."),
+    ("yellowhead-county", "Your booking · Yellowhead County", "Supplied stay for 2–3 October; use the exact address for final routing."),
+    ("revelstoke", "Your booking · Revelstoke", "Supplied stay for 3–4 October."),
+    ("kelowna", "Your booking · Kelowna", "Supplied stay for 4–5 October."),
 ]:
     x["hotels"][key] = [{"name": label, "type": "fixed Airbnb stay", "why": why}]
 

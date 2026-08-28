@@ -24,7 +24,7 @@ All flight times are local to the relevant airport. Day plans now start at **08:
 
 ## Fixed Airbnb stays
 
-The route is organized around the supplied stays rather than moving you back to Canmore, a cabin, or a Jasper hotel:
+The route is organized around the supplied accommodation bookings rather than moving you back to Canmore, a cabin, or a Jasper hotel:
 
 | Dates | Base | Role in the route |
 |---|---|---|
@@ -71,24 +71,19 @@ Then visit <http://localhost:8000>.
 
 ### Whole-trip estimate for two, excluding international flights
 
+The accommodation and rental figures below are the actual amounts you supplied, converted for planning at **1 HKD = 0.176799 CAD**. The international flight fares are still excluded.
+
 | Category | Planning range (CAD) |
 |---|---:|
-| Clive Avenue Airbnb · Collingwood, 3 nights | 450–780 |
-| Dunbar Street Airbnb · Dunbar-Southlands, 2 nights | 400–700 |
-| Golden Airbnb, 1 night | 180–300 |
-| Harvie Heights Airbnb, 2 nights | 440–760 |
-| Bragg Creek Airbnb, 2 nights | 440–800 |
-| Yellowhead County Airbnb, 1 night | 160–300 |
-| Revelstoke Airbnb, 1 night | 200–350 |
-| Kelowna Airbnb, 1 night | 180–320 |
-| Kamloops bridge night | 180–250 |
-| SUV rental, 11 days including estimated taxes/fees | 1,556 |
-| Gas | 529–647 |
+| Supplied accommodation bookings — 8 bookings, HKD 26,019 | **4,600.13** |
+| Kamloops bridge night — 26–27 Sep placeholder | 180–250 |
+| Toyota RAV4 rental — HKD 3,507, 14 days, unlimited mileage, FWD | **620.03** |
+| Gas for booked RAV4 FWD | 420–560 |
 | Food and groceries | 1,800–3,300 |
 | Parks, attractions, parking and local transport | 600–1,200 |
-| **Estimated total, excluding flights** | **7,115–11,263** |
+| **Estimated total, excluding flights** | **8,220–10,530** |
 
-Recommended working reserve: **CAD 7,827–12,389**. Airbnb prices and the international flight fares were not provided, so this is a transparent planning range—not a booking total. Enter the actual Airbnb totals, car quote, flight fares and paid-activity prices to finalize it.
+Recommended working reserve: **CAD 9,042–11,583**. The accommodation and car figures are supplied prices; confirm whether taxes, cleaning fees, insurance, deposits and other charges are included. Add international airfare and any excluded Airbnb charges to finalize the full trip total.
 
 
 - Dates are **23 Sep 2026 to 7 Oct 2026 inclusive**. Flight times are confirmed as listed above.
@@ -99,23 +94,39 @@ Recommended working reserve: **CAD 7,827–12,389**. Airbnb prices and the inter
 - Route times are estimates without live traffic, weather, construction or stop time.
 - Late September and early October can bring snow, frost, shorter daylight and wildlife on roads. Check DriveBC, 511 Alberta and Parks Canada bulletins before each mountain transfer.
 
-## Recommended rental car
+## Exact accommodation and rental details
 
-**Toyota RAV4 Hybrid AWD** is the best overall fit for this trip: durable and practical for two people, easier to handle than a three-row SUV, and more economical than the larger options. Toyota Canada lists the 2026 RAV4 hybrid AWD grades at approximately **5.5–6.2 L/100 km combined**; the RAV4 also has enough luggage flexibility for two travelers without the bulk penalty of a Highlander or CX-90.[1][2]
+The following booking information is now recorded in `data/itinerary.json` and displayed in the live data model. Amounts are converted using **1 HKD = 0.176799 CAD** as a planning reference; exchange rates and card charges may differ.
+
+| Stay | Dates / times | Address | Supplied price |
+|---|---|---|---:|
+| Clive / Collingwood | 23 Sep 4:00 PM – 26 Sep 10:00 AM | 3264 Vanness Avenue, Vancouver | HKD 6,056 / CAD 1,070.69 |
+| Golden | 27 Sep 4:00 PM – 28 Sep 11:00 AM | 818 12 Street South | HKD 1,816 / CAD 321.07 |
+| Harvie Heights | 28 Sep 5:00 PM – 30 Sep 11:00 AM | 750 Harvie Heights Road | HKD 4,994 / CAD 882.93 |
+| Bragg Creek | 30 Sep 4:00 PM – 2 Oct 11:00 AM | 50023 Boyce Ranch Road | HKD 3,634 / CAD 642.49 |
+| Yellowhead County / Hinton | 2 Oct 4:00 PM – 3 Oct 10:00 AM | 50410 Yellowhead Highway | HKD 2,230 / CAD 394.26 |
+| Revelstoke | 3 Oct 12:00 PM – 4 Oct 12:00 PM | 1500 1 Street West | HKD 1,150 / CAD 203.32 |
+| Kelowna / Glenmore | 4 Oct 3:00 PM – 5 Oct 11:00 AM | 104 Clifton Road North | HKD 1,694 / CAD 299.50 |
+| Dunbar-Southlands | 5 Oct 3:00 PM – 7 Oct 11:00 AM | 3540 West 37th Avenue | HKD 4,445 / CAD 785.87 |
+
+**Accommodation total:** HKD 26,019 / approximately **CAD 4,600.13**. The Toyota RAV4 rental is **HKD 3,507 / approximately CAD 620.03**, for 14 days, unlimited mileage, FWD / without four-wheel drive. Confirm whether the rental quote includes insurance, taxes, deposits and the required tire specification.
+
+
+**Toyota RAV4 FWD** is the car you have booked. It is practical and economical for two people, but it does not provide AWD traction on snow or steep unplowed access roads. For this route, tire quality and conservative driving are essential.
 
 For the planned 3,166 km, the rough fuel comparison is:
 
 | Vehicle | Planning consumption | Approx. fuel | Approx. gas cost (CAD) |
 |---|---:|---:|---:|
-| **RAV4 Hybrid AWD** | 5.5–6.2 L/100 km | 174–196 L | **320–390** |
+| **RAV4 FWD (booked)** | ~8.0 L/100 km | ~253 L | **420–560** |
+| RAV4 Hybrid AWD (if upgraded) | 5.5–6.2 L/100 km | 174–196 L | 320–390 |
 | Highlander Hybrid AWD | 6.7 L/100 km | 212 L | 390–425 |
-| RAV4 gasoline AWD | 8.0 L/100 km | 253 L | 470–510 |
 | Mazda CX-90 Turbo AWD | ~9.8 L/100 km | 310 L | 570–620 |
 | Wrangler / large gasoline SUV | ~11.0 L/100 km | 348 L | 640–700 |
 
 The **Mazda CX-90 AWD** is the handling-and-safety alternative: IIHS lists the 2026 CX-90 as a Top Safety Pick+, but it is larger, thirstier and more complex. Choose the Highlander Hybrid instead if you have unusually large luggage or want maximum cabin space.[3][6]
 
-At pickup, request **“Toyota RAV4 Hybrid AWD or equivalent with 3PMSF mountain/snowflake-rated tires”**. Tire specification matters more than AWD branding on the Sea-to-Sky, Coquihalla, Icefields Parkway and interior BC routes. B.C. advises visitors to ensure rental vehicles have winter tires, and notes that 3PMSF tires provide the best traction in winter conditions.[4]
+At pickup, request **“Toyota RAV4 FWD or equivalent with 3PMSF mountain/snowflake-rated tires”**. Tire specification matters more than AWD branding on the Sea-to-Sky, Coquihalla, Icefields Parkway and interior BC routes. B.C. advises visitors to ensure rental vehicles have winter tires, and notes that 3PMSF tires provide the best traction in winter conditions.[4]
 
 Inspect the tire tread, spare or proper puncture kit, brakes, wipers, windshield, warning lights, emergency kit, roadside-assistance number, luggage cover and any restrictions on mountain roads. Reserve the vehicle class rather than relying on the exact badge, since rental fleets may substitute models.[7]
 
@@ -128,7 +139,14 @@ Inspect the tire tread, spare or proper puncture kit, brakes, wipers, windshield
 - **Dunbar Street area:** Pacific Spirit Regional Park, UBC, Museum of Anthropology, Kitsilano Beach, Jericho Beach and Granville Island are the nearby focus.
 - McArthurGlen is optional on arrival and is not the main final-day plan; do not schedule shopping before the 14:10 international departure on 7 Oct.
 
-## Booking checklist
+## Weather and packing
+
+Late September and early October will cross several microclimates. Vancouver is generally mild and wet; Golden, Harvie Heights, Kananaskis and the Jasper/Yellowhead area can have frosty mornings, early snow and rapidly changing mountain conditions; Revelstoke is wetter at elevation; Kelowna is cooler and comparatively drier. These are climate-planning ranges, not a forecast. Check Environment Canada shortly before each day.[28][29][30][31]
+
+Pack a moisture-wicking base layer, long sleeves, fleece or wool mid-layer, lightweight insulated jacket, waterproof/windproof hooded shell, warm hat, light gloves, neck gaiter, waterproof shoes with good tread, spare warm socks, daypack, water bottles, headlamp, sunglasses, sunscreen, lip balm, personal medicines, first-aid/blister care, power bank, offline maps and a compact umbrella for Vancouver. Add optional microspikes/gaiters if trails are icy or snowy.[29][30]
+
+For the FWD RAV4, confirm 3PMSF mountain/snowflake-rated tires, spare or proper puncture kit, emergency blanket, flashlight, ice scraper, extra water/snacks and roadside assistance. B.C. requires winter tires or chains on most designated routes from 1 October; the Sea-to-Sky, Coquihalla and interior mountain highways need special attention.[25][33] Do not continue a snowy or icy mountain transfer just because it is in the itinerary—wait, reroute or shorten the day if conditions exceed your experience.
+
 
 - CX814 and CX867 flight times, terminal guidance and baggage allowance
 - McArthurGlen opening hours and luggage-locker availability
@@ -146,6 +164,6 @@ Inspect the tire tread, spare or proper puncture kit, brakes, wipers, windshield
 - `data/itinerary.json` - machine-readable trip data
 - `README.md` - trip assumptions, confirmed flights and booking checklist
 - `SOURCES.md` - source ledger, Airbnb shortlist and verification notes
-- `scripts/build.py` - original deterministic data generator
-- `scripts/update_plan.py` - current trip plan generator; includes the 26 Sep Vancouver → Kamloops, 27 Sep Kamloops → Golden, and 28 Sep Golden → Canmore change
-- `scripts/confirm_vancouver_return_update.py` - historical helper retained for provenance; do not run after the current plan generator
+- `scripts/update_plan.py` - historical trip plan generator
+- `scripts/update_airbnb_route.py` - current itinerary generator with exact bookings, weather, packing and rental details
+- `scripts/generate_calendar_ics.py` - Apple Calendar export generator
