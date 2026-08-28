@@ -11,16 +11,31 @@ All flight times are local to the relevant airport. Day plans now start at **08:
 
 ## Updated plan
 
-- Vancouver: **23-26 Sep 2026** (three nights), then Vancouver city again on 5-7 Oct
-- Kamloops: **26-27 Sep 2026** (one night)
-- Golden: **27-28 Sep 2026** (one night)
-- Canmore: **from 28 Sep 2026** as the main economical Rockies base
-- McArthurGlen Designer Outlet Vancouver Airport is the only outlet
-- Canmore is the main economical Rockies base
-- Exactly two cabin nights: 30 September and 1 October
-- Jasper gets one recommended overnight after the Icefields Parkway
-- Return routing is now **Canmore → Revelstoke on 4 Oct → Vancouver city on 5 Oct**
-- Restaurants are organized by Vancouver, Whistler, **Golden**, Canmore, Banff, the cabin zone and Jasper
+- **Vancouver:** first 3 nights, 23–26 Sep 2026; final 2 nights, 5–7 Oct
+- **Kamloops:** one practical bridge night, 26–27 Sep
+- **Golden:** Airbnb, 27–28 Sep
+- **Harvie Heights:** Airbnb, 28–30 Sep
+- **Bragg Creek:** Airbnb, 30 Sep–2 Oct
+- **Yellowhead County:** Airbnb, 2–3 Oct; treated as the Jasper / Hinton-area base
+- **Revelstoke:** Airbnb, 3–4 Oct
+- **Kelowna:** Airbnb, 4–5 Oct
+- **Daily start:** 08:00, matching the normal wake-up time
+- **Route:** Vancouver → Kamloops → Golden → Harvie Heights → Bragg Creek → Yellowhead County → Revelstoke → Kelowna → Vancouver
+
+## Fixed Airbnb stays
+
+The route is organized around the supplied stays rather than moving you back to Canmore, a cabin, or a Jasper hotel:
+
+| Dates | Base | Role in the route |
+|---|---|---|
+| 27–28 Sep | Golden | First mountain stopover |
+| 28–30 Sep | Harvie Heights | Banff / Lake Louise / Moraine Lake base |
+| 30 Sep–2 Oct | Bragg Creek | Foothills and Kananaskis base |
+| 2–3 Oct | Yellowhead County | Jasper / Hinton-area base |
+| 3–4 Oct | Revelstoke | Rogers Pass / Revelstoke base |
+| 4–5 Oct | Kelowna | Okanagan stop |
+
+The Yellowhead County Airbnb's exact address should be added before departure. “Yellowhead County” is a large area; the plan treats it as a Jasper / Hinton-area base, and the final driving times can change materially depending on the listing's location.
 
 ## What is included
 
@@ -44,14 +59,36 @@ python3 -m http.server 8000
 
 Then visit <http://localhost:8000>.
 
-## Important assumptions
+## Driving, gas and whole-trip cost estimate
 
-- Dates are **23 Sep 2026 to 7 Oct 2026 inclusive**. Flight times are now confirmed as listed above.
-- The route is now: Vancouver city (23-25 Sep nights) → Kamloops (26 Sep night) → Golden (27 Sep night) → Canmore from 28 Sep → Revelstoke (4 Oct) → Vancouver city (5-6 Oct) → YVR (7 Oct).
-- The plan is ambitious. Day 4 Vancouver to Kamloops via Whistler, Day 5 Kamloops to Golden, Day 6 Golden to Canmore, and the final Revelstoke to Vancouver transfer are long or weather-sensitive road days.
-- Accommodation cards are candidates, not reservations. Prices, inventory, cancellation terms and seasonal opening must be checked for the exact dates.
-- Airbnb links are search links or current search-result candidates, not endorsements or confirmed availability.
-- Route times are planning estimates without live traffic, weather, construction or stop time.
+### Driving
+
+- Fixed-base intercity route: **about 2,716 km** and **about 34.2 hours of baseline wheel time**.
+- With local sightseeing around each Airbnb: **about 3,166 km planned** and **about 40–48 hours of driving**, excluding long attraction visits.
+- Fuel planning: **285–317 L** at 9–10 L/100 km.
+- Gas estimate: **CAD 529–647**, using a planning rate of CAD 2.05/L in BC and CAD 1.55/L in Alberta. Recheck prices before departure.
+
+### Whole-trip estimate for two, excluding international flights
+
+| Category | Planning range (CAD) |
+|---|---:|
+| Fixed Airbnb stays, 8 nights | 1,600–2,800 |
+| Vancouver stays, 5 nights + Kamloops, 1 night | 1,430–2,500 |
+| SUV rental, 11 days including estimated taxes/fees | 1,556 |
+| Gas | 529–647 |
+| Food and groceries | 1,800–3,300 |
+| Parks, attractions, parking and local transport | 600–1,200 |
+| **Estimated total, excluding flights** | **7,515–12,003** |
+
+Recommended working reserve: **CAD 8,270–13,200**. Airbnb prices and the international flight fares were not provided, so this is a transparent planning range—not a booking total. Enter the actual Airbnb totals, car quote, flight fares and paid-activity prices to finalize it.
+
+
+- Dates are **23 Sep 2026 to 7 Oct 2026 inclusive**. Flight times are confirmed as listed above.
+- The route is: Vancouver (first 3 nights) → Kamloops (26 Sep night) → Golden Airbnb (27 Sep) → Harvie Heights Airbnb (28–29 Sep) → Bragg Creek Airbnb (30 Sep–1 Oct) → Yellowhead County Airbnb (2 Oct) → Revelstoke Airbnb (3 Oct) → Kelowna Airbnb (4 Oct) → Vancouver (final 2 nights) → YVR departure.
+- The plan is ambitious. The 2 Oct Bragg Creek → Yellowhead County and 3 Oct Yellowhead County → Revelstoke legs are especially long scenic transfers; skip optional stops if daylight, weather or road conditions deteriorate.
+- Yellowhead County is a large area. Use the exact Airbnb address to recalculate the Jasper/Hinton-area legs before departure.
+- Airbnb prices were not supplied. The budget is a planning range, not a booking quote; add actual Airbnb totals, cleaning fees and taxes.
+- Route times are estimates without live traffic, weather, construction or stop time.
 - Late September and early October can bring snow, frost, shorter daylight and wildlife on roads. Check DriveBC, 511 Alberta and Parks Canada bulletins before each mountain transfer.
 
 ## Recommended lodging strategy

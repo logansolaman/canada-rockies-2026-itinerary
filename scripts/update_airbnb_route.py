@@ -1,0 +1,414 @@
+#!/usr/bin/env python3
+"""Rebuild the Canada itinerary around the user's fixed Airbnb bases.
+
+The first three nights and final two nights remain in Vancouver. The supplied
+Airbnb bases are treated as fixed overnight anchors; the day plans are then
+ordered to minimize backtracking while keeping the 08:00 start time.
+"""
+import json
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+DATA = ROOT / "data/itinerary.json"
+
+
+def day(date, label, base, route, focus, overnight, items):
+    blocks = [
+        {
+            "time": f"{h:02d}:00",
+            "title": "Open / flexible",
+            "detail": "Keep this hour available for meals, weather, parking, queues or a slower choice.",
+            "kind": "buffer",
+        }
+        for h in range(8, 24)
+    ]
+    by = {b["time"]: b for b in blocks}
+    for time, title, detail, kind in items:
+        by[time] = {"time": time, "title": title, "detail": detail, "kind": kind}
+    return {
+        "date": date,
+        "label": label,
+        "base": base,
+        "route": route,
+        "focus": focus,
+        "overnight": overnight,
+        "blocks": [by[f"{h:02d}:00"] for h in range(8, 24)],
+    }
+
+
+def build_days():
+    d = []
+    d.append(day("2026-09-23", "Day 1 · Arrival in Vancouver", "Vancouver", "CX814 · HKG 11:05 → YVR 07:40 · airport arrival → Vancouver", "Arrive gently, settle into the first Vancouver base and only shop if energy and baggage logistics allow.", "Vancouver Airbnb / hotel", [
+        ("08:00", "YVR arrival, immigration and bags", "CX814 is scheduled to arrive at 07:40 local time. Allow immigration, baggage, customs and a first coffee.", "travel"),
+        ("09:00", "Transfer / luggage plan", "Take the Canada Line or confirmed hotel transfer. Keep luggage secure.", "travel"),
+        ("10:00", "McArthurGlen option", "Use only if arrival is smooth; keep the visit short and protect baggage capacity.", "shop"),
+        ("11:00", "Coffee / light lunch", "Keep the first meal easy and nearby.", "food"),
+        ("12:00", "Transfer to Vancouver stay", "Head to the first three-night Vancouver base.", "travel"),
+        ("13:00", "Luggage drop / check-in", "Ask about early check-in or leave bags securely.", "rest"),
+        ("14:00", "Jet-lag reset", "Shower, nap and hydrate. No sightseeing obligation.", "rest"),
+        ("15:00", "Easy waterfront walk", "Coal Harbour, English Bay or the nearest calm neighbourhood option.", "walk"),
+        ("16:00", "Free / recover", "Do not over-program arrival day.", "rest"),
+        ("17:00", "Dinner nearby", "Choose somewhere close to the stay.", "food"),
+        ("18:00", "Dinner", "Keep the first evening short.", "food"),
+        ("19:00", "Settle in", "Confirm tomorrow's city plan and rental-car timing.", "plan"),
+        ("20:00", "Wind down", "Prepare for a normal 08:00 start.", "rest"),
+        ("21:00", "Sleep", "Time-zone recovery.", "rest"),
+        ("22:00", "Sleep", "Overnight recovery.", "rest"),
+        ("23:00", "Sleep", "Overnight recovery.", "rest"),
+    ]))
+    d.append(day("2026-09-24", "Day 2 · Vancouver highlights", "Vancouver", "Stanley Park → Granville Island → Gastown", "Use the first full day for Vancouver's classic waterfront and market sequence.", "Vancouver Airbnb / hotel", [
+        ("08:00", "Breakfast", "Start at the agreed 08:00 wake-up time.", "food"),
+        ("09:00", "Stanley Park seawall", "Walk or rent bikes if weather is good.", "walk"),
+        ("10:00", "Stanley Park", "Totem poles, forest paths and Coal Harbour edge.", "explore"),
+        ("11:00", "Stanley Park", "Finish a comfortable loop; do not force the entire seawall.", "walk"),
+        ("12:00", "Granville Island transfer", "Allow transit and queue time.", "travel"),
+        ("13:00", "Granville Island Public Market", "Market browsing and lunch.", "food"),
+        ("14:00", "Granville Island", "Studios, shops and waterfront.", "explore"),
+        ("15:00", "False Creek / Yaletown", "Aquabus or an easy walk if energy is good.", "walk"),
+        ("16:00", "Gastown", "Water Street, galleries and historic streets.", "explore"),
+        ("17:00", "Canada Place", "Return toward the stay before dinner.", "walk"),
+        ("18:00", "Dinner", "Choose one neighbourhood restaurant.", "food"),
+        ("19:00", "Dinner", "Slow meal.", "food"),
+        ("20:00", "Pack for road start", "Layers, snacks, documents and rental-car details.", "plan"),
+        ("21:00", "Sleep", "Tomorrow is North Shore day.", "rest"),
+        ("22:00", "Sleep", "Overnight recovery.", "rest"),
+        ("23:00", "Sleep", "Overnight recovery.", "rest"),
+    ]))
+    d.append(day("2026-09-25", "Day 3 · Vancouver North Shore", "Vancouver", "Downtown → Capilano or Grouse Mountain → Kitsilano", "Keep the third Vancouver day local and flexible before picking up the car.", "Vancouver Airbnb / hotel", [
+        ("08:00", "Breakfast", "Check weather before committing to the North Shore.", "food"),
+        ("09:00", "Transit to North Shore", "Use SeaBus or the planned transfer.", "travel"),
+        ("10:00", "Capilano or Grouse", "Choose one headline attraction, not both.", "explore"),
+        ("11:00", "North Shore attraction", "Continue the chosen activity.", "explore"),
+        ("12:00", "North Shore lunch", "Lonsdale Quay or a nearby option.", "food"),
+        ("13:00", "Return downtown", "Build a transfer buffer.", "travel"),
+        ("14:00", "Kitsilano or English Bay", "Beach, café or rest.", "walk"),
+        ("15:00", "Easy city afternoon", "Keep this deliberately light.", "walk"),
+        ("16:00", "Hotel reset", "Prepare for the road start tomorrow.", "rest"),
+        ("17:00", "Rental-car check", "Confirm pickup, AWD/SUV, tires and roadside cover.", "plan"),
+        ("18:00", "Dinner", "Stay close to the Vancouver base.", "food"),
+        ("19:00", "Dinner", "Keep the evening unhurried.", "food"),
+        ("20:00", "Pack for Kamloops", "Layers, snacks, offline maps and documents.", "plan"),
+        ("21:00", "Sleep", "Final first-stay Vancouver night.", "rest"),
+        ("22:00", "Sleep", "Overnight recovery.", "rest"),
+        ("23:00", "Sleep", "Overnight recovery.", "rest"),
+    ]))
+    d.append(day("2026-09-26", "Day 4 · Vancouver to Kamloops via Sea-to-Sky", "Kamloops", "Vancouver → Horseshoe Bay → Squamish → Whistler → Pemberton → Kamloops", "Take the scenic Sea-to-Sky and Duffey Lake route, accepting that this is a long transfer day.", "Kamloops hotel", [
+        ("08:00", "Breakfast + check out", "Keep the 08:00 start; collect the rental car afterward.", "travel"),
+        ("09:00", "Collect rental car", "Inspect tires, winter-tire policy, insurance and roadside assistance.", "travel"),
+        ("10:00", "Drive to Horseshoe Bay", "Begin Highway 99 with a traffic buffer.", "travel"),
+        ("11:00", "Howe Sound viewpoint", "Short photo stop.", "stop"),
+        ("12:00", "Shannon Falls / Squamish", "Choose a short walk or viewpoint.", "explore"),
+        ("13:00", "Lunch in Squamish", "Eat before heading inland.", "food"),
+        ("14:00", "Drive to Whistler", "Optional Brandywine Falls if access and time allow.", "travel"),
+        ("15:00", "Whistler Village", "Walk, coffee and mountain views; do not turn it into an overnight.", "explore"),
+        ("16:00", "Fuel and route check", "Confirm Duffey Lake Road conditions before continuing.", "stop"),
+        ("17:00", "Pemberton / Duffey Lake route", "Long scenic transfer; keep food and daylight buffers.", "travel"),
+        ("18:00", "Seton / Lillooet direction", "Continue only if road and weather conditions are good.", "travel"),
+        ("19:00", "Drive toward Kamloops", "Use the fastest safe continuation and avoid extra detours.", "travel"),
+        ("20:00", "Kamloops arrival buffer", "Check in as soon as practical.", "travel"),
+        ("21:00", "Dinner", "Simple nearby meal.", "food"),
+        ("22:00", "Sleep", "Recover after the long scenic drive.", "rest"),
+        ("23:00", "Sleep", "Overnight recovery.", "rest"),
+    ]))
+    d.append(day("2026-09-27", "Day 5 · Kamloops to Golden", "Golden", "Kamloops → Salmon Arm → Revelstoke → Rogers Pass → Golden", "Use the Trans-Canada eastbound route and arrive in Golden for the first fixed Airbnb stay.", "Golden Airbnb", [
+        ("08:00", "Breakfast + check out", "Fuel and check DriveBC before leaving.", "travel"),
+        ("09:00", "Depart Kamloops", "Head east on the Trans-Canada Highway.", "travel"),
+        ("10:00", "Shuswap / Salmon Arm", "Coffee and a short waterfront reset.", "stop"),
+        ("11:00", "Continue toward Revelstoke", "Lake and mountain scenery.", "travel"),
+        ("12:00", "Revelstoke lunch / fuel", "Refuel before the pass.", "food"),
+        ("13:00", "Revelstoke town option", "Keep the stop short; the priority is Golden check-in.", "explore"),
+        ("14:00", "Rogers Pass direction", "Continue through Glacier National Park.", "travel"),
+        ("15:00", "Rogers Pass viewpoint", "Short viewpoint or visitor-centre stop if open.", "explore"),
+        ("16:00", "Drive to Golden", "Keep the final transfer comfortable.", "travel"),
+        ("17:00", "Golden Airbnb check-in", "Settle into the 27–28 September stay.", "travel"),
+        ("18:00", "Golden town / river walk", "Easy orientation close to the accommodation.", "walk"),
+        ("19:00", "Golden dinner", "Choose a nearby restaurant.", "food"),
+        ("20:00", "Plan Yoho and Harvie Heights move", "Check Emerald Lake, Lake Louise access and road conditions.", "plan"),
+        ("21:00", "Sleep", "Golden overnight.", "rest"),
+        ("22:00", "Sleep", "Overnight recovery.", "rest"),
+        ("23:00", "Sleep", "Overnight recovery.", "rest"),
+    ]))
+    d.append(day("2026-09-28", "Day 6 · Golden to Harvie Heights via Yoho", "Harvie Heights", "Golden → Field → Emerald Lake → Lake Louise → Harvie Heights", "Move east through Yoho and Lake Louise so the next two nights are positioned for Banff and the lakes.", "Harvie Heights Airbnb", [
+        ("08:00", "Breakfast + check out", "Leave Golden at the agreed 08:00 start.", "travel"),
+        ("09:00", "Yoho / Field", "Coffee and a short scenic stop.", "stop"),
+        ("10:00", "Emerald Lake", "Lakeshore walk if access, parking and weather cooperate.", "explore"),
+        ("11:00", "Natural Bridge", "Short stop on the way back toward the Trans-Canada.", "explore"),
+        ("12:00", "Lunch near Field / Lake Louise", "Refuel before the afternoon move.", "food"),
+        ("13:00", "Lake Louise village", "Collect groceries and confirm shuttle instructions.", "stop"),
+        ("14:00", "Lake Louise lakeshore option", "Keep this brief because the dedicated lake day is tomorrow.", "explore"),
+        ("15:00", "Drive to Harvie Heights", "Use Highway 1 toward Canmore; keep check-in flexible.", "travel"),
+        ("16:00", "Harvie Heights Airbnb check-in", "Settle into the 28–30 September stay.", "travel"),
+        ("17:00", "Groceries / reset", "Prepare breakfast and shuttle essentials.", "plan"),
+        ("18:00", "Dinner", "Canmore or the Airbnb kitchen.", "food"),
+        ("19:00", "Lake day preparation", "Confirm Lake Louise / Moraine Lake reservations and transport.", "plan"),
+        ("20:00", "Quiet evening", "Protect energy for tomorrow's reservation-led day.", "rest"),
+        ("21:00", "Sleep", "Harvie Heights night 1 of 2.", "rest"),
+        ("22:00", "Sleep", "Overnight recovery.", "rest"),
+        ("23:00", "Sleep", "Overnight recovery.", "rest"),
+    ]))
+    d.append(day("2026-09-29", "Day 7 · Lake Louise and Moraine Lake", "Harvie Heights", "Harvie Heights → Lake Louise Park and Ride → Lake Louise / Moraine Lake → Harvie Heights", "Use Harvie Heights as the practical base for the reservation-led lake day; do not rely on personal-vehicle access to Moraine Lake Road.", "Harvie Heights Airbnb", [
+        ("08:00", "Breakfast", "Start at 08:00 and use the confirmed shuttle plan.", "food"),
+        ("09:00", "Drive to Lake Louise Park and Ride", "Allow parking and queue time; follow the reservation instructions.", "travel"),
+        ("10:00", "Lake Louise shuttle / access", "Use the confirmed shuttle or licensed operator.", "travel"),
+        ("11:00", "Lake Louise lakeshore", "Photos and a modest lakeshore walk.", "explore"),
+        ("12:00", "Lake Louise lunch", "Use the booked or practical lunch option.", "food"),
+        ("13:00", "Moraine Lake transfer", "Use the reserved connection; Moraine Lake Road is closed to personal vehicles.", "travel"),
+        ("14:00", "Moraine Lake", "Rockpile viewpoint and lakeshore.", "explore"),
+        ("15:00", "Moraine Lake", "Keep hiking modest and weather-aware.", "explore"),
+        ("16:00", "Return shuttle", "Expect waiting time and preserve a return buffer.", "travel"),
+        ("17:00", "Return to Harvie Heights", "Unload and reset at the Airbnb.", "travel"),
+        ("18:00", "Dinner", "Canmore or home-cooked dinner.", "food"),
+        ("19:00", "Pack for Bragg Creek", "One small road bag and groceries for the next Airbnb.", "plan"),
+        ("20:00", "Weather / road check", "Check Parks Canada, 511 Alberta and Highway 1 conditions.", "plan"),
+        ("21:00", "Sleep", "Final Harvie Heights night.", "rest"),
+        ("22:00", "Sleep", "Overnight recovery.", "rest"),
+        ("23:00", "Sleep", "Overnight recovery.", "rest"),
+    ]))
+    d.append(day("2026-09-30", "Day 8 · Harvie Heights to Bragg Creek", "Bragg Creek", "Harvie Heights → Canmore → Kananaskis / Calgary west → Bragg Creek", "Use the move day to transition from the Rockies lake base to the foothills Airbnb without unnecessary backtracking.", "Bragg Creek Airbnb", [
+        ("08:00", "Breakfast + check out", "Pack the Harvie Heights Airbnb and leave at 08:00.", "travel"),
+        ("09:00", "Canmore / Bow Valley", "Final local coffee or groceries.", "stop"),
+        ("10:00", "Banff option", "Choose Banff Avenue or Bow Falls only if energy is good.", "explore"),
+        ("11:00", "Banff / Canmore lunch", "Keep the move day relaxed.", "food"),
+        ("12:00", "Drive toward Kananaskis", "Use the foothills route toward Bragg Creek.", "travel"),
+        ("13:00", "Kananaskis viewpoint option", "Short stop only; avoid turning the transfer into a long hike.", "explore"),
+        ("14:00", "Kananaskis / Highway 40", "Weather-sensitive mountain road; check 511 Alberta.", "travel"),
+        ("15:00", "Bragg Creek approach", "Stock up before the Airbnb if needed.", "travel"),
+        ("16:00", "Bragg Creek Airbnb check-in", "Settle into the 30 September–2 October stay.", "travel"),
+        ("17:00", "Property reset", "Unpack and enjoy the foothills setting.", "rest"),
+        ("18:00", "Dinner", "Cook at the Airbnb or eat in Bragg Creek.", "food"),
+        ("19:00", "Elbow Valley orientation", "Short local walk if daylight and conditions allow.", "walk"),
+        ("20:00", "Plan foothills day", "Choose Bragg Creek, Kananaskis or Elbow Falls based on weather.", "plan"),
+        ("21:00", "Sleep", "Bragg Creek night 1 of 2.", "rest"),
+        ("22:00", "Sleep", "Overnight recovery.", "rest"),
+        ("23:00", "Sleep", "Overnight recovery.", "rest"),
+    ]))
+    d.append(day("2026-10-01", "Day 9 · Bragg Creek and Kananaskis", "Bragg Creek", "Bragg Creek → Elbow Falls / Kananaskis option → Bragg Creek", "Make the Bragg Creek stay feel distinct: a lower-mileage foothills day before the long northbound transfer.", "Bragg Creek Airbnb", [
+        ("08:00", "Breakfast", "Slow start at the Airbnb.", "food"),
+        ("09:00", "Bragg Creek village", "Coffee, supplies and local orientation.", "explore"),
+        ("10:00", "Elbow Falls option", "Short walk if the road and trail are open and safe.", "explore"),
+        ("11:00", "Elbow Valley", "Scenic foothills drive; keep wildlife awareness high.", "travel"),
+        ("12:00", "Lunch", "Picnic or Bragg Creek restaurant.", "food"),
+        ("13:00", "Kananaskis option", "Drive only as far as conditions and daylight justify.", "travel"),
+        ("14:00", "Kananaskis viewpoint / walk", "Choose one modest outdoor stop.", "explore"),
+        ("15:00", "Return toward Bragg Creek", "Do not add a second major hike.", "travel"),
+        ("16:00", "Airbnb reset", "Rest and enjoy the property.", "rest"),
+        ("17:00", "Pack for Yellowhead County", "Prepare food, layers and offline maps for the long road day.", "plan"),
+        ("18:00", "Dinner", "Home-cooked or local dinner.", "food"),
+        ("19:00", "Route check", "Check 511 Alberta, Parks Canada and Icefields Parkway conditions.", "plan"),
+        ("20:00", "Early wind-down", "Tomorrow is the longest scenic transfer of the trip.", "rest"),
+        ("21:00", "Sleep", "Final Bragg Creek night.", "rest"),
+        ("22:00", "Sleep", "Overnight recovery.", "rest"),
+        ("23:00", "Sleep", "Overnight recovery.", "rest"),
+    ]))
+    d.append(day("2026-10-02", "Day 10 · Bragg Creek to Yellowhead County", "Yellowhead County", "Bragg Creek → Banff → Lake Louise → Icefields Parkway → Jasper area → Hinton / Yellowhead County", "This is the critical long transfer. Use the Icefields Parkway as the day's attraction and treat Yellowhead County as the overnight base near Jasper/Hinton.", "Yellowhead County Airbnb", [
+        ("08:00", "Breakfast + check out", "Leave Bragg Creek at 08:00 with a full fuel and food check.", "travel"),
+        ("09:00", "Drive toward Banff", "Use Highway 1 and keep the mountain-road buffer.", "travel"),
+        ("10:00", "Banff / Lake Louise direction", "Do not add a separate Banff attraction today.", "travel"),
+        ("11:00", "Lake Louise fuel / coffee", "Short stop before the Parkway.", "stop"),
+        ("12:00", "Bow Lake", "First major Icefields Parkway viewpoint.", "explore"),
+        ("13:00", "Peyto Lake", "Short viewpoint walk if conditions are safe.", "explore"),
+        ("14:00", "Waterfowl Lakes / Mistaya", "Choose one brief stop.", "explore"),
+        ("15:00", "Columbia Icefield", "Lunch, fuel and attraction-status check.", "food"),
+        ("16:00", "Athabasca Glacier viewpoint", "Only use a pre-booked tour; otherwise keep this to a short viewpoint.", "explore"),
+        ("17:00", "Continue toward Jasper / Hinton", "Protect the late-afternoon daylight and avoid extra detours.", "travel"),
+        ("18:00", "Jasper-area transfer", "The Yellowhead County Airbnb is the fixed overnight target.", "travel"),
+        ("19:00", "Yellowhead County Airbnb check-in", "Settle into the 2–3 October stay.", "travel"),
+        ("20:00", "Simple dinner", "Eat at the Airbnb or use the nearest confirmed option.", "food"),
+        ("21:00", "Sleep", "Recover before the long Yellowhead-to-Revelstoke crossing.", "rest"),
+        ("22:00", "Sleep", "Overnight recovery.", "rest"),
+        ("23:00", "Sleep", "Overnight recovery.", "rest"),
+    ]))
+    d.append(day("2026-10-03", "Day 11 · Yellowhead County to Revelstoke", "Revelstoke", "Yellowhead County / Hinton → Jasper → Icefields Parkway → Lake Louise → Rogers Pass → Revelstoke", "Keep Jasper brief, then make the southbound Parkway and Rogers Pass the scenic route to the Revelstoke Airbnb. This is a very long day, so skip optional stops if timing slips.", "Revelstoke Airbnb", [
+        ("08:00", "Breakfast + check out", "Start from the Yellowhead County Airbnb at 08:00.", "travel"),
+        ("09:00", "Jasper town / Pyramid Lake option", "Choose one short morning stop only.", "explore"),
+        ("10:00", "Depart Jasper", "Begin the southbound Icefields Parkway leg.", "travel"),
+        ("11:00", "Athabasca Falls", "Short stop if missed yesterday and conditions are safe.", "explore"),
+        ("12:00", "Sunwapta / Columbia area", "Choose one stop and keep moving south.", "travel"),
+        ("13:00", "Packed lunch", "Use a designated stop; avoid a restaurant detour.", "food"),
+        ("14:00", "Columbia Icefield / Parker Ridge option", "Only if daylight and timing remain comfortable.", "explore"),
+        ("15:00", "Peyto or Bow Lake option", "Pick one final major viewpoint, not both.", "explore"),
+        ("16:00", "Drive to Lake Louise", "Continue toward the Trans-Canada connection.", "travel"),
+        ("17:00", "Lake Louise / Golden direction", "Fuel and check Rogers Pass conditions.", "stop"),
+        ("18:00", "Rogers Pass direction", "Keep the final mountain transfer moving.", "travel"),
+        ("19:00", "Drive to Revelstoke", "Arrival will be late if stops or conditions add time.", "travel"),
+        ("20:00", "Revelstoke Airbnb check-in", "Settle into the 3–4 October stay; skip town sightseeing tonight.", "travel"),
+        ("21:00", "Dinner / rest", "Simple meal and no more driving.", "food"),
+        ("22:00", "Sleep", "Recover after the longest road day.", "rest"),
+        ("23:00", "Sleep", "Overnight recovery.", "rest"),
+    ]))
+    d.append(day("2026-10-04", "Day 12 · Revelstoke to Kelowna", "Kelowna", "Revelstoke → Sicamous → Vernon / Okanagan → Kelowna", "Use the shorter transfer to reach the Okanagan Airbnb with time for a relaxed Kelowna afternoon.", "Kelowna Airbnb", [
+        ("08:00", "Breakfast + check out", "Fuel in Revelstoke before leaving.", "travel"),
+        ("09:00", "Mount Revelstoke option", "Only if open and the previous day's arrival was not too late.", "explore"),
+        ("10:00", "Depart toward Sicamous", "Follow Highway 1 through the Shuswap.", "travel"),
+        ("11:00", "Sicamous / Mara Lake", "Coffee and short lake stop.", "stop"),
+        ("12:00", "Armstrong / Vernon direction", "Continue south on the North Okanagan route.", "travel"),
+        ("13:00", "Lunch", "Choose a practical stop before Kelowna.", "food"),
+        ("14:00", "Kelowna approach", "Allow urban traffic and Airbnb check-in buffer.", "travel"),
+        ("15:00", "Kelowna Airbnb check-in", "Settle into the 4–5 October stay.", "travel"),
+        ("16:00", "Okanagan lakefront", "Easy waterfront walk or rest.", "walk"),
+        ("17:00", "Kelowna reset", "Laundry, groceries and packing for Vancouver.", "plan"),
+        ("18:00", "Dinner", "Kelowna restaurant or the Airbnb.", "food"),
+        ("19:00", "Lakefront evening", "Keep the night relaxed.", "walk"),
+        ("20:00", "Plan Vancouver transfer", "Check Coquihalla / Highway 5 conditions and Vancouver traffic.", "plan"),
+        ("21:00", "Sleep", "Kelowna overnight.", "rest"),
+        ("22:00", "Sleep", "Overnight recovery.", "rest"),
+        ("23:00", "Sleep", "Overnight recovery.", "rest"),
+    ]))
+    d.append(day("2026-10-05", "Day 13 · Kelowna to Vancouver", "Vancouver", "Kelowna → Merritt → Coquihalla → Vancouver", "Return to Vancouver for the final two nights, using the fastest sensible route and protecting the evening.", "Vancouver Airbnb / hotel", [
+        ("08:00", "Breakfast + check out", "Leave Kelowna at 08:00 after checking Highway 5 conditions.", "travel"),
+        ("09:00", "Drive toward Merritt", "Take Highway 97C / 5 as conditions allow.", "travel"),
+        ("10:00", "Okanagan Connector", "Keep a fuel and weather buffer.", "travel"),
+        ("11:00", "Merritt / fuel", "Coffee, fuel and road check.", "stop"),
+        ("12:00", "Coquihalla direction", "Mountain highway transfer.", "travel"),
+        ("13:00", "Lunch stop", "Use a practical highway stop.", "food"),
+        ("14:00", "Continue toward Vancouver", "Traffic buffer grows near the Lower Mainland.", "travel"),
+        ("15:00", "Fraser Valley", "Do not add detours today.", "travel"),
+        ("16:00", "Vancouver arrival", "Head to the final two-night Vancouver base.", "travel"),
+        ("17:00", "Vancouver check-in", "Settle into the final Vancouver stay.", "travel"),
+        ("18:00", "Dinner nearby", "Keep the evening local after the transfer.", "food"),
+        ("19:00", "Rest", "No major sightseeing obligation.", "rest"),
+        ("20:00", "Flight and outlet plan", "Confirm CX867, baggage and whether McArthurGlen fits tomorrow without risk.", "plan"),
+        ("21:00", "Sleep", "Final Vancouver stay night 1 of 2.", "rest"),
+        ("22:00", "Sleep", "Overnight recovery.", "rest"),
+        ("23:00", "Sleep", "Overnight recovery.", "rest"),
+    ]))
+    d.append(day("2026-10-06", "Day 14 · Vancouver final city day", "Vancouver", "Vancouver city → optional McArthurGlen → waterfront", "Keep the last full day flexible and city-based; do not create a long excursion before the international departure.", "Vancouver Airbnb / hotel", [
+        ("08:00", "Breakfast", "Normal 08:00 start in Vancouver.", "food"),
+        ("09:00", "Vancouver neighbourhood", "Choose a nearby café or market.", "explore"),
+        ("10:00", "McArthurGlen option", "Use this safer shopping window only if luggage and current hours work.", "shop"),
+        ("11:00", "McArthurGlen / Richmond", "Keep purchases within airline baggage limits.", "shop"),
+        ("12:00", "Lunch", "Stay near the chosen area.", "food"),
+        ("13:00", "Waterfront or Granville Island", "One easy city option.", "explore"),
+        ("14:00", "Waterfront", "Keep the afternoon unhurried.", "walk"),
+        ("15:00", "Coffee / souvenirs", "Final purchases and receipts.", "shop"),
+        ("16:00", "Return to stay", "Pack everything before dinner.", "travel"),
+        ("17:00", "Luggage sort", "Confirm passports, receipts and airport transfer.", "plan"),
+        ("18:00", "Final Vancouver dinner", "Choose somewhere close to the stay.", "food"),
+        ("19:00", "Dinner", "Keep the final evening calm.", "food"),
+        ("20:00", "Pack for CX867", "Prepare a carry-on and confirm terminal timing.", "plan"),
+        ("21:00", "Sleep", "Final Vancouver night.", "rest"),
+        ("22:00", "Sleep", "Overnight recovery.", "rest"),
+        ("23:00", "Sleep", "Departure tomorrow.", "rest"),
+    ]))
+    d.append(day("2026-10-07", "Day 15 · Vancouver departure", "YVR", "Vancouver → YVR · CX867 14:10 → HKG 19:20 on 8 Oct", "Keep the departure day calm. The 14:10 international flight gets a real airport buffer; no attraction is scheduled after check-in.", "CX867 in flight", [
+        ("08:00", "Breakfast", "Hotel breakfast and final flight check.", "food"),
+        ("09:00", "Pack and check out", "Confirm luggage, receipts and storage.", "travel"),
+        ("10:00", "Transfer to YVR", "Return the rental car if needed or use the confirmed airport transfer.", "travel"),
+        ("11:00", "CX867 check-in and bags", "Be at the airport with a proper international-departure buffer.", "travel"),
+        ("12:00", "Security and immigration", "Complete airport formalities.", "travel"),
+        ("13:00", "Gate buffer", "Water, final purchases and boarding buffer.", "travel"),
+        ("14:00", "CX867 departure buffer", "Scheduled departure is 14:10 local Vancouver time.", "travel"),
+        ("15:00", "CX867 in flight", "Return flight to Hong Kong.", "travel"),
+        ("16:00", "CX867 in flight", "Return flight to Hong Kong.", "travel"),
+        ("17:00", "CX867 in flight", "Return flight to Hong Kong.", "travel"),
+        ("18:00", "CX867 in flight", "Return flight to Hong Kong.", "travel"),
+        ("19:00", "CX867 in flight", "Scheduled arrival is 19:20 on 8 Oct Hong Kong time.", "travel"),
+        ("20:00", "Arrival recovery", "Hong Kong arrival is the next calendar day.", "rest"),
+        ("21:00", "Arrival recovery", "Trip complete.", "rest"),
+        ("22:00", "Arrival recovery", "Trip complete.", "rest"),
+        ("23:00", "Arrival recovery", "Trip complete.", "rest"),
+    ]))
+    return d
+
+
+x = json.loads(DATA.read_text(encoding="utf-8"))
+x["meta"].update({
+    "title": "Canada Rockies · Vancouver + fixed Airbnb route",
+    "wake_time": "08:00",
+    "lodging_note": "Fixed stays supplied by the travelers: Golden 27–28 Sep; Harvie Heights 28–30 Sep; Bragg Creek 30 Sep–2 Oct; Yellowhead County 2–3 Oct; Revelstoke 3–4 Oct; Kelowna 4–5 Oct. Vancouver is used for the first three nights and final two nights.",
+    "assumption": "Route rebuilt around the supplied Airbnb bases. The one-night Kamloops stop on 26 Sep bridges the first Vancouver stay and Golden; Yellowhead County is treated as a Jasper/Hinton-area base. The 3 Oct Yellowhead County → Revelstoke day is intentionally a long scenic transfer and must be shortened if weather, daylight or road conditions deteriorate.",
+})
+x["route"] = [
+    {"name": "Vancouver", "date": "23–26 Sep + 5–7 Oct", "km": "city / airport", "stay": "first 3 nights + final 2 nights", "color": "#7dd3fc"},
+    {"name": "Kamloops", "date": "26–27 Sep", "km": "scenic road bridge", "stay": "one-night hotel", "color": "#fde68a"},
+    {"name": "Golden", "date": "27–28 Sep", "km": "mountain stopover", "stay": "your Airbnb", "color": "#fca5a5"},
+    {"name": "Harvie Heights", "date": "28–30 Sep", "km": "Bow Valley base", "stay": "your Airbnb", "color": "#86efac"},
+    {"name": "Bragg Creek", "date": "30 Sep–2 Oct", "km": "foothills base", "stay": "your Airbnb", "color": "#f0abfc"},
+    {"name": "Yellowhead County", "date": "2–3 Oct", "km": "Jasper / Hinton area", "stay": "your Airbnb", "color": "#93c5fd"},
+    {"name": "Revelstoke", "date": "3–4 Oct", "km": "Trans-Canada west", "stay": "your Airbnb", "color": "#fdba74"},
+    {"name": "Kelowna", "date": "4–5 Oct", "km": "Okanagan stop", "stay": "your Airbnb", "color": "#c4b5fd"},
+    {"name": "Departure", "date": "7 Oct", "km": "airport day", "stay": "CX867", "color": "#f9a8d4"},
+]
+x["route_legs"] = [
+    {"from": "Vancouver", "to": "Kamloops", "distance": "≈450 km", "distance_km": 450, "time": "≈6 h + stops", "baseline_hours": 6.0, "planned_hours": "7–9", "estimated_liters": "41–45", "estimated_gas_cad": "84–92", "note": "Most scenic option via Sea-to-Sky, Whistler, Pemberton and Duffey Lake; weather-sensitive."},
+    {"from": "Kamloops", "to": "Golden", "distance": "≈360 km", "distance_km": 360, "time": "≈4 h + stops", "baseline_hours": 4.1, "planned_hours": "5–6", "estimated_liters": "32–36", "estimated_gas_cad": "58–74", "note": "Trans-Canada through Salmon Arm, Revelstoke and Rogers Pass."},
+    {"from": "Golden", "to": "Harvie Heights", "distance": "≈162 km", "distance_km": 162, "time": "≈2 h + stops", "baseline_hours": 2.0, "planned_hours": "4–6", "estimated_liters": "15–16", "estimated_gas_cad": "23–33", "note": "Use Yoho, Emerald Lake and Lake Louise as the scenic sequence; the direct drive is about 162 km."},
+    {"from": "Harvie Heights", "to": "Bragg Creek", "distance": "≈125 km", "distance_km": 125, "time": "≈1.5–2 h + stops", "baseline_hours": 1.75, "planned_hours": "3–5", "estimated_liters": "11–13", "estimated_gas_cad": "17–20", "note": "Bow Valley to the foothills; use Banff or Kananaskis as one optional stop."},
+    {"from": "Bragg Creek", "to": "Yellowhead County", "distance": "≈500 km", "distance_km": 500, "time": "≈7–8 h + stops", "baseline_hours": 6.1, "planned_hours": "8–10", "estimated_liters": "45–50", "estimated_gas_cad": "70–78", "note": "Banff, Lake Louise and the Icefields Parkway; a full scenic transfer day."},
+    {"from": "Yellowhead County", "to": "Revelstoke", "distance": "≈529 km", "distance_km": 529, "time": "≈7 h non-stop / 9–10 h scenic", "baseline_hours": 6.8, "planned_hours": "9–11", "estimated_liters": "48–53", "estimated_gas_cad": "74–109", "note": "Jasper, Icefields Parkway southbound and Rogers Pass; skip optional stops if timing slips."},
+    {"from": "Revelstoke", "to": "Kelowna", "distance": "≈200 km", "distance_km": 200, "time": "≈2.5–3 h", "baseline_hours": 2.75, "planned_hours": "3–4", "estimated_liters": "18–20", "estimated_gas_cad": "37–41", "note": "Shuswap and North Okanagan route via Sicamous and Vernon."},
+    {"from": "Kelowna", "to": "Vancouver", "distance": "≈390 km", "distance_km": 390, "time": "≈4.5–5 h + traffic", "baseline_hours": 4.75, "planned_hours": "5–7", "estimated_liters": "35–39", "estimated_gas_cad": "72–80", "note": "Highway 97C / Coquihalla; check mountain conditions and Lower Mainland traffic."},
+]
+x["driving_summary"] = {
+    "intercity_km": 2716,
+    "local_sightseeing_allowance_km": 450,
+    "total_planned_km": 3166,
+    "baseline_driving_hours": 34.2,
+    "planned_driving_hours_without_long_stops": "40–48",
+    "fuel_liters_at_9_l_per_100km": 285,
+    "fuel_liters_at_10_l_per_100km": 317,
+    "fuel_estimate_cad": "529–647",
+    "method": "Route-leg estimates plus a 450 km local/sightseeing allowance. Fuel uses 9–10 L/100 km, BC CAD 2.05/L and Alberta CAD 1.55/L planning prices; prices and conditions can change."
+}
+x["days"] = build_days()
+x["budget"] = {
+    "currency": "CAD",
+    "scope": "Estimated for 2 travelers; international flights are excluded because their fares are not in the itinerary data. Airbnb prices were not supplied, so their line is a planning range, not a booking quote.",
+    "assumptions": {
+        "total_driving_km": 3166,
+        "intercity_driving_km": 2716,
+        "local_and_sightseeing_allowance_km": 450,
+        "vehicle_consumption_l_per_100km": "9–10",
+        "fuel_price_bc_cad_per_l": 2.05,
+        "fuel_price_ab_cad_per_l": 1.55,
+        "rental_days": 11,
+        "rental_vehicle": "SUV / equivalent",
+        "rental_daily_average_cad": 123,
+        "rental_tax_and_fees_factor": 1.15,
+        "food_per_person_per_day_cad": "60–110",
+        "airbnb_nights": 8,
+        "non_airbnb_nights": 6
+    },
+    "categories": [
+        {"name": "Airbnb stays", "low": 1600, "high": 2800, "note": "8 nights; placeholder CAD 200–350/night until the six booking totals are entered."},
+        {"name": "Vancouver + Kamloops stays", "low": 1430, "high": 2500, "note": "5 Vancouver nights plus 1 Kamloops night; placeholder CAD 250–450 and CAD 180–250/night respectively."},
+        {"name": "Rental car", "low": 1556, "high": 1556, "note": "11 days × CAD 123/day SUV average × 1.15 tax/fee factor; actual quote may differ."},
+        {"name": "Gas", "low": 529, "high": 647, "note": "About 285–317 L for 3,166 km, using BC CAD 2.05/L and Alberta CAD 1.55/L planning prices."},
+        {"name": "Food and groceries", "low": 1800, "high": 3300, "note": "CAD 60–110 per person per day for 15 days; kitchens make the lower end more realistic."},
+        {"name": "Parks, attractions, parking and local transport", "low": 600, "high": 1200, "note": "Includes a planning allowance for park access, shuttles, parking and selected paid attractions; verify reservations and fees."}
+    ],
+    "totals": {"low": 7515, "high": 12003, "recommended_reserve_low": 8270, "recommended_reserve_high": 13200},
+    "note": "The 10% reserve is for fuel-price movement, parking, taxes/cleaning fees, weather detours and small unplanned costs. Add the actual Airbnb totals and international-flight fares for a final booked-trip total."
+}
+x["airbnb_stays"] = [
+    {"base": "Golden", "dates": "27–28 September", "note": "User-supplied fixed Airbnb."},
+    {"base": "Harvie Heights", "dates": "28–30 September", "note": "User-supplied fixed Airbnb; best positioned for Banff, Lake Louise and Moraine Lake access."},
+    {"base": "Bragg Creek", "dates": "30 September–2 October", "note": "User-supplied fixed Airbnb; foothills / Kananaskis base."},
+    {"base": "Yellowhead County", "dates": "2–3 October", "note": "User-supplied fixed Airbnb; treated as the Jasper / Hinton-area base for routing."},
+    {"base": "Revelstoke", "dates": "3–4 October", "note": "User-supplied fixed Airbnb."},
+    {"base": "Kelowna", "dates": "4–5 October", "note": "User-supplied fixed Airbnb."},
+]
+
+x["sources"] = [s for s in x.get("sources", []) if s.get("id") not in {19, 20, 21}] + [
+    {"id": 19, "label": "Fuel-price planning reference · CAA / NRCan context", "url": "https://natural-resources.canada.ca/energy-facts/energy-facts/transportation-energy-use/gasoline-prices"},
+    {"id": 20, "label": "Rental-car planning reference", "url": "https://ca.kayak.com/Cheap-Vancouver-Car-Rentals.6668.cars.ksp"},
+    {"id": 21, "label": "Canada travel-cost planning reference", "url": "https://www.budgetyourtrip.com/canada"},
+]
+
+# Keep the supplementary candidate directory, but add the fixed-base labels so
+# the site's stay selector reflects the actual plan rather than the old bases.
+for key, label, why in [
+    ("golden", "Your Airbnb · Golden", "Fixed stay supplied by the travelers for 27–28 September."),
+    ("harvie-heights", "Your Airbnb · Harvie Heights", "Fixed stay supplied by the travelers for 28–30 September; practical Bow Valley base."),
+    ("bragg-creek", "Your Airbnb · Bragg Creek", "Fixed stay supplied by the travelers for 30 September–2 October; foothills base."),
+    ("yellowhead-county", "Your Airbnb · Yellowhead County", "Fixed stay supplied by the travelers for 2–3 October; use the exact address for final routing."),
+    ("revelstoke", "Your Airbnb · Revelstoke", "Fixed stay supplied by the travelers for 3–4 October."),
+    ("kelowna", "Your Airbnb · Kelowna", "Fixed stay supplied by the travelers for 4–5 October."),
+]:
+    x["hotels"][key] = [{"name": label, "type": "fixed Airbnb stay", "why": why}]
+
+DATA.write_text(json.dumps(x, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+print(f"updated {DATA}")
+print(f"days {len(x['days'])} blocks {sum(len(d['blocks']) for d in x['days'])}")
+print(f"wake_time {x['meta']['wake_time']}")
+print("bases", " → ".join(r["name"] for r in x["route"]))

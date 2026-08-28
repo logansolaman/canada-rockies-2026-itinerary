@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "Canada Rockies · Vancouver + Kamloops + Golden + Canmore base loop",
+    "title": "Canada Rockies · Vancouver + fixed Airbnb route",
     "start": "2026-09-23",
     "end": "2026-10-07",
     "travelers": 2,
@@ -27,72 +27,66 @@
         "note": "Arrival is the next calendar day in Hong Kong."
       }
     ],
-    "assumption": "Updated with confirmed flights: CX814 HKG 11:05 to YVR 07:40 on 23 Sep 2026 (11h35m); CX867 YVR 14:10 to HKG 19:20 on 8 Oct 2026. Daily plan begins at 08:00.",
-    "wake_time": "08:00"
+    "assumption": "Route rebuilt around the supplied Airbnb bases. The one-night Kamloops stop on 26 Sep bridges the first Vancouver stay and Golden; Yellowhead County is treated as a Jasper/Hinton-area base. The 3 Oct Yellowhead County → Revelstoke day is intentionally a long scenic transfer and must be shortened if weather, daylight or road conditions deteriorate.",
+    "wake_time": "08:00",
+    "lodging_note": "Fixed stays supplied by the travelers: Golden 27–28 Sep; Harvie Heights 28–30 Sep; Bragg Creek 30 Sep–2 Oct; Yellowhead County 2–3 Oct; Revelstoke 3–4 Oct; Kelowna 4–5 Oct. Vancouver is used for the first three nights and final two nights."
   },
   "route": [
     {
       "name": "Vancouver",
-      "date": "23-26 Sep + 5-7 Oct",
+      "date": "23–26 Sep + 5–7 Oct",
       "km": "city / airport",
-      "stay": "Vancouver city base",
+      "stay": "first 3 nights + final 2 nights",
       "color": "#7dd3fc"
     },
     {
-      "name": "Sea-to-Sky",
-      "date": "26 Sep",
-      "km": "scenic transfer",
-      "stay": "day route to Kamloops",
-      "color": "#a7f3d0"
-    },
-    {
       "name": "Kamloops",
-      "date": "26-27 Sep",
-      "km": "interior overnight",
-      "stay": "Kamloops hotel",
+      "date": "26–27 Sep",
+      "km": "scenic road bridge",
+      "stay": "one-night hotel",
       "color": "#fde68a"
     },
     {
       "name": "Golden",
-      "date": "27-28 Sep",
+      "date": "27–28 Sep",
       "km": "mountain stopover",
-      "stay": "Golden hotel / rental",
+      "stay": "your Airbnb",
       "color": "#fca5a5"
     },
     {
-      "name": "Canmore",
-      "date": "28 Sep-5 Oct",
-      "km": "main Rockies base",
-      "stay": "economical base",
+      "name": "Harvie Heights",
+      "date": "28–30 Sep",
+      "km": "Bow Valley base",
+      "stay": "your Airbnb",
       "color": "#86efac"
     },
     {
-      "name": "Cabin zone",
-      "date": "30 Sep-2 Oct",
-      "km": "two nights",
-      "stay": "Baker Creek or Storm Mountain",
-      "color": "#c4b5fd"
+      "name": "Bragg Creek",
+      "date": "30 Sep–2 Oct",
+      "km": "foothills base",
+      "stay": "your Airbnb",
+      "color": "#f0abfc"
     },
     {
-      "name": "Jasper",
-      "date": "2-3 Oct",
-      "km": "via Icefields Parkway",
-      "stay": "Jasper overnight",
+      "name": "Yellowhead County",
+      "date": "2–3 Oct",
+      "km": "Jasper / Hinton area",
+      "stay": "your Airbnb",
       "color": "#93c5fd"
     },
     {
       "name": "Revelstoke",
-      "date": "4-5 Oct",
-      "km": "return overnight",
-      "stay": "practical road hotel",
+      "date": "3–4 Oct",
+      "km": "Trans-Canada west",
+      "stay": "your Airbnb",
       "color": "#fdba74"
     },
     {
-      "name": "Vancouver city",
-      "date": "5-7 Oct",
-      "km": "city finish",
-      "stay": "downtown hotel",
-      "color": "#f0abfc"
+      "name": "Kelowna",
+      "date": "4–5 Oct",
+      "km": "Okanagan stop",
+      "stay": "your Airbnb",
+      "color": "#c4b5fd"
     },
     {
       "name": "Departure",
@@ -107,9 +101,9 @@
       "date": "2026-09-23",
       "label": "Day 1 · Arrival in Vancouver",
       "base": "Vancouver",
-      "route": "CX814 · HKG 11:05 → YVR 07:40 · airport arrival → McArthurGlen → Vancouver hotel",
-      "focus": "Land at 07:40, clear the airport properly, then shop only if the flight and energy cooperate.",
-      "overnight": "Vancouver",
+      "route": "CX814 · HKG 11:05 → YVR 07:40 · airport arrival → Vancouver",
+      "focus": "Arrive gently, settle into the first Vancouver base and only shop if energy and baggage logistics allow.",
+      "overnight": "Vancouver Airbnb / hotel",
       "blocks": [
         {
           "time": "08:00",
@@ -120,30 +114,30 @@
         {
           "time": "09:00",
           "title": "Transfer / luggage plan",
-          "detail": "Take the Canada Line or hotel transfer. Store luggage only with a service confirmed in advance.",
+          "detail": "Take the Canada Line or confirmed hotel transfer. Keep luggage secure.",
           "kind": "travel"
         },
         {
           "time": "10:00",
-          "title": "McArthurGlen Designer Outlet",
-          "detail": "The only outlet in this plan. Keep the visit short and protect baggage capacity; skip it if arrival is delayed.",
+          "title": "McArthurGlen option",
+          "detail": "Use only if arrival is smooth; keep the visit short and protect baggage capacity.",
           "kind": "shop"
         },
         {
           "time": "11:00",
-          "title": "Outlet coffee / light lunch",
-          "detail": "Keep receipts and avoid bulky purchases until baggage limits are clear.",
+          "title": "Coffee / light lunch",
+          "detail": "Keep the first meal easy and nearby.",
           "kind": "food"
         },
         {
           "time": "12:00",
-          "title": "Transfer to Vancouver hotel",
-          "detail": "Canada Line or car transfer, depending on the hotel.",
+          "title": "Transfer to Vancouver stay",
+          "detail": "Head to the first three-night Vancouver base.",
           "kind": "travel"
         },
         {
           "time": "13:00",
-          "title": "Check-in / luggage drop",
+          "title": "Luggage drop / check-in",
           "detail": "Ask about early check-in or leave bags securely.",
           "kind": "rest"
         },
@@ -156,7 +150,7 @@
         {
           "time": "15:00",
           "title": "Easy waterfront walk",
-          "detail": "Coal Harbour or a short hotel-neighbourhood walk.",
+          "detail": "Coal Harbour, English Bay or the nearest calm neighbourhood option.",
           "kind": "walk"
         },
         {
@@ -167,27 +161,27 @@
         },
         {
           "time": "17:00",
-          "title": "Dinner option",
-          "detail": "Blue Water Cafe, Elisa, ARC or Kissa Tanto. Reserve only after the flight is known.",
+          "title": "Dinner nearby",
+          "detail": "Choose somewhere close to the stay.",
           "kind": "food"
         },
         {
           "time": "18:00",
           "title": "Dinner",
-          "detail": "Choose one nearby restaurant, not a cross-city transfer.",
+          "detail": "Keep the first evening short.",
           "kind": "food"
         },
         {
           "time": "19:00",
-          "title": "Dinner / settle",
-          "detail": "Keep the first evening short.",
-          "kind": "rest"
+          "title": "Settle in",
+          "detail": "Confirm tomorrow's city plan and rental-car timing.",
+          "kind": "plan"
         },
         {
           "time": "20:00",
-          "title": "Tomorrow preview",
-          "detail": "Stanley Park, Granville Island and Gastown.",
-          "kind": "plan"
+          "title": "Wind down",
+          "detail": "Prepare for a normal 08:00 start.",
+          "kind": "rest"
         },
         {
           "time": "21:00",
@@ -214,73 +208,73 @@
       "label": "Day 2 · Vancouver highlights",
       "base": "Vancouver",
       "route": "Stanley Park → Granville Island → Gastown",
-      "focus": "The classic city day, paced as a walkable sequence.",
-      "overnight": "Vancouver",
+      "focus": "Use the first full day for Vancouver's classic waterfront and market sequence.",
+      "overnight": "Vancouver Airbnb / hotel",
       "blocks": [
         {
           "time": "08:00",
-          "title": "Stanley Park",
-          "detail": "Totem poles, forest paths and Coal Harbour edge.",
-          "kind": "walk"
+          "title": "Breakfast",
+          "detail": "Start at the agreed 08:00 wake-up time.",
+          "kind": "food"
         },
         {
           "time": "09:00",
-          "title": "Stanley Park",
-          "detail": "Finish the chosen loop; do not force the entire seawall.",
+          "title": "Stanley Park seawall",
+          "detail": "Walk or rent bikes if weather is good.",
           "kind": "walk"
         },
         {
           "time": "10:00",
-          "title": "Transit to Granville Island",
-          "detail": "Allow transfer and queue time.",
-          "kind": "travel"
+          "title": "Stanley Park",
+          "detail": "Totem poles, forest paths and Coal Harbour edge.",
+          "kind": "explore"
         },
         {
           "time": "11:00",
-          "title": "Granville Island Public Market",
-          "detail": "Market browsing and early lunch.",
-          "kind": "food"
+          "title": "Stanley Park",
+          "detail": "Finish a comfortable loop; do not force the entire seawall.",
+          "kind": "walk"
         },
         {
           "time": "12:00",
+          "title": "Granville Island transfer",
+          "detail": "Allow transit and queue time.",
+          "kind": "travel"
+        },
+        {
+          "time": "13:00",
+          "title": "Granville Island Public Market",
+          "detail": "Market browsing and lunch.",
+          "kind": "food"
+        },
+        {
+          "time": "14:00",
           "title": "Granville Island",
           "detail": "Studios, shops and waterfront.",
           "kind": "explore"
         },
         {
-          "time": "13:00",
+          "time": "15:00",
           "title": "False Creek / Yaletown",
-          "detail": "Aquabus or walk if energy is good.",
+          "detail": "Aquabus or an easy walk if energy is good.",
           "kind": "walk"
         },
         {
-          "time": "14:00",
-          "title": "Yaletown / Robson Street",
-          "detail": "Flexible city shopping and coffee.",
-          "kind": "explore"
-        },
-        {
-          "time": "15:00",
+          "time": "16:00",
           "title": "Gastown",
           "detail": "Water Street, galleries and historic streets.",
           "kind": "explore"
         },
         {
-          "time": "16:00",
-          "title": "Canada Place waterfront",
-          "detail": "Return toward hotel before dinner.",
-          "kind": "walk"
-        },
-        {
           "time": "17:00",
-          "title": "Rest / dress",
-          "detail": "Protect the evening.",
-          "kind": "rest"
+          "title": "Canada Place",
+          "detail": "Return toward the stay before dinner.",
+          "kind": "walk"
         },
         {
           "time": "18:00",
           "title": "Dinner",
-          "detail": "CinCin, Tableau Bar Bistro or a Yaletown restaurant.",
+          "detail": "Choose one neighbourhood restaurant.",
           "kind": "food"
         },
         {
@@ -291,14 +285,14 @@
         },
         {
           "time": "20:00",
-          "title": "Pack city bags",
-          "detail": "Keep road layers and documents ready.",
+          "title": "Pack for road start",
+          "detail": "Layers, snacks, documents and rental-car details.",
           "kind": "plan"
         },
         {
           "time": "21:00",
           "title": "Sleep",
-          "detail": "Tomorrow is another full city day.",
+          "detail": "Tomorrow is North Shore day.",
           "kind": "rest"
         },
         {
@@ -320,91 +314,91 @@
       "label": "Day 3 · Vancouver North Shore",
       "base": "Vancouver",
       "route": "Downtown → Capilano or Grouse Mountain → Kitsilano",
-      "focus": "Use the fourth day of the trip for North Shore nature, with a softer city evening.",
-      "overnight": "Vancouver",
+      "focus": "Keep the third Vancouver day local and flexible before picking up the car.",
+      "overnight": "Vancouver Airbnb / hotel",
       "blocks": [
         {
           "time": "08:00",
-          "title": "Capilano Suspension Bridge or Grouse",
-          "detail": "Choose one. Do not stack both unless you want a long day.",
-          "kind": "explore"
+          "title": "Breakfast",
+          "detail": "Check weather before committing to the North Shore.",
+          "kind": "food"
         },
         {
           "time": "09:00",
-          "title": "North Shore attraction",
-          "detail": "Allow time for trails, queues and viewpoints.",
-          "kind": "explore"
+          "title": "Transit to North Shore",
+          "detail": "Use SeaBus or the planned transfer.",
+          "kind": "travel"
         },
         {
           "time": "10:00",
+          "title": "Capilano or Grouse",
+          "detail": "Choose one headline attraction, not both.",
+          "kind": "explore"
+        },
+        {
+          "time": "11:00",
           "title": "North Shore attraction",
           "detail": "Continue the chosen activity.",
           "kind": "explore"
         },
         {
-          "time": "11:00",
-          "title": "North Shore coffee",
-          "detail": "Reset before returning downtown.",
-          "kind": "food"
-        },
-        {
           "time": "12:00",
-          "title": "Lunch",
-          "detail": "Lonsdale Quay or a nearby neighbourhood option.",
+          "title": "North Shore lunch",
+          "detail": "Lonsdale Quay or a nearby option.",
           "kind": "food"
         },
         {
           "time": "13:00",
           "title": "Return downtown",
-          "detail": "Bus / SeaBus transfer buffer.",
+          "detail": "Build a transfer buffer.",
           "kind": "travel"
         },
         {
           "time": "14:00",
           "title": "Kitsilano or English Bay",
-          "detail": "Choose beach, café or rest.",
+          "detail": "Beach, café or rest.",
           "kind": "walk"
         },
         {
           "time": "15:00",
-          "title": "Kitsilano / English Bay",
-          "detail": "Easy afternoon.",
+          "title": "Easy city afternoon",
+          "detail": "Keep this deliberately light.",
           "kind": "walk"
         },
         {
           "time": "16:00",
           "title": "Hotel reset",
-          "detail": "Tomorrow is the road start.",
+          "detail": "Prepare for the road start tomorrow.",
           "kind": "rest"
         },
         {
           "time": "17:00",
-          "title": "Rental-car planning",
-          "detail": "Confirm pickup, AWD/SUV and winter-tire policy.",
+          "title": "Rental-car check",
+          "detail": "Confirm pickup, AWD/SUV, tires and roadside cover.",
           "kind": "plan"
         },
         {
           "time": "18:00",
           "title": "Dinner",
-          "detail": "Kitsilano or downtown.",
+          "detail": "Stay close to the Vancouver base.",
           "kind": "food"
         },
         {
           "time": "19:00",
           "title": "Dinner",
-          "detail": "Keep it close to the hotel.",
+          "detail": "Keep the evening unhurried.",
           "kind": "food"
         },
         {
           "time": "20:00",
-          "title": "Pack for the Rockies",
-          "detail": "Layers, offline maps, snacks and documents.",
+          "title": "Pack for Kamloops",
+          "detail": "Layers, snacks, offline maps and documents.",
           "kind": "plan"
         },
         {
           "time": "21:00",
           "title": "Sleep",
-          "detail": "Final Vancouver night before the drive.",
+          "detail": "Final first-stay Vancouver night.",
           "kind": "rest"
         },
         {
@@ -423,100 +417,100 @@
     },
     {
       "date": "2026-09-26",
-      "label": "Day 4 · Vancouver to Kamloops via Whistler",
+      "label": "Day 4 · Vancouver to Kamloops via Sea-to-Sky",
       "base": "Kamloops",
-      "route": "Vancouver → Sea-to-Sky → Squamish → Whistler → Kamloops",
-      "focus": "Start the road trip with the scenic corridor, then make a practical interior overnight.",
-      "overnight": "Kamloops",
+      "route": "Vancouver → Horseshoe Bay → Squamish → Whistler → Pemberton → Kamloops",
+      "focus": "Take the scenic Sea-to-Sky and Duffey Lake route, accepting that this is a long transfer day.",
+      "overnight": "Kamloops hotel",
       "blocks": [
         {
           "time": "08:00",
-          "title": "Drive to Horseshoe Bay",
-          "detail": "Sea-to-Sky Highway begins.",
+          "title": "Breakfast + check out",
+          "detail": "Keep the 08:00 start; collect the rental car afterward.",
           "kind": "travel"
         },
         {
           "time": "09:00",
-          "title": "Howe Sound stop",
-          "detail": "Short viewpoint near Horseshoe Bay.",
-          "kind": "stop"
+          "title": "Collect rental car",
+          "detail": "Inspect tires, winter-tire policy, insurance and roadside assistance.",
+          "kind": "travel"
         },
         {
           "time": "10:00",
-          "title": "Shannon Falls / Squamish",
-          "detail": "Short walk or Sea to Sky Gondola if pre-booked and weather is clear.",
-          "kind": "explore"
+          "title": "Drive to Horseshoe Bay",
+          "detail": "Begin Highway 99 with a traffic buffer.",
+          "kind": "travel"
         },
         {
           "time": "11:00",
-          "title": "Squamish",
-          "detail": "Continue the chosen stop.",
-          "kind": "explore"
-        },
-        {
-          "time": "12:00",
-          "title": "Lunch in Squamish",
-          "detail": "Eat before heading toward Whistler.",
-          "kind": "food"
-        },
-        {
-          "time": "13:00",
-          "title": "Drive to Whistler",
-          "detail": "Optional Brandywine Falls if open.",
-          "kind": "travel"
-        },
-        {
-          "time": "14:00",
-          "title": "Whistler Village stop",
-          "detail": "Walk, coffee and mountain views. Do not turn this into an overnight unless preferred.",
-          "kind": "explore"
-        },
-        {
-          "time": "15:00",
-          "title": "Whistler / fuel",
-          "detail": "Fuel and check the Duffy Lake route before continuing.",
+          "title": "Howe Sound viewpoint",
+          "detail": "Short photo stop.",
           "kind": "stop"
         },
         {
-          "time": "16:00",
-          "title": "Drive toward Kamloops",
-          "detail": "Long transfer block. Weather-sensitive routes need same-day confirmation.",
+          "time": "12:00",
+          "title": "Shannon Falls / Squamish",
+          "detail": "Choose a short walk or viewpoint.",
+          "kind": "explore"
+        },
+        {
+          "time": "13:00",
+          "title": "Lunch in Squamish",
+          "detail": "Eat before heading inland.",
+          "kind": "food"
+        },
+        {
+          "time": "14:00",
+          "title": "Drive to Whistler",
+          "detail": "Optional Brandywine Falls if access and time allow.",
           "kind": "travel"
         },
         {
+          "time": "15:00",
+          "title": "Whistler Village",
+          "detail": "Walk, coffee and mountain views; do not turn it into an overnight.",
+          "kind": "explore"
+        },
+        {
+          "time": "16:00",
+          "title": "Fuel and route check",
+          "detail": "Confirm Duffey Lake Road conditions before continuing.",
+          "kind": "stop"
+        },
+        {
           "time": "17:00",
-          "title": "Drive toward Kamloops",
-          "detail": "Keep a food and fuel buffer.",
+          "title": "Pemberton / Duffey Lake route",
+          "detail": "Long scenic transfer; keep food and daylight buffers.",
           "kind": "travel"
         },
         {
           "time": "18:00",
-          "title": "Drive / arrival buffer",
-          "detail": "Check in as soon as practical.",
+          "title": "Seton / Lillooet direction",
+          "detail": "Continue only if road and weather conditions are good.",
           "kind": "travel"
         },
         {
           "time": "19:00",
-          "title": "Kamloops dinner",
-          "detail": "Hotel restaurant or nearby simple dinner.",
-          "kind": "food"
+          "title": "Drive toward Kamloops",
+          "detail": "Use the fastest safe continuation and avoid extra detours.",
+          "kind": "travel"
         },
         {
           "time": "20:00",
-          "title": "Road reset",
-          "detail": "Confirm Revelstoke and Canmore bookings.",
-          "kind": "plan"
+          "title": "Kamloops arrival buffer",
+          "detail": "Check in as soon as practical.",
+          "kind": "travel"
         },
         {
           "time": "21:00",
-          "title": "Sleep",
-          "detail": "Recover after the longest transfer so far.",
-          "kind": "rest"
+          "title": "Dinner",
+          "detail": "Simple nearby meal.",
+          "kind": "food"
         },
         {
           "time": "22:00",
           "title": "Sleep",
-          "detail": "Overnight recovery.",
+          "detail": "Recover after the long scenic drive.",
           "kind": "rest"
         },
         {
@@ -531,86 +525,86 @@
       "date": "2026-09-27",
       "label": "Day 5 · Kamloops to Golden",
       "base": "Golden",
-      "route": "Kamloops → Revelstoke → Rogers Pass → Golden",
-      "focus": "Use Golden as the dedicated mountain stopover rather than rushing all the way to Canmore.",
-      "overnight": "Golden",
+      "route": "Kamloops → Salmon Arm → Revelstoke → Rogers Pass → Golden",
+      "focus": "Use the Trans-Canada eastbound route and arrive in Golden for the first fixed Airbnb stay.",
+      "overnight": "Golden Airbnb",
       "blocks": [
         {
           "time": "08:00",
-          "title": "Shuswap / Salmon Arm",
-          "detail": "Coffee and short rest stop.",
-          "kind": "stop"
+          "title": "Breakfast + check out",
+          "detail": "Fuel and check DriveBC before leaving.",
+          "kind": "travel"
         },
         {
           "time": "09:00",
-          "title": "Continue to Revelstoke",
-          "detail": "Lake and mountain scenery.",
+          "title": "Depart Kamloops",
+          "detail": "Head east on the Trans-Canada Highway.",
           "kind": "travel"
         },
         {
           "time": "10:00",
-          "title": "Revelstoke stop",
-          "detail": "Fuel, coffee and optional railway museum if timing allows.",
+          "title": "Shuswap / Salmon Arm",
+          "detail": "Coffee and a short waterfront reset.",
           "kind": "stop"
         },
         {
           "time": "11:00",
-          "title": "Rogers Pass direction",
-          "detail": "Continue through the mountain corridor.",
+          "title": "Continue toward Revelstoke",
+          "detail": "Lake and mountain scenery.",
           "kind": "travel"
         },
         {
           "time": "12:00",
-          "title": "Packed lunch / pass stop",
-          "detail": "Use a safe designated stop and check road conditions.",
+          "title": "Revelstoke lunch / fuel",
+          "detail": "Refuel before the pass.",
           "kind": "food"
         },
         {
           "time": "13:00",
-          "title": "Rogers Pass / Glacier area",
-          "detail": "Short viewpoint or visitor-centre stop if open and timing allows.",
+          "title": "Revelstoke town option",
+          "detail": "Keep the stop short; the priority is Golden check-in.",
           "kind": "explore"
         },
         {
           "time": "14:00",
-          "title": "Drive to Golden",
-          "detail": "Keep the afternoon transfer comfortable.",
+          "title": "Rogers Pass direction",
+          "detail": "Continue through Glacier National Park.",
           "kind": "travel"
         },
         {
           "time": "15:00",
-          "title": "Golden check-in",
-          "detail": "Settle into the dedicated Golden overnight.",
-          "kind": "travel"
-        },
-        {
-          "time": "16:00",
-          "title": "Golden town / Kicking Horse River",
-          "detail": "Easy walk and mountain-town orientation.",
+          "title": "Rogers Pass viewpoint",
+          "detail": "Short viewpoint or visitor-centre stop if open.",
           "kind": "explore"
         },
         {
+          "time": "16:00",
+          "title": "Drive to Golden",
+          "detail": "Keep the final transfer comfortable.",
+          "kind": "travel"
+        },
+        {
           "time": "17:00",
-          "title": "Golden rest",
-          "detail": "Protect the next day's transfer to Canmore.",
-          "kind": "rest"
+          "title": "Golden Airbnb check-in",
+          "detail": "Settle into the 27–28 September stay.",
+          "kind": "travel"
         },
         {
           "time": "18:00",
-          "title": "Golden dinner",
-          "detail": "Choose a nearby Golden restaurant after checking current hours.",
-          "kind": "food"
+          "title": "Golden town / river walk",
+          "detail": "Easy orientation close to the accommodation.",
+          "kind": "walk"
         },
         {
           "time": "19:00",
-          "title": "Dinner",
-          "detail": "Keep the evening local and unhurried.",
+          "title": "Golden dinner",
+          "detail": "Choose a nearby restaurant.",
           "kind": "food"
         },
         {
           "time": "20:00",
-          "title": "Plan Golden to Canmore",
-          "detail": "Check Yoho access, weather, fuel and the Canmore check-in.",
+          "title": "Plan Yoho and Harvie Heights move",
+          "detail": "Check Emerald Lake, Lake Louise access and road conditions.",
           "kind": "plan"
         },
         {
@@ -635,94 +629,94 @@
     },
     {
       "date": "2026-09-28",
-      "label": "Day 6 · Golden to Canmore",
-      "base": "Canmore",
-      "route": "Golden → Yoho / Emerald Lake option → Lake Louise → Canmore",
-      "focus": "Move into Canmore for the economical Rockies base; keep Yoho stops flexible around weather and access.",
-      "overnight": "Canmore",
+      "label": "Day 6 · Golden to Harvie Heights via Yoho",
+      "base": "Harvie Heights",
+      "route": "Golden → Field → Emerald Lake → Lake Louise → Harvie Heights",
+      "focus": "Move east through Yoho and Lake Louise so the next two nights are positioned for Banff and the lakes.",
+      "overnight": "Harvie Heights Airbnb",
       "blocks": [
         {
           "time": "08:00",
-          "title": "Yoho / Field area",
-          "detail": "Coffee and a short scenic stop if conditions allow.",
-          "kind": "stop"
+          "title": "Breakfast + check out",
+          "detail": "Leave Golden at the agreed 08:00 start.",
+          "kind": "travel"
         },
         {
           "time": "09:00",
-          "title": "Emerald Lake option",
-          "detail": "Use only if access, parking and daylight fit; otherwise continue toward Lake Louise.",
-          "kind": "explore"
+          "title": "Yoho / Field",
+          "detail": "Coffee and a short scenic stop.",
+          "kind": "stop"
         },
         {
           "time": "10:00",
-          "title": "Emerald Lake / Yoho option",
-          "detail": "Keep this as a flexible stop, not a fixed reservation.",
+          "title": "Emerald Lake",
+          "detail": "Lakeshore walk if access, parking and weather cooperate.",
           "kind": "explore"
         },
         {
           "time": "11:00",
-          "title": "Drive toward Lake Louise",
-          "detail": "Allow road and parking buffer.",
-          "kind": "travel"
+          "title": "Natural Bridge",
+          "detail": "Short stop on the way back toward the Trans-Canada.",
+          "kind": "explore"
         },
         {
           "time": "12:00",
-          "title": "Lake Louise village / lunch",
-          "detail": "Quick lunch and fuel before the final leg.",
+          "title": "Lunch near Field / Lake Louise",
+          "detail": "Refuel before the afternoon move.",
           "kind": "food"
         },
         {
           "time": "13:00",
-          "title": "Lake Louise lakeshore option",
-          "detail": "Only a brief visit if parking and time permit; the dedicated lake day remains 29 Sep.",
-          "kind": "explore"
+          "title": "Lake Louise village",
+          "detail": "Collect groceries and confirm shuttle instructions.",
+          "kind": "stop"
         },
         {
           "time": "14:00",
-          "title": "Drive to Canmore",
-          "detail": "Shorter final transfer with arrival buffer.",
-          "kind": "travel"
+          "title": "Lake Louise lakeshore option",
+          "detail": "Keep this brief because the dedicated lake day is tomorrow.",
+          "kind": "explore"
         },
         {
           "time": "15:00",
-          "title": "Canmore check-in",
-          "detail": "Main economical base begins.",
+          "title": "Drive to Harvie Heights",
+          "detail": "Use Highway 1 toward Canmore; keep check-in flexible.",
           "kind": "travel"
         },
         {
           "time": "16:00",
-          "title": "Canmore groceries / walk",
-          "detail": "Set up the base for the Rockies portion.",
-          "kind": "explore"
+          "title": "Harvie Heights Airbnb check-in",
+          "detail": "Settle into the 28–30 September stay.",
+          "kind": "travel"
         },
         {
           "time": "17:00",
-          "title": "Rest",
-          "detail": "Recover after the Golden transfer.",
-          "kind": "rest"
+          "title": "Groceries / reset",
+          "detail": "Prepare breakfast and shuttle essentials.",
+          "kind": "plan"
         },
         {
           "time": "18:00",
           "title": "Dinner",
-          "detail": "The Trough, Communitea Café or Rocky Mountain Flatbread.",
+          "detail": "Canmore or the Airbnb kitchen.",
           "kind": "food"
         },
         {
           "time": "19:00",
-          "title": "Dinner",
-          "detail": "Local Canmore evening.",
-          "kind": "food"
+          "title": "Lake day preparation",
+          "detail": "Confirm Lake Louise / Moraine Lake reservations and transport.",
+          "kind": "plan"
         },
         {
           "time": "20:00",
-          "title": "Lake Louise shuttle prep",
-          "detail": "Confirm reservation, Park and Ride and pass for the 29 Sep lake day.",
-          "kind": "plan"
+          "title": "Quiet evening",
+          "detail": "Protect energy for tomorrow's reservation-led day.",
+          "kind": "rest"
         },
         {
           "time": "21:00",
           "title": "Sleep",
-          "detail": "Canmore overnight.",
+          "detail": "Harvie Heights night 1 of 2.",
           "kind": "rest"
         },
         {
@@ -741,94 +735,94 @@
     },
     {
       "date": "2026-09-29",
-      "label": "Day 7 · Lake Louise, Moraine Lake and Yoho",
-      "base": "Canmore",
-      "route": "Canmore → Lake Louise Park and Ride → Lake Louise / Moraine Lake → Emerald Lake",
-      "focus": "One reservation-led lake day. Keep Emerald Lake as the flex choice, not a guarantee.",
-      "overnight": "Canmore",
+      "label": "Day 7 · Lake Louise and Moraine Lake",
+      "base": "Harvie Heights",
+      "route": "Harvie Heights → Lake Louise Park and Ride → Lake Louise / Moraine Lake → Harvie Heights",
+      "focus": "Use Harvie Heights as the practical base for the reservation-led lake day; do not rely on personal-vehicle access to Moraine Lake Road.",
+      "overnight": "Harvie Heights Airbnb",
       "blocks": [
         {
           "time": "08:00",
-          "title": "Shuttle / access",
-          "detail": "Moraine Lake Road is closed to personal vehicles. Use confirmed shuttle or licensed operator.",
-          "kind": "travel"
+          "title": "Breakfast",
+          "detail": "Start at 08:00 and use the confirmed shuttle plan.",
+          "kind": "food"
         },
         {
           "time": "09:00",
-          "title": "Lake Louise",
-          "detail": "Lakeshore and photos.",
-          "kind": "explore"
+          "title": "Drive to Lake Louise Park and Ride",
+          "detail": "Allow parking and queue time; follow the reservation instructions.",
+          "kind": "travel"
         },
         {
           "time": "10:00",
-          "title": "Lake Louise",
-          "detail": "Short trail only if conditions allow.",
-          "kind": "explore"
+          "title": "Lake Louise shuttle / access",
+          "detail": "Use the confirmed shuttle or licensed operator.",
+          "kind": "travel"
         },
         {
           "time": "11:00",
-          "title": "Lake Louise / shuttle connection",
-          "detail": "Build queue buffer.",
-          "kind": "travel"
+          "title": "Lake Louise lakeshore",
+          "detail": "Photos and a modest lakeshore walk.",
+          "kind": "explore"
         },
         {
           "time": "12:00",
-          "title": "Moraine Lake transfer",
-          "detail": "Use reserved connection if included.",
-          "kind": "travel"
+          "title": "Lake Louise lunch",
+          "detail": "Use the booked or practical lunch option.",
+          "kind": "food"
         },
         {
           "time": "13:00",
+          "title": "Moraine Lake transfer",
+          "detail": "Use the reserved connection; Moraine Lake Road is closed to personal vehicles.",
+          "kind": "travel"
+        },
+        {
+          "time": "14:00",
           "title": "Moraine Lake",
           "detail": "Rockpile viewpoint and lakeshore.",
           "kind": "explore"
         },
         {
-          "time": "14:00",
+          "time": "15:00",
           "title": "Moraine Lake",
           "detail": "Keep hiking modest and weather-aware.",
           "kind": "explore"
         },
         {
-          "time": "15:00",
+          "time": "16:00",
           "title": "Return shuttle",
-          "detail": "Expect waiting time.",
+          "detail": "Expect waiting time and preserve a return buffer.",
           "kind": "travel"
         },
         {
-          "time": "16:00",
-          "title": "Yoho / Emerald Lake option",
-          "detail": "Only if the shuttle return and daylight leave room.",
-          "kind": "explore"
-        },
-        {
           "time": "17:00",
-          "title": "Return Canmore",
-          "detail": "Long but straightforward return.",
+          "title": "Return to Harvie Heights",
+          "detail": "Unload and reset at the Airbnb.",
           "kind": "travel"
         },
         {
           "time": "18:00",
           "title": "Dinner",
-          "detail": "Walliser Stube or Post Hotel are splurge candidates; Canmore is the practical fallback.",
+          "detail": "Canmore or home-cooked dinner.",
           "kind": "food"
         },
         {
           "time": "19:00",
-          "title": "Dinner",
-          "detail": "Keep tomorrow's cabin move easy.",
-          "kind": "food"
+          "title": "Pack for Bragg Creek",
+          "detail": "One small road bag and groceries for the next Airbnb.",
+          "kind": "plan"
         },
         {
           "time": "20:00",
-          "title": "Pack cabin bag",
-          "detail": "Two nights only. Leave unnecessary luggage in Canmore if hotel permits.",
+          "title": "Weather / road check",
+          "detail": "Check Parks Canada, 511 Alberta and Highway 1 conditions.",
           "kind": "plan"
         },
         {
           "time": "21:00",
           "title": "Sleep",
-          "detail": "Cabin move tomorrow.",
+          "detail": "Final Harvie Heights night.",
           "kind": "rest"
         },
         {
@@ -847,94 +841,94 @@
     },
     {
       "date": "2026-09-30",
-      "label": "Day 8 · Cabin night 1",
-      "base": "Cabin zone",
-      "route": "Canmore → Johnston Canyon / Bow Valley Parkway → Baker Creek or Storm Mountain",
-      "focus": "Start the two-night romantic cabin experience.",
-      "overnight": "Baker Creek by Basecamp or Storm Mountain Lodge",
+      "label": "Day 8 · Harvie Heights to Bragg Creek",
+      "base": "Bragg Creek",
+      "route": "Harvie Heights → Canmore → Kananaskis / Calgary west → Bragg Creek",
+      "focus": "Use the move day to transition from the Rockies lake base to the foothills Airbnb without unnecessary backtracking.",
+      "overnight": "Bragg Creek Airbnb",
       "blocks": [
         {
           "time": "08:00",
-          "title": "Johnston Canyon",
-          "detail": "Short walk if open and conditions are safe.",
-          "kind": "explore"
+          "title": "Breakfast + check out",
+          "detail": "Pack the Harvie Heights Airbnb and leave at 08:00.",
+          "kind": "travel"
         },
         {
           "time": "09:00",
-          "title": "Johnston Canyon",
-          "detail": "Keep the hike within energy and daylight.",
-          "kind": "explore"
+          "title": "Canmore / Bow Valley",
+          "detail": "Final local coffee or groceries.",
+          "kind": "stop"
         },
         {
           "time": "10:00",
-          "title": "Bow Valley Parkway",
-          "detail": "Morant's Curve or a short viewpoint.",
+          "title": "Banff option",
+          "detail": "Choose Banff Avenue or Bow Falls only if energy is good.",
           "kind": "explore"
         },
         {
           "time": "11:00",
-          "title": "Coffee / picnic",
-          "detail": "Use packed food if remote.",
+          "title": "Banff / Canmore lunch",
+          "detail": "Keep the move day relaxed.",
           "kind": "food"
         },
         {
           "time": "12:00",
-          "title": "Drive to cabin",
-          "detail": "Short transfer.",
+          "title": "Drive toward Kananaskis",
+          "detail": "Use the foothills route toward Bragg Creek.",
           "kind": "travel"
         },
         {
           "time": "13:00",
-          "title": "Cabin check-in",
-          "detail": "Baker Creek or Storm Mountain. Storm has no kitchen, Wi-Fi or TV.",
-          "kind": "travel"
+          "title": "Kananaskis viewpoint option",
+          "detail": "Short stop only; avoid turning the transfer into a long hike.",
+          "kind": "explore"
         },
         {
           "time": "14:00",
-          "title": "Cabin reset",
-          "detail": "Fireplace, creek and quiet.",
-          "kind": "rest"
+          "title": "Kananaskis / Highway 40",
+          "detail": "Weather-sensitive mountain road; check 511 Alberta.",
+          "kind": "travel"
         },
         {
           "time": "15:00",
-          "title": "Cabin grounds",
-          "detail": "No ambitious excursion.",
-          "kind": "walk"
+          "title": "Bragg Creek approach",
+          "detail": "Stock up before the Airbnb if needed.",
+          "kind": "travel"
         },
         {
           "time": "16:00",
-          "title": "Cabin grounds",
-          "detail": "Read, nap or take photos.",
-          "kind": "rest"
+          "title": "Bragg Creek Airbnb check-in",
+          "detail": "Settle into the 30 September–2 October stay.",
+          "kind": "travel"
         },
         {
           "time": "17:00",
-          "title": "Dinner prep / lodge dining",
-          "detail": "Storm has on-site dining; Baker Creek has café / food packages. Reserve ahead.",
-          "kind": "food"
+          "title": "Property reset",
+          "detail": "Unpack and enjoy the foothills setting.",
+          "kind": "rest"
         },
         {
           "time": "18:00",
           "title": "Dinner",
-          "detail": "Cabin or lodge dining.",
+          "detail": "Cook at the Airbnb or eat in Bragg Creek.",
           "kind": "food"
         },
         {
           "time": "19:00",
-          "title": "Fireplace evening",
-          "detail": "Romantic cabin night.",
-          "kind": "rest"
+          "title": "Elbow Valley orientation",
+          "detail": "Short local walk if daylight and conditions allow.",
+          "kind": "walk"
         },
         {
           "time": "20:00",
-          "title": "Fireplace evening",
-          "detail": "Keep phones and driving plans off.",
-          "kind": "rest"
+          "title": "Plan foothills day",
+          "detail": "Choose Bragg Creek, Kananaskis or Elbow Falls based on weather.",
+          "kind": "plan"
         },
         {
           "time": "21:00",
           "title": "Sleep",
-          "detail": "Cabin night 1 of 2.",
+          "detail": "Bragg Creek night 1 of 2.",
           "kind": "rest"
         },
         {
@@ -953,94 +947,94 @@
     },
     {
       "date": "2026-10-01",
-      "label": "Day 9 · Cabin night 2",
-      "base": "Cabin zone",
-      "route": "Cabin → Bow Valley Parkway / Lake Louise flex loop",
-      "focus": "A full romantic cabin day. Keep Emerald Lake as the optional daylight excursion.",
-      "overnight": "Baker Creek by Basecamp or Storm Mountain Lodge",
+      "label": "Day 9 · Bragg Creek and Kananaskis",
+      "base": "Bragg Creek",
+      "route": "Bragg Creek → Elbow Falls / Kananaskis option → Bragg Creek",
+      "focus": "Make the Bragg Creek stay feel distinct: a lower-mileage foothills day before the long northbound transfer.",
+      "overnight": "Bragg Creek Airbnb",
       "blocks": [
         {
           "time": "08:00",
-          "title": "Short nature walk",
-          "detail": "Use lodge grounds or a confirmed nearby trail.",
-          "kind": "walk"
+          "title": "Breakfast",
+          "detail": "Slow start at the Airbnb.",
+          "kind": "food"
         },
         {
           "time": "09:00",
-          "title": "Short nature walk",
-          "detail": "Keep the day restorative.",
-          "kind": "walk"
+          "title": "Bragg Creek village",
+          "detail": "Coffee, supplies and local orientation.",
+          "kind": "explore"
         },
         {
           "time": "10:00",
-          "title": "Emerald Lake option",
-          "detail": "Only if road, weather and daylight are comfortable. Otherwise stay at the cabin.",
+          "title": "Elbow Falls option",
+          "detail": "Short walk if the road and trail are open and safe.",
           "kind": "explore"
         },
         {
           "time": "11:00",
-          "title": "Emerald Lake / cabin",
-          "detail": "Lakeshore loop or cabin time.",
-          "kind": "explore"
+          "title": "Elbow Valley",
+          "detail": "Scenic foothills drive; keep wildlife awareness high.",
+          "kind": "travel"
         },
         {
           "time": "12:00",
           "title": "Lunch",
-          "detail": "Lodge lunch or packed picnic.",
+          "detail": "Picnic or Bragg Creek restaurant.",
           "kind": "food"
         },
         {
           "time": "13:00",
-          "title": "Lake Louise / Bow Valley option",
-          "detail": "One nearby viewpoint, not a second lake marathon.",
-          "kind": "explore"
-        },
-        {
-          "time": "14:00",
-          "title": "Return to cabin",
-          "detail": "Enjoy the property.",
+          "title": "Kananaskis option",
+          "detail": "Drive only as far as conditions and daylight justify.",
           "kind": "travel"
         },
         {
+          "time": "14:00",
+          "title": "Kananaskis viewpoint / walk",
+          "detail": "Choose one modest outdoor stop.",
+          "kind": "explore"
+        },
+        {
           "time": "15:00",
-          "title": "Cabin reset",
-          "detail": "Fireplace and reading.",
-          "kind": "rest"
+          "title": "Return toward Bragg Creek",
+          "detail": "Do not add a second major hike.",
+          "kind": "travel"
         },
         {
           "time": "16:00",
-          "title": "Cabin reset",
-          "detail": "Keep luggage compact for tomorrow's early departure.",
+          "title": "Airbnb reset",
+          "detail": "Rest and enjoy the property.",
           "kind": "rest"
         },
         {
           "time": "17:00",
-          "title": "Dinner reservation",
-          "detail": "Storm Mountain dining or Baker Creek option.",
-          "kind": "food"
+          "title": "Pack for Yellowhead County",
+          "detail": "Prepare food, layers and offline maps for the long road day.",
+          "kind": "plan"
         },
         {
           "time": "18:00",
           "title": "Dinner",
-          "detail": "Romantic cabin dinner.",
+          "detail": "Home-cooked or local dinner.",
           "kind": "food"
         },
         {
           "time": "19:00",
-          "title": "Fireplace evening",
-          "detail": "No more driving.",
-          "kind": "rest"
+          "title": "Route check",
+          "detail": "Check 511 Alberta, Parks Canada and Icefields Parkway conditions.",
+          "kind": "plan"
         },
         {
           "time": "20:00",
-          "title": "Pack for Icefields Parkway",
-          "detail": "Fuel, lunch, layers and offline map.",
-          "kind": "plan"
+          "title": "Early wind-down",
+          "detail": "Tomorrow is the longest scenic transfer of the trip.",
+          "kind": "rest"
         },
         {
           "time": "21:00",
           "title": "Sleep",
-          "detail": "Cabin night 2 of 2.",
+          "detail": "Final Bragg Creek night.",
           "kind": "rest"
         },
         {
@@ -1059,94 +1053,94 @@
     },
     {
       "date": "2026-10-02",
-      "label": "Day 10 · Icefields Parkway to Jasper",
-      "base": "Jasper",
-      "route": "Cabin zone → Bow Lake → Peyto Lake → Columbia Icefield → Athabasca Falls → Jasper",
-      "focus": "Make the Parkway the main event. Stay in Jasper if possible; do not force a same-day return to Canmore.",
-      "overnight": "Jasper hotel / lodge",
+      "label": "Day 10 · Bragg Creek to Yellowhead County",
+      "base": "Yellowhead County",
+      "route": "Bragg Creek → Banff → Lake Louise → Icefields Parkway → Jasper area → Hinton / Yellowhead County",
+      "focus": "This is the critical long transfer. Use the Icefields Parkway as the day's attraction and treat Yellowhead County as the overnight base near Jasper/Hinton.",
+      "overnight": "Yellowhead County Airbnb",
       "blocks": [
         {
           "time": "08:00",
-          "title": "Bow Lake",
-          "detail": "Short lakeshore stop.",
-          "kind": "explore"
+          "title": "Breakfast + check out",
+          "detail": "Leave Bragg Creek at 08:00 with a full fuel and food check.",
+          "kind": "travel"
         },
         {
           "time": "09:00",
-          "title": "Peyto Lake",
-          "detail": "Viewpoint and short walk.",
-          "kind": "explore"
+          "title": "Drive toward Banff",
+          "detail": "Use Highway 1 and keep the mountain-road buffer.",
+          "kind": "travel"
         },
         {
           "time": "10:00",
-          "title": "Waterfowl / Mistaya",
-          "detail": "Choose one brief stop.",
-          "kind": "explore"
+          "title": "Banff / Lake Louise direction",
+          "detail": "Do not add a separate Banff attraction today.",
+          "kind": "travel"
         },
         {
           "time": "11:00",
-          "title": "Weeping Wall",
-          "detail": "Viewpoint and stretch.",
+          "title": "Lake Louise fuel / coffee",
+          "detail": "Short stop before the Parkway.",
           "kind": "stop"
         },
         {
           "time": "12:00",
-          "title": "Columbia Icefield Discovery Centre",
-          "detail": "Lunch, fuel and attraction status.",
-          "kind": "food"
+          "title": "Bow Lake",
+          "detail": "First major Icefields Parkway viewpoint.",
+          "kind": "explore"
         },
         {
           "time": "13:00",
-          "title": "Athabasca Glacier / Skywalk",
-          "detail": "Pre-book only; otherwise use a short viewpoint.",
+          "title": "Peyto Lake",
+          "detail": "Short viewpoint walk if conditions are safe.",
           "kind": "explore"
         },
         {
           "time": "14:00",
-          "title": "Columbia Icefield",
-          "detail": "Continue while daylight is good.",
+          "title": "Waterfowl Lakes / Mistaya",
+          "detail": "Choose one brief stop.",
           "kind": "explore"
         },
         {
           "time": "15:00",
-          "title": "Sunwapta Falls",
-          "detail": "Short walk if open.",
-          "kind": "explore"
+          "title": "Columbia Icefield",
+          "detail": "Lunch, fuel and attraction-status check.",
+          "kind": "food"
         },
         {
           "time": "16:00",
-          "title": "Athabasca Falls",
-          "detail": "Final major viewpoint.",
+          "title": "Athabasca Glacier viewpoint",
+          "detail": "Only use a pre-booked tour; otherwise keep this to a short viewpoint.",
           "kind": "explore"
         },
         {
           "time": "17:00",
-          "title": "Drive to Jasper",
-          "detail": "Arrival buffer.",
+          "title": "Continue toward Jasper / Hinton",
+          "detail": "Protect the late-afternoon daylight and avoid extra detours.",
           "kind": "travel"
         },
         {
           "time": "18:00",
-          "title": "Jasper check-in",
-          "detail": "Verify property operating status before booking.",
+          "title": "Jasper-area transfer",
+          "detail": "The Yellowhead County Airbnb is the fixed overnight target.",
           "kind": "travel"
         },
         {
           "time": "19:00",
-          "title": "Dinner",
-          "detail": "Jasper town restaurant or simple lodge meal.",
-          "kind": "food"
+          "title": "Yellowhead County Airbnb check-in",
+          "detail": "Settle into the 2–3 October stay.",
+          "kind": "travel"
         },
         {
           "time": "20:00",
-          "title": "Rest",
-          "detail": "Check Jasper bulletins for tomorrow.",
-          "kind": "rest"
+          "title": "Simple dinner",
+          "detail": "Eat at the Airbnb or use the nearest confirmed option.",
+          "kind": "food"
         },
         {
           "time": "21:00",
           "title": "Sleep",
-          "detail": "Do not make the return drive tonight.",
+          "detail": "Recover before the long Yellowhead-to-Revelstoke crossing.",
           "kind": "rest"
         },
         {
@@ -1165,100 +1159,100 @@
     },
     {
       "date": "2026-10-03",
-      "label": "Day 11 · Jasper morning, return to Canmore",
-      "base": "Canmore",
-      "route": "Jasper → Pyramid Lake / Patricia Lake → Icefields Parkway → Canmore",
-      "focus": "A long transfer back to the economical base. Skip Maligne Lake if it makes the return unsafe or too late.",
-      "overnight": "Canmore",
+      "label": "Day 11 · Yellowhead County to Revelstoke",
+      "base": "Revelstoke",
+      "route": "Yellowhead County / Hinton → Jasper → Icefields Parkway → Lake Louise → Rogers Pass → Revelstoke",
+      "focus": "Keep Jasper brief, then make the southbound Parkway and Rogers Pass the scenic route to the Revelstoke Airbnb. This is a very long day, so skip optional stops if timing slips.",
+      "overnight": "Revelstoke Airbnb",
       "blocks": [
         {
           "time": "08:00",
-          "title": "Patricia Lake",
-          "detail": "Short scenic stop.",
-          "kind": "explore"
+          "title": "Breakfast + check out",
+          "detail": "Start from the Yellowhead County Airbnb at 08:00.",
+          "kind": "travel"
         },
         {
           "time": "09:00",
-          "title": "Fuel and depart Jasper",
-          "detail": "Keep the return leg moving.",
-          "kind": "travel"
-        },
-        {
-          "time": "10:00",
-          "title": "Athabasca Falls / road stop",
-          "detail": "Use one short stop if missed.",
+          "title": "Jasper town / Pyramid Lake option",
+          "detail": "Choose one short morning stop only.",
           "kind": "explore"
         },
         {
-          "time": "11:00",
-          "title": "Sunwapta / Columbia area",
-          "detail": "Continue south.",
+          "time": "10:00",
+          "title": "Depart Jasper",
+          "detail": "Begin the southbound Icefields Parkway leg.",
           "kind": "travel"
+        },
+        {
+          "time": "11:00",
+          "title": "Athabasca Falls",
+          "detail": "Short stop if missed yesterday and conditions are safe.",
+          "kind": "explore"
         },
         {
           "time": "12:00",
-          "title": "Packed lunch",
-          "detail": "Designated stop, not a long restaurant detour.",
-          "kind": "food"
+          "title": "Sunwapta / Columbia area",
+          "detail": "Choose one stop and keep moving south.",
+          "kind": "travel"
         },
         {
           "time": "13:00",
-          "title": "Icefields Parkway return",
-          "detail": "Peyto or Bow Lake only if needed.",
-          "kind": "travel"
+          "title": "Packed lunch",
+          "detail": "Use a designated stop; avoid a restaurant detour.",
+          "kind": "food"
         },
         {
           "time": "14:00",
-          "title": "Continue to Lake Louise",
-          "detail": "Watch daylight and wildlife.",
-          "kind": "travel"
+          "title": "Columbia Icefield / Parker Ridge option",
+          "detail": "Only if daylight and timing remain comfortable.",
+          "kind": "explore"
         },
         {
           "time": "15:00",
-          "title": "Lake Louise village fuel / coffee",
-          "detail": "Short reset.",
-          "kind": "stop"
+          "title": "Peyto or Bow Lake option",
+          "detail": "Pick one final major viewpoint, not both.",
+          "kind": "explore"
         },
         {
           "time": "16:00",
-          "title": "Drive to Canmore",
-          "detail": "Final local leg.",
+          "title": "Drive to Lake Louise",
+          "detail": "Continue toward the Trans-Canada connection.",
           "kind": "travel"
         },
         {
           "time": "17:00",
-          "title": "Canmore check-in",
-          "detail": "Return to the main economical base.",
-          "kind": "travel"
+          "title": "Lake Louise / Golden direction",
+          "detail": "Fuel and check Rogers Pass conditions.",
+          "kind": "stop"
         },
         {
           "time": "18:00",
-          "title": "Dinner",
-          "detail": "The Trough, Communitea or Rocky Mountain Flatbread.",
-          "kind": "food"
+          "title": "Rogers Pass direction",
+          "detail": "Keep the final mountain transfer moving.",
+          "kind": "travel"
         },
         {
           "time": "19:00",
-          "title": "Dinner",
-          "detail": "Slow evening.",
-          "kind": "food"
+          "title": "Drive to Revelstoke",
+          "detail": "Arrival will be late if stops or conditions add time.",
+          "kind": "travel"
         },
         {
           "time": "20:00",
-          "title": "Plan Banff recovery day",
-          "detail": "Keep tomorrow local.",
-          "kind": "plan"
+          "title": "Revelstoke Airbnb check-in",
+          "detail": "Settle into the 3–4 October stay; skip town sightseeing tonight.",
+          "kind": "travel"
         },
         {
           "time": "21:00",
-          "title": "Sleep",
-          "detail": "Long transfer complete.",
-          "kind": "rest"
+          "title": "Dinner / rest",
+          "detail": "Simple meal and no more driving.",
+          "kind": "food"
         },
         {
           "time": "22:00",
           "title": "Sleep",
-          "detail": "Overnight recovery.",
+          "detail": "Recover after the longest road day.",
           "kind": "rest"
         },
         {
@@ -1271,94 +1265,94 @@
     },
     {
       "date": "2026-10-04",
-      "label": "Day 12 · Canmore / Banff recovery",
-      "base": "Canmore",
-      "route": "Canmore → optional Banff / local loop",
-      "focus": "A deliberately lower-mileage base day after Jasper.",
-      "overnight": "Canmore",
+      "label": "Day 12 · Revelstoke to Kelowna",
+      "base": "Kelowna",
+      "route": "Revelstoke → Sicamous → Vernon / Okanagan → Kelowna",
+      "focus": "Use the shorter transfer to reach the Okanagan Airbnb with time for a relaxed Kelowna afternoon.",
+      "overnight": "Kelowna Airbnb",
       "blocks": [
         {
           "time": "08:00",
-          "title": "Canmore cafés",
-          "detail": "Easy morning.",
-          "kind": "food"
+          "title": "Breakfast + check out",
+          "detail": "Fuel in Revelstoke before leaving.",
+          "kind": "travel"
         },
         {
           "time": "09:00",
-          "title": "Canmore shops / galleries",
-          "detail": "Local day.",
+          "title": "Mount Revelstoke option",
+          "detail": "Only if open and the previous day's arrival was not too late.",
           "kind": "explore"
         },
         {
           "time": "10:00",
-          "title": "Banff option",
-          "detail": "Drive to Banff only if energy is good.",
+          "title": "Depart toward Sicamous",
+          "detail": "Follow Highway 1 through the Shuswap.",
           "kind": "travel"
         },
         {
           "time": "11:00",
-          "title": "Banff Avenue or Bow Falls",
-          "detail": "One easy Banff stop.",
-          "kind": "explore"
+          "title": "Sicamous / Mara Lake",
+          "detail": "Coffee and short lake stop.",
+          "kind": "stop"
         },
         {
           "time": "12:00",
-          "title": "Lunch",
-          "detail": "The Bison, Park Distillery or Canmore fallback.",
-          "kind": "food"
+          "title": "Armstrong / Vernon direction",
+          "detail": "Continue south on the North Okanagan route.",
+          "kind": "travel"
         },
         {
           "time": "13:00",
-          "title": "Rest / Upper Hot Springs",
-          "detail": "Choose recovery over another attraction.",
-          "kind": "rest"
+          "title": "Lunch",
+          "detail": "Choose a practical stop before Kelowna.",
+          "kind": "food"
         },
         {
           "time": "14:00",
-          "title": "Rest",
-          "detail": "Flexible.",
-          "kind": "rest"
+          "title": "Kelowna approach",
+          "detail": "Allow urban traffic and Airbnb check-in buffer.",
+          "kind": "travel"
         },
         {
           "time": "15:00",
-          "title": "Canmore return",
-          "detail": "Coffee or local shopping.",
+          "title": "Kelowna Airbnb check-in",
+          "detail": "Settle into the 4–5 October stay.",
           "kind": "travel"
         },
         {
           "time": "16:00",
-          "title": "Canmore",
-          "detail": "Laundry and packing.",
-          "kind": "plan"
+          "title": "Okanagan lakefront",
+          "detail": "Easy waterfront walk or rest.",
+          "kind": "walk"
         },
         {
           "time": "17:00",
-          "title": "Hotel reset",
-          "detail": "Prepare for the return road.",
-          "kind": "rest"
+          "title": "Kelowna reset",
+          "detail": "Laundry, groceries and packing for Vancouver.",
+          "kind": "plan"
         },
         {
           "time": "18:00",
           "title": "Dinner",
-          "detail": "Canmore dinner.",
+          "detail": "Kelowna restaurant or the Airbnb.",
           "kind": "food"
         },
         {
           "time": "19:00",
-          "title": "Dinner",
-          "detail": "Keep the last Rockies evening easy.",
-          "kind": "food"
+          "title": "Lakefront evening",
+          "detail": "Keep the night relaxed.",
+          "kind": "walk"
         },
         {
           "time": "20:00",
-          "title": "Pack for Revelstoke",
-          "detail": "Check DriveBC and reserve road stop.",
+          "title": "Plan Vancouver transfer",
+          "detail": "Check Coquihalla / Highway 5 conditions and Vancouver traffic.",
           "kind": "plan"
         },
         {
           "time": "21:00",
           "title": "Sleep",
-          "detail": "Return drive begins tomorrow.",
+          "detail": "Kelowna overnight.",
           "kind": "rest"
         },
         {
@@ -1377,94 +1371,94 @@
     },
     {
       "date": "2026-10-05",
-      "label": "Day 13 · Canmore to Revelstoke",
-      "base": "Revelstoke",
-      "route": "Canmore → Banff / Yoho → Golden → Rogers Pass → Revelstoke",
-      "focus": "Start the two-day return to Vancouver with a practical mountain overnight.",
-      "overnight": "Revelstoke",
+      "label": "Day 13 · Kelowna to Vancouver",
+      "base": "Vancouver",
+      "route": "Kelowna → Merritt → Coquihalla → Vancouver",
+      "focus": "Return to Vancouver for the final two nights, using the fastest sensible route and protecting the evening.",
+      "overnight": "Vancouver Airbnb / hotel",
       "blocks": [
         {
           "time": "08:00",
-          "title": "Banff / Yoho viewpoint",
-          "detail": "Choose one short stop.",
-          "kind": "stop"
+          "title": "Breakfast + check out",
+          "detail": "Leave Kelowna at 08:00 after checking Highway 5 conditions.",
+          "kind": "travel"
         },
         {
           "time": "09:00",
-          "title": "Field / Golden",
-          "detail": "Coffee and fuel.",
-          "kind": "stop"
+          "title": "Drive toward Merritt",
+          "detail": "Take Highway 97C / 5 as conditions allow.",
+          "kind": "travel"
         },
         {
           "time": "10:00",
-          "title": "Golden to Rogers Pass",
-          "detail": "Mountain transfer.",
+          "title": "Okanagan Connector",
+          "detail": "Keep a fuel and weather buffer.",
           "kind": "travel"
         },
         {
           "time": "11:00",
-          "title": "Rogers Pass",
-          "detail": "Short viewpoint or visitor centre if open.",
-          "kind": "explore"
+          "title": "Merritt / fuel",
+          "detail": "Coffee, fuel and road check.",
+          "kind": "stop"
         },
         {
           "time": "12:00",
-          "title": "Packed lunch",
-          "detail": "Protect the afternoon arrival.",
-          "kind": "food"
-        },
-        {
-          "time": "13:00",
-          "title": "Drive to Revelstoke",
-          "detail": "Continue west.",
+          "title": "Coquihalla direction",
+          "detail": "Mountain highway transfer.",
           "kind": "travel"
         },
         {
+          "time": "13:00",
+          "title": "Lunch stop",
+          "detail": "Use a practical highway stop.",
+          "kind": "food"
+        },
+        {
           "time": "14:00",
-          "title": "Revelstoke check-in",
-          "detail": "Early arrival target.",
+          "title": "Continue toward Vancouver",
+          "detail": "Traffic buffer grows near the Lower Mainland.",
           "kind": "travel"
         },
         {
           "time": "15:00",
-          "title": "Riverfront / town",
-          "detail": "Coffee and walk.",
-          "kind": "explore"
+          "title": "Fraser Valley",
+          "detail": "Do not add detours today.",
+          "kind": "travel"
         },
         {
           "time": "16:00",
-          "title": "Revelstoke town",
-          "detail": "Souvenir / grocery hour.",
-          "kind": "explore"
+          "title": "Vancouver arrival",
+          "detail": "Head to the final two-night Vancouver base.",
+          "kind": "travel"
         },
         {
           "time": "17:00",
-          "title": "Rest",
-          "detail": "Prepare for the long final transfer.",
-          "kind": "rest"
+          "title": "Vancouver check-in",
+          "detail": "Settle into the final Vancouver stay.",
+          "kind": "travel"
         },
         {
           "time": "18:00",
-          "title": "Dinner",
-          "detail": "Revelstoke town dinner.",
+          "title": "Dinner nearby",
+          "detail": "Keep the evening local after the transfer.",
           "kind": "food"
         },
         {
           "time": "19:00",
-          "title": "Dinner",
-          "detail": "Early meal.",
-          "kind": "food"
+          "title": "Rest",
+          "detail": "No major sightseeing obligation.",
+          "kind": "rest"
         },
         {
           "time": "20:00",
-          "title": "Route and flight check",
-          "detail": "DriveBC, rental return and flight timing.",
+          "title": "Flight and outlet plan",
+          "detail": "Confirm CX867, baggage and whether McArthurGlen fits tomorrow without risk.",
           "kind": "plan"
         },
         {
           "time": "21:00",
           "title": "Sleep",
-          "detail": "Last road night.",
+          "detail": "Final Vancouver stay night 1 of 2.",
           "kind": "rest"
         },
         {
@@ -1483,94 +1477,94 @@
     },
     {
       "date": "2026-10-06",
-      "label": "Day 14 · Revelstoke to Vancouver",
-      "base": "Vancouver / Richmond",
-      "route": "Revelstoke → Vancouver / Richmond → McArthurGlen",
-      "focus": "Return to the YVR area, then use the final evening for the outlet only if the drive and rental-car timing cooperate.",
-      "overnight": "Vancouver or Richmond",
+      "label": "Day 14 · Vancouver final city day",
+      "base": "Vancouver",
+      "route": "Vancouver city → optional McArthurGlen → waterfront",
+      "focus": "Keep the last full day flexible and city-based; do not create a long excursion before the international departure.",
+      "overnight": "Vancouver Airbnb / hotel",
       "blocks": [
         {
           "time": "08:00",
-          "title": "Sicamous / Salmon Arm",
-          "detail": "Coffee and fuel.",
-          "kind": "stop"
+          "title": "Breakfast",
+          "detail": "Normal 08:00 start in Vancouver.",
+          "kind": "food"
         },
         {
           "time": "09:00",
-          "title": "Continue west",
-          "detail": "No major detours today.",
-          "kind": "travel"
+          "title": "Vancouver neighbourhood",
+          "detail": "Choose a nearby café or market.",
+          "kind": "explore"
         },
         {
           "time": "10:00",
-          "title": "Kamloops area",
-          "detail": "Rest stop and fuel.",
-          "kind": "stop"
+          "title": "McArthurGlen option",
+          "detail": "Use this safer shopping window only if luggage and current hours work.",
+          "kind": "shop"
         },
         {
           "time": "11:00",
-          "title": "Coquihalla / Highway 5",
-          "detail": "Weather and construction check.",
-          "kind": "travel"
+          "title": "McArthurGlen / Richmond",
+          "detail": "Keep purchases within airline baggage limits.",
+          "kind": "shop"
         },
         {
           "time": "12:00",
-          "title": "Lunch stop",
-          "detail": "Keep it efficient.",
+          "title": "Lunch",
+          "detail": "Stay near the chosen area.",
           "kind": "food"
         },
         {
           "time": "13:00",
-          "title": "Continue toward Hope",
-          "detail": "Traffic buffer.",
-          "kind": "travel"
+          "title": "Waterfront or Granville Island",
+          "detail": "One easy city option.",
+          "kind": "explore"
         },
         {
           "time": "14:00",
-          "title": "Hope / rest",
-          "detail": "Stretch and fuel.",
-          "kind": "stop"
+          "title": "Waterfront",
+          "detail": "Keep the afternoon unhurried.",
+          "kind": "walk"
         },
         {
           "time": "15:00",
-          "title": "Fraser Valley to Vancouver",
-          "detail": "Expect metro traffic.",
-          "kind": "travel"
+          "title": "Coffee / souvenirs",
+          "detail": "Final purchases and receipts.",
+          "kind": "shop"
         },
         {
           "time": "16:00",
-          "title": "Return rental car or hotel",
-          "detail": "Choose based on the departure time and hotel location.",
+          "title": "Return to stay",
+          "detail": "Pack everything before dinner.",
           "kind": "travel"
         },
         {
           "time": "17:00",
-          "title": "McArthurGlen evening option",
-          "detail": "After hotel / rental-car logistics, use this as the safer final outlet window. Skip if the drive is late.",
-          "kind": "shop"
+          "title": "Luggage sort",
+          "detail": "Confirm passports, receipts and airport transfer.",
+          "kind": "plan"
         },
         {
           "time": "18:00",
-          "title": "McArthurGlen final shop",
-          "detail": "Keep purchases within airline baggage limits and confirm current hours before going.",
-          "kind": "shop"
+          "title": "Final Vancouver dinner",
+          "detail": "Choose somewhere close to the stay.",
+          "kind": "food"
         },
         {
           "time": "19:00",
-          "title": "Dinner near YVR / Richmond",
-          "detail": "Stay near the hotel; do not cross the metro area.",
+          "title": "Dinner",
+          "detail": "Keep the final evening calm.",
           "kind": "food"
         },
         {
           "time": "20:00",
-          "title": "Baggage and receipts",
-          "detail": "Separate outlet items and confirm airline limits.",
+          "title": "Pack for CX867",
+          "detail": "Prepare a carry-on and confirm terminal timing.",
           "kind": "plan"
         },
         {
           "time": "21:00",
           "title": "Sleep",
-          "detail": "Final night in Canada.",
+          "detail": "Final Vancouver night.",
           "kind": "rest"
         },
         {
@@ -1582,47 +1576,47 @@
         {
           "time": "23:00",
           "title": "Sleep",
-          "detail": "Overnight recovery.",
+          "detail": "Departure tomorrow.",
           "kind": "rest"
         }
       ]
     },
     {
       "date": "2026-10-07",
-      "label": "Day 15 · McArthurGlen and departure",
+      "label": "Day 15 · Vancouver departure",
       "base": "YVR",
-      "route": "YVR departure · CX867 14:10 → HKG 19:20 on 8 Oct",
-      "focus": "Use the morning for a calm airport departure. The 14:10 international flight requires a real check-in and security buffer.",
+      "route": "Vancouver → YVR · CX867 14:10 → HKG 19:20 on 8 Oct",
+      "focus": "Keep the departure day calm. The 14:10 international flight gets a real airport buffer; no attraction is scheduled after check-in.",
       "overnight": "CX867 in flight",
       "blocks": [
         {
           "time": "08:00",
           "title": "Breakfast",
-          "detail": "Hotel breakfast and final weather / flight check.",
+          "detail": "Hotel breakfast and final flight check.",
           "kind": "food"
         },
         {
           "time": "09:00",
           "title": "Pack and check out",
-          "detail": "Confirm luggage, receipts and hotel storage. Do not leave bags unattended in a car.",
+          "detail": "Confirm luggage, receipts and storage.",
           "kind": "travel"
         },
         {
           "time": "10:00",
           "title": "Transfer to YVR",
-          "detail": "Return the rental car if not already returned, or take the confirmed hotel / airport transfer.",
+          "detail": "Return the rental car if needed or use the confirmed airport transfer.",
           "kind": "travel"
         },
         {
           "time": "11:00",
           "title": "CX867 check-in and bags",
-          "detail": "Be at the airport with a proper international-departure buffer before the scheduled 14:10 departure.",
+          "detail": "Be at the airport with a proper international-departure buffer.",
           "kind": "travel"
         },
         {
           "time": "12:00",
           "title": "Security and immigration",
-          "detail": "Complete airport formalities; no attraction is scheduled after this point.",
+          "detail": "Complete airport formalities.",
           "kind": "travel"
         },
         {
@@ -1670,7 +1664,7 @@
         {
           "time": "20:00",
           "title": "Arrival recovery",
-          "detail": "Hong Kong arrival is the next calendar day, 8 Oct 2026.",
+          "detail": "Hong Kong arrival is the next calendar day.",
           "kind": "rest"
         },
         {
@@ -1785,32 +1779,9 @@
     ],
     "golden": [
       {
-        "name": "Tourism Golden accommodation search",
-        "type": "town accommodation directory",
-        "why": "Use the local directory to compare Golden hotels, lodges and guesthouses for the confirmed 27 Sep overnight.",
-        "url": "https://www.tourismgolden.com/where-to-stay",
-        "book": "https://www.tourismgolden.com/where-to-stay"
-      },
-      {
-        "name": "Golden hotel search",
-        "type": "town hotel",
-        "why": "Practical Golden base with access to the Trans-Canada and Kicking Horse River walks.",
-        "url": "https://www.tourismgolden.com/",
-        "book": "https://www.google.com/travel/search?q=Golden%20BC%20hotel"
-      },
-      {
-        "name": "Airbnb Golden search",
-        "type": "vacation rental",
-        "why": "Search a private suite or cabin with parking and a kitchen for the one-night stop.",
-        "url": "https://www.airbnb.com/golden-canada/stays",
-        "book": "https://www.airbnb.com/golden-canada/stays"
-      },
-      {
-        "name": "Wild Wood Cabins: Deer Crossing",
-        "type": "Airbnb cabin",
-        "why": "Current research candidate near Golden; verify exact 27 Sep dates, price, road access and cancellation terms.",
-        "url": "https://www.airbnb.ca/rooms/18427652",
-        "book": "https://www.airbnb.ca/rooms/18427652"
+        "name": "Your Airbnb · Golden",
+        "type": "fixed Airbnb stay",
+        "why": "Fixed stay supplied by the travelers for 27–28 September."
       }
     ],
     "canmore": [
@@ -1961,46 +1932,9 @@
     ],
     "revelstoke": [
       {
-        "name": "Basecamp Resorts Revelstoke",
-        "type": "suite / condo",
-        "why": "Kitchen-style base with hot-tub options.",
-        "url": "https://basecampresorts.com/destinations/revelstoke/",
-        "book": "https://www.google.com/travel/search?q=Basecamp%20Resorts%20Revelstoke"
-      },
-      {
-        "name": "Regent Hotel Revelstoke",
-        "type": "town hotel",
-        "why": "Downtown overnight with dinner on foot.",
-        "url": "https://www.regentrevelstoke.com/",
-        "book": "https://www.google.com/travel/search?q=Regent%20Hotel%20Revelstoke"
-      },
-      {
-        "name": "Stoke Hotel",
-        "type": "hotel",
-        "why": "Practical value option for the return leg.",
-        "url": "https://www.stokehotel.ca/",
-        "book": "https://www.google.com/travel/search?q=Stoke%20Hotel%20Revelstoke"
-      },
-      {
-        "name": "Airbnb Revelstoke search",
-        "type": "vacation rental",
-        "why": "Search cabins, suites or hot-tub stays near town.",
-        "url": "https://www.airbnb.com/revelstoke-canada/stays",
-        "book": "https://www.airbnb.com/revelstoke-canada/stays"
-      },
-      {
-        "name": "Revelation Retreat Townhouse",
-        "type": "Airbnb townhouse",
-        "why": "Search result identifies a Revelstoke townhouse with private hot tub; suitable for the return-leg recovery night if exact dates and price work.",
-        "url": "https://www.airbnb.ca/rooms/46141195",
-        "book": "https://www.airbnb.ca/rooms/46141195"
-      },
-      {
-        "name": "Penthouse with Hot Tub - The Big Deck",
-        "type": "Airbnb condo",
-        "why": "Search result identifies a Revelstoke condo with a hot tub and large deck; verify parking and drive-time fit.",
-        "url": "https://www.airbnb.ca/rooms/859400628190813161",
-        "book": "https://www.airbnb.ca/rooms/859400628190813161"
+        "name": "Your Airbnb · Revelstoke",
+        "type": "fixed Airbnb stay",
+        "why": "Fixed stay supplied by the travelers for 3–4 October."
       }
     ],
     "yvr": [
@@ -2024,6 +1958,34 @@
         "why": "In-room kitchens and airport shuttle listed by Marriott.",
         "url": "https://www.marriott.com/en-us/hotels/yvrra-residence-inn-vancouver-airport/overview/",
         "book": "https://www.google.com/travel/search?q=Residence%20Inn%20Vancouver%20Airport"
+      }
+    ],
+    "harvie-heights": [
+      {
+        "name": "Your Airbnb · Harvie Heights",
+        "type": "fixed Airbnb stay",
+        "why": "Fixed stay supplied by the travelers for 28–30 September; practical Bow Valley base."
+      }
+    ],
+    "bragg-creek": [
+      {
+        "name": "Your Airbnb · Bragg Creek",
+        "type": "fixed Airbnb stay",
+        "why": "Fixed stay supplied by the travelers for 30 September–2 October; foothills base."
+      }
+    ],
+    "yellowhead-county": [
+      {
+        "name": "Your Airbnb · Yellowhead County",
+        "type": "fixed Airbnb stay",
+        "why": "Fixed stay supplied by the travelers for 2–3 October; use the exact address for final routing."
+      }
+    ],
+    "kelowna": [
+      {
+        "name": "Your Airbnb · Kelowna",
+        "type": "fixed Airbnb stay",
+        "why": "Fixed stay supplied by the travelers for 4–5 October."
       }
     ]
   },
@@ -2160,66 +2122,99 @@
   "route_legs": [
     {
       "from": "Vancouver",
-      "to": "Kamloops via Sea-to-Sky",
-      "distance": "about 420 km",
-      "time": "long day with stops",
-      "note": "Scenic 26 Sep transfer; Kamloops is the overnight base."
+      "to": "Kamloops",
+      "distance": "≈450 km",
+      "distance_km": 450,
+      "time": "≈6 h + stops",
+      "baseline_hours": 6.0,
+      "planned_hours": "7–9",
+      "estimated_liters": "41–45",
+      "estimated_gas_cad": "84–92",
+      "note": "Most scenic option via Sea-to-Sky, Whistler, Pemberton and Duffey Lake; weather-sensitive."
     },
     {
       "from": "Kamloops",
       "to": "Golden",
-      "distance": "about 310 km",
-      "time": "4-5 h with stops",
-      "note": "27 Sep transfer through Revelstoke and Rogers Pass; Golden is the overnight base."
+      "distance": "≈360 km",
+      "distance_km": 360,
+      "time": "≈4 h + stops",
+      "baseline_hours": 4.1,
+      "planned_hours": "5–6",
+      "estimated_liters": "32–36",
+      "estimated_gas_cad": "58–74",
+      "note": "Trans-Canada through Salmon Arm, Revelstoke and Rogers Pass."
     },
     {
       "from": "Golden",
-      "to": "Canmore",
-      "distance": "about 140 km baseline",
-      "time": "2-3 h with Yoho stops",
-      "note": "28 Sep transfer; Emerald Lake / Yoho are flexible stops, not guaranteed attractions."
+      "to": "Harvie Heights",
+      "distance": "≈162 km",
+      "distance_km": 162,
+      "time": "≈2 h + stops",
+      "baseline_hours": 2.0,
+      "planned_hours": "4–6",
+      "estimated_liters": "15–16",
+      "estimated_gas_cad": "23–33",
+      "note": "Use Yoho, Emerald Lake and Lake Louise as the scenic sequence; the direct drive is about 162 km."
     },
     {
-      "from": "Canmore",
-      "to": "Banff",
-      "distance": "about 25 km",
-      "time": "20-30 min baseline",
-      "note": "Canmore is the main economical base; parking and park-pass logistics still matter."
+      "from": "Harvie Heights",
+      "to": "Bragg Creek",
+      "distance": "≈125 km",
+      "distance_km": 125,
+      "time": "≈1.5–2 h + stops",
+      "baseline_hours": 1.75,
+      "planned_hours": "3–5",
+      "estimated_liters": "11–13",
+      "estimated_gas_cad": "17–20",
+      "note": "Bow Valley to the foothills; use Banff or Kananaskis as one optional stop."
     },
     {
-      "from": "Canmore",
-      "to": "Lake Louise",
-      "distance": "about 80 km",
-      "time": "1 h baseline",
-      "note": "Moraine Lake requires reserved shuttle or licensed access."
+      "from": "Bragg Creek",
+      "to": "Yellowhead County",
+      "distance": "≈500 km",
+      "distance_km": 500,
+      "time": "≈7–8 h + stops",
+      "baseline_hours": 6.1,
+      "planned_hours": "8–10",
+      "estimated_liters": "45–50",
+      "estimated_gas_cad": "70–78",
+      "note": "Banff, Lake Louise and the Icefields Parkway; a full scenic transfer day."
     },
     {
-      "from": "Lake Louise",
-      "to": "Jasper",
-      "distance": "about 230 km scenic road",
-      "time": "full day with stops",
-      "note": "Icefields Parkway is the attraction, not a simple transfer."
-    },
-    {
-      "from": "Jasper",
-      "to": "Canmore",
-      "distance": "about 300 km baseline",
-      "time": "full transfer day",
-      "note": "Keep Maligne Lake optional to avoid an unsafe late return."
-    },
-    {
-      "from": "Canmore",
+      "from": "Yellowhead County",
       "to": "Revelstoke",
-      "distance": "about 285 km",
-      "time": "4-6 h with stops",
-      "note": "4 Oct return overnight through Yoho and Rogers Pass."
+      "distance": "≈529 km",
+      "distance_km": 529,
+      "time": "≈7 h non-stop / 9–10 h scenic",
+      "baseline_hours": 6.8,
+      "planned_hours": "9–11",
+      "estimated_liters": "48–53",
+      "estimated_gas_cad": "74–109",
+      "note": "Jasper, Icefields Parkway southbound and Rogers Pass; skip optional stops if timing slips."
     },
     {
       "from": "Revelstoke",
-      "to": "Vancouver city",
-      "distance": "about 565 km",
-      "time": "full transfer day",
-      "note": "Arrive and sleep in Vancouver city on 5 Oct."
+      "to": "Kelowna",
+      "distance": "≈200 km",
+      "distance_km": 200,
+      "time": "≈2.5–3 h",
+      "baseline_hours": 2.75,
+      "planned_hours": "3–4",
+      "estimated_liters": "18–20",
+      "estimated_gas_cad": "37–41",
+      "note": "Shuswap and North Okanagan route via Sicamous and Vernon."
+    },
+    {
+      "from": "Kelowna",
+      "to": "Vancouver",
+      "distance": "≈390 km",
+      "distance_km": 390,
+      "time": "≈4.5–5 h + traffic",
+      "baseline_hours": 4.75,
+      "planned_hours": "5–7",
+      "estimated_liters": "35–39",
+      "estimated_gas_cad": "72–80",
+      "note": "Highway 97C / Coquihalla; check mountain conditions and Lower Mainland traffic."
     }
   ],
   "sources": [
@@ -2312,6 +2307,128 @@
       "id": 18,
       "label": "Parks Canada advisories",
       "url": "https://parks.canada.ca/voyage-travel/advisories"
+    },
+    {
+      "id": 19,
+      "label": "Fuel-price planning reference · CAA / NRCan context",
+      "url": "https://natural-resources.canada.ca/energy-facts/energy-facts/transportation-energy-use/gasoline-prices"
+    },
+    {
+      "id": 20,
+      "label": "Rental-car planning reference",
+      "url": "https://ca.kayak.com/Cheap-Vancouver-Car-Rentals.6668.cars.ksp"
+    },
+    {
+      "id": 21,
+      "label": "Canada travel-cost planning reference",
+      "url": "https://www.budgetyourtrip.com/canada"
     }
-  ]
+  ],
+  "airbnb_stays": [
+    {
+      "base": "Golden",
+      "dates": "27–28 September",
+      "note": "User-supplied fixed Airbnb."
+    },
+    {
+      "base": "Harvie Heights",
+      "dates": "28–30 September",
+      "note": "User-supplied fixed Airbnb; best positioned for Banff, Lake Louise and Moraine Lake access."
+    },
+    {
+      "base": "Bragg Creek",
+      "dates": "30 September–2 October",
+      "note": "User-supplied fixed Airbnb; foothills / Kananaskis base."
+    },
+    {
+      "base": "Yellowhead County",
+      "dates": "2–3 October",
+      "note": "User-supplied fixed Airbnb; treated as the Jasper / Hinton-area base for routing."
+    },
+    {
+      "base": "Revelstoke",
+      "dates": "3–4 October",
+      "note": "User-supplied fixed Airbnb."
+    },
+    {
+      "base": "Kelowna",
+      "dates": "4–5 October",
+      "note": "User-supplied fixed Airbnb."
+    }
+  ],
+  "budget": {
+    "currency": "CAD",
+    "scope": "Estimated for 2 travelers; international flights are excluded because their fares are not in the itinerary data. Airbnb prices were not supplied, so their line is a planning range, not a booking quote.",
+    "assumptions": {
+      "total_driving_km": 3166,
+      "intercity_driving_km": 2716,
+      "local_and_sightseeing_allowance_km": 450,
+      "vehicle_consumption_l_per_100km": "9–10",
+      "fuel_price_bc_cad_per_l": 2.05,
+      "fuel_price_ab_cad_per_l": 1.55,
+      "rental_days": 11,
+      "rental_vehicle": "SUV / equivalent",
+      "rental_daily_average_cad": 123,
+      "rental_tax_and_fees_factor": 1.15,
+      "food_per_person_per_day_cad": "60–110",
+      "airbnb_nights": 8,
+      "non_airbnb_nights": 6
+    },
+    "categories": [
+      {
+        "name": "Airbnb stays",
+        "low": 1600,
+        "high": 2800,
+        "note": "8 nights; placeholder CAD 200–350/night until the six booking totals are entered."
+      },
+      {
+        "name": "Vancouver + Kamloops stays",
+        "low": 1430,
+        "high": 2500,
+        "note": "5 Vancouver nights plus 1 Kamloops night; placeholder CAD 250–450 and CAD 180–250/night respectively."
+      },
+      {
+        "name": "Rental car",
+        "low": 1556,
+        "high": 1556,
+        "note": "11 days × CAD 123/day SUV average × 1.15 tax/fee factor; actual quote may differ."
+      },
+      {
+        "name": "Gas",
+        "low": 529,
+        "high": 647,
+        "note": "About 285–317 L for 3,166 km, using BC CAD 2.05/L and Alberta CAD 1.55/L planning prices."
+      },
+      {
+        "name": "Food and groceries",
+        "low": 1800,
+        "high": 3300,
+        "note": "CAD 60–110 per person per day for 15 days; kitchens make the lower end more realistic."
+      },
+      {
+        "name": "Parks, attractions, parking and local transport",
+        "low": 600,
+        "high": 1200,
+        "note": "Includes a planning allowance for park access, shuttles, parking and selected paid attractions; verify reservations and fees."
+      }
+    ],
+    "totals": {
+      "low": 7515,
+      "high": 12003,
+      "recommended_reserve_low": 8270,
+      "recommended_reserve_high": 13200
+    },
+    "note": "The 10% reserve is for fuel-price movement, parking, taxes/cleaning fees, weather detours and small unplanned costs. Add the actual Airbnb totals and international-flight fares for a final booked-trip total."
+  },
+  "driving_summary": {
+    "intercity_km": 2716,
+    "local_sightseeing_allowance_km": 450,
+    "total_planned_km": 3166,
+    "baseline_driving_hours": 34.2,
+    "planned_driving_hours_without_long_stops": "40–48",
+    "fuel_liters_at_9_l_per_100km": 285,
+    "fuel_liters_at_10_l_per_100km": 317,
+    "fuel_estimate_cad": "529–647",
+    "method": "Route-leg estimates plus a 450 km local/sightseeing allowance. Fuel uses 9–10 L/100 km, BC CAD 2.05/L and Alberta CAD 1.55/L planning prices; prices and conditions can change."
+  }
 }
