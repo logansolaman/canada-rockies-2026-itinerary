@@ -352,6 +352,47 @@ x["driving_summary"] = {
     "method": "Route-leg estimates plus a 450 km local/sightseeing allowance. Fuel uses 9–10 L/100 km, BC CAD 2.05/L and Alberta CAD 1.55/L planning prices; prices and conditions can change."
 }
 x["days"] = build_days()
+x["vehicle_recommendation"] = {
+    "recommendation": "Toyota RAV4 Hybrid AWD",
+    "rental_class": "Toyota RAV4 Hybrid AWD or equivalent",
+    "verdict": "Best overall fit for this two-person, 15-day Rockies route: durable and practical, easier to handle than a three-row SUV, and much more economical than the large SUVs.",
+    "why": [
+        "AWD traction and compact-SUV dimensions suit mountain highways, Airbnb parking and Vancouver city driving.",
+        "Enough cargo flexibility for two travelers without paying the fuel and bulk penalty of a Highlander, CX-90, Palisade or full-size SUV.",
+        "Toyota's RAV4 has a strong recent reliability record; the recent model is recommended by Consumer Reports.",
+        "The hybrid AWD version is the fuel-economy choice. Official Canadian figures for the 2026 RAV4 range from about 5.5 to 6.2 L/100 km combined by grade.",
+        "The Mazda CX-90 is an excellent, safer-feeling handling alternative, but it is larger, more complex and less economical for this trip."
+    ],
+    "ranked_alternatives": [
+        {"rank": 1, "model": "Toyota Highlander Hybrid AWD", "best_for": "More luggage and maximum highway comfort", "tradeoff": "Bigger, harder to park and thirstier than the RAV4."},
+        {"rank": 2, "model": "Mazda CX-90 AWD", "best_for": "Handling, power and premium cabin", "tradeoff": "Larger, more expensive to fuel, and a newer/more complex powertrain."},
+        {"rank": 3, "model": "Toyota RAV4 gasoline AWD", "best_for": "Fallback if the hybrid is unavailable", "tradeoff": "Still practical, but higher fuel use."},
+        {"rank": 4, "model": "Ford Escape Hybrid AWD", "best_for": "Acceptable alternative", "tradeoff": "Choose only if the rental condition, tires and roadside coverage are clearly better."}
+    ],
+    "avoid_for_this_trip": [
+        "Toyota Corolla, Toyota Camry, Nissan Kicks, Volkswagen Taos and Audi Q3: less cargo/reserve and less suitable as the preferred choice for remote mountain legs.",
+        "Ford Expedition, Infiniti QX80, Volvo XC90, Hyundai Palisade and full-size SUVs: unnecessary size and fuel cost for two people.",
+        "Jeep Wrangler: capable off pavement, but noisier, less comfortable and less fuel-efficient for your long highway days.",
+        "Jeep Grand Cherokee, Ford Edge and similar larger gasoline SUVs: workable, but not as balanced as the RAV4 Hybrid AWD."
+    ],
+    "fuel_comparison_for_3166km": [
+        {"model": "RAV4 Hybrid AWD", "consumption": "≈5.5–6.2 L/100 km", "liters": "≈174–196 L", "fuel_cost_cad": "≈320–390"},
+        {"model": "Highlander Hybrid AWD", "consumption": "≈6.7 L/100 km", "liters": "≈212 L", "fuel_cost_cad": "≈390–425"},
+        {"model": "RAV4 gasoline AWD", "consumption": "≈8.0 L/100 km", "liters": "≈253 L", "fuel_cost_cad": "≈470–510"},
+        {"model": "CX-90 Turbo AWD", "consumption": "≈9.8 L/100 km planning", "liters": "≈310 L", "fuel_cost_cad": "≈570–620"},
+        {"model": "Wrangler / large gasoline SUV", "consumption": "≈11.0 L/100 km planning", "liters": "≈348 L", "fuel_cost_cad": "≈640–700"}
+    ],
+    "must_confirm_at_pickup": [
+        "3PMSF mountain/snowflake-rated tires, not just the words AWD or M+S",
+        "Tire tread, spare tire or proper puncture kit, and roadside-assistance number",
+        "No dashboard warning lights; inspect brakes, wipers, windshield and lights",
+        "Snow/road mode operation, luggage cover, and rental restrictions on mountain roads",
+        "Exact model is subject to rental-fleet availability; reserve the vehicle class, not only the badge."
+    ],
+    "important_tire_note": "For the Sea-to-Sky, Coquihalla, Icefields Parkway and interior BC, tire specification matters more than AWD branding. BC advises out-of-province visitors to ensure rental vehicles have winter tires; 3PMSF tires provide better winter traction than basic M+S tires.",
+    "source_ids": [22, 23, 24, 25, 26, 27]
+}
+
 x["budget"] = {
     "currency": "CAD",
     "scope": "Estimated for 2 travelers; international flights are excluded because their fares are not in the itinerary data. Airbnb prices were not supplied, so each lodging line is a planning range, not a booking quote.",
@@ -398,10 +439,16 @@ x["airbnb_stays"] = [
     {"base": "Kelowna", "dates": "4–5 October", "note": "User-supplied fixed Airbnb."},
 ]
 
-x["sources"] = [s for s in x.get("sources", []) if s.get("id") not in {19, 20, 21}] + [
+x["sources"] = [s for s in x.get("sources", []) if s.get("id") not in {19, 20, 21, 22, 23, 24, 25, 26, 27}] + [
     {"id": 19, "label": "Fuel-price planning reference · CAA / NRCan context", "url": "https://natural-resources.canada.ca/energy-facts/energy-facts/transportation-energy-use/gasoline-prices"},
     {"id": 20, "label": "Rental-car planning reference", "url": "https://ca.kayak.com/Cheap-Vancouver-Car-Rentals.6668.cars.ksp"},
     {"id": 21, "label": "Canada travel-cost planning reference", "url": "https://www.budgetyourtrip.com/canada"},
+    {"id": 22, "label": "Toyota Canada · 2026 RAV4 features", "url": "https://www.toyota.ca/en/vehicles/rav4/features-benefits/"},
+    {"id": 23, "label": "Toyota Canada · 2026 RAV4 fuel economy and AWD", "url": "https://media.toyota.ca/en/releases/2026/the-canadian-built-rav4-is-all-new-for-2026--and-offered-at-sugg.html"},
+    {"id": 24, "label": "IIHS · 2026 Top Safety Picks", "url": "https://www.iihs.org/ratings/top-safety-picks"},
+    {"id": 25, "label": "British Columbia · winter tires for visitors and rentals", "url": "https://www2.gov.bc.ca/gov/content/transportation/driving-and-cycling/traveller-information/seasonal/winter-driving/visitors"},
+    {"id": 26, "label": "Consumer Reports · Toyota RAV4 reliability", "url": "https://www.consumerreports.org/cars/toyota/rav4/2025/reliability/"},
+    {"id": 27, "label": "Toyota Canada · 2026 Highlander specifications", "url": "https://www.toyota.ca/en/vehicles/highlander/models-specifications"},
 ]
 
 # Keep the supplementary candidate directory, but add the fixed-base labels so

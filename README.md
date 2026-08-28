@@ -99,6 +99,26 @@ Recommended working reserve: **CAD 7,827–12,389**. Airbnb prices and the inter
 - Route times are estimates without live traffic, weather, construction or stop time.
 - Late September and early October can bring snow, frost, shorter daylight and wildlife on roads. Check DriveBC, 511 Alberta and Parks Canada bulletins before each mountain transfer.
 
+## Recommended rental car
+
+**Toyota RAV4 Hybrid AWD** is the best overall fit for this trip: durable and practical for two people, easier to handle than a three-row SUV, and more economical than the larger options. Toyota Canada lists the 2026 RAV4 hybrid AWD grades at approximately **5.5–6.2 L/100 km combined**; the RAV4 also has enough luggage flexibility for two travelers without the bulk penalty of a Highlander or CX-90.[1][2]
+
+For the planned 3,166 km, the rough fuel comparison is:
+
+| Vehicle | Planning consumption | Approx. fuel | Approx. gas cost (CAD) |
+|---|---:|---:|---:|
+| **RAV4 Hybrid AWD** | 5.5–6.2 L/100 km | 174–196 L | **320–390** |
+| Highlander Hybrid AWD | 6.7 L/100 km | 212 L | 390–425 |
+| RAV4 gasoline AWD | 8.0 L/100 km | 253 L | 470–510 |
+| Mazda CX-90 Turbo AWD | ~9.8 L/100 km | 310 L | 570–620 |
+| Wrangler / large gasoline SUV | ~11.0 L/100 km | 348 L | 640–700 |
+
+The **Mazda CX-90 AWD** is the handling-and-safety alternative: IIHS lists the 2026 CX-90 as a Top Safety Pick+, but it is larger, thirstier and more complex. Choose the Highlander Hybrid instead if you have unusually large luggage or want maximum cabin space.[3][6]
+
+At pickup, request **“Toyota RAV4 Hybrid AWD or equivalent with 3PMSF mountain/snowflake-rated tires”**. Tire specification matters more than AWD branding on the Sea-to-Sky, Coquihalla, Icefields Parkway and interior BC routes. B.C. advises visitors to ensure rental vehicles have winter tires, and notes that 3PMSF tires provide the best traction in winter conditions.[4]
+
+Inspect the tire tread, spare or proper puncture kit, brakes, wipers, windshield, warning lights, emergency kit, roadside-assistance number, luggage cover and any restrictions on mountain roads. Reserve the vehicle class rather than relying on the exact badge, since rental fleets may substitute models.[7]
+
 ## Recommended lodging strategy
 
 - Vancouver: Clive Avenue / Collingwood, Vancouver (23–26 Sep); Dunbar Street / Dunbar-Southlands, Vancouver (5–7 Oct)
