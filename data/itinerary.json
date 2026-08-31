@@ -2860,5 +2860,380 @@
       38,
       39
     ]
+  },
+  "hidden_gems": {
+    "summary": "Hand-picked hidden and off-the-beaten-path spots per stay: nature, viewpoints, shops, malls and seasonal experiences for late September to early October. Check opening status for anything seasonal before you go — fall shoulder-season hours change fast.",
+    "bases": [
+      {
+        "base": "Vancouver · Clive Avenue (Joyce-Collingwood) · 23–26 Sep",
+        "spots": [
+          {
+            "name": "Wang Shanghai soup dumplings",
+            "kind": "food",
+            "why": "Some of the best xiaolongbao in the city, tucked in the old London Drugs parking lot at 3328 Kingsway and easy to miss.",
+            "tip": "Go early, it fills up."
+          },
+          {
+            "name": "Kingsway 3300-block food walk",
+            "kind": "food",
+            "why": "24 restaurants and bakeries from Chinese, Filipino, Chilean and Indian communities along one block.",
+            "tip": "Do a small-plates crawl for lunch."
+          },
+          {
+            "name": "Burnaby Village Museum",
+            "kind": "culture",
+            "why": "1912 carousel, blacksmith, historic streetcar — a step back in time.",
+            "tip": "Seasonal; check autumn weekend hours."
+          },
+          {
+            "name": "Deer Lake Park",
+            "kind": "nature",
+            "why": "Lake loop, heritage homes and Japanese garden; quiet autumn colours.",
+            "tip": "Combines with Metrotown."
+          },
+          {
+            "name": "Vancouver Police Museum",
+            "kind": "culture",
+            "why": "Former morgue turned museum of crime history and evidence — eerie but unforgettable.",
+            "tip": "Compact, rainy-day option."
+          },
+          {
+            "name": "Lynn Canyon Park & suspension bridge",
+            "kind": "nature",
+            "why": "Free alternative to Capilano, less crowded, deep rainforest and a 50 m suspension bridge.",
+            "tip": "North Vancouver; take the Seabus/SkyTrain combo."
+          }
+        ]
+      },
+      {
+        "base": "Vancouver · Dunbar-Southlands · 5–7 Oct",
+        "spots": [
+          {
+            "name": "Pacific Spirit Regional Park",
+            "kind": "nature",
+            "why": "Huge coastal rainforest right from your door; golden autumn trails.",
+            "tip": "Start early, quietest then."
+          },
+          {
+            "name": "Museum of Anthropology (UBC)",
+            "kind": "culture",
+            "why": "World-class Indigenous art — totem poles, carvings, great architecture.",
+            "tip": "Paid; check hours."
+          },
+          {
+            "name": "Queen Elizabeth Park + Quarry Garden",
+            "kind": "view",
+            "why": "Vancouver's highest point, free panoramic city and mountain views.",
+            "tip": "Best at sunset."
+          },
+          {
+            "name": "Kitsilano & Jericho beaches",
+            "kind": "nature",
+            "why": "Scenic waterfront walk with mountain views and no crowds in October.",
+            "tip": "Pack a hot drink."
+          },
+          {
+            "name": "Granville Island",
+            "kind": "shop",
+            "why": "Public market, artisan studios and food stalls — a relaxed afternoon outing.",
+            "tip": "Go mid-afternoon to dodge the rush."
+          },
+          {
+            "name": "Stanley Park Prospect Point",
+            "kind": "view",
+            "why": "Lions Gate Bridge and harbour panorama from the high lookout.",
+            "tip": "Drive or bus up; short walk from the lot."
+          }
+        ]
+      },
+      {
+        "base": "Kamloops · bridge night · 26 Sep",
+        "spots": [
+          {
+            "name": "Paul Lake Provincial Park",
+            "kind": "nature",
+            "why": "Mountain lake 25 minutes from town with easy lakeside trails and far fewer people.",
+            "tip": "Short leg-stretch on arrival."
+          },
+          {
+            "name": "Kenna Cartwright Park sunset",
+            "kind": "view",
+            "why": "Kamloops' largest park with big-sky panoramic views over the valley.",
+            "tip": "Best just before sunset."
+          },
+          {
+            "name": "BC Wildlife Park",
+            "kind": "culture",
+            "why": "Black bears, wolves, elk, moose and raptors in natural enclosures.",
+            "tip": "Only if you have daylight to spare."
+          },
+          {
+            "name": "Thompson Valley Wine Trail",
+            "kind": "food",
+            "why": "One of Canada's northernmost wine regions; harvest season in late September.",
+            "tip": "Sagewood or Privato for boutique tastings."
+          }
+        ]
+      },
+      {
+        "base": "Golden · 27–28 Sep",
+        "spots": [
+          {
+            "name": "Wapta Falls",
+            "kind": "nature",
+            "why": "The widest waterfall on the Kicking Horse River (~100 m across), easy family trail 30 min from Golden.",
+            "tip": "Tucked in Yoho; quietest in the morning."
+          },
+          {
+            "name": "Takakkaw Falls",
+            "kind": "nature",
+            "why": "Canada's second-tallest waterfall at 373 m, visible from the road and thundering in the canyon.",
+            "tip": "Yoho; road is seasonal, verify access."
+          },
+          {
+            "name": "Thompson Falls",
+            "kind": "nature",
+            "why": "Under-the-radar powerful waterfall on the Blaeberry River, ~30 min from downtown and car-accessible.",
+            "tip": "Easy overlook, few visitors."
+          },
+          {
+            "name": "Golden Skybridge",
+            "kind": "view",
+            "why": "Canada's highest suspension bridge pair over a canyon — with zipline, swing and mountain coaster.",
+            "tip": "Paid; check if the coaster is running in shoulder season."
+          },
+          {
+            "name": "Emerald Lake & Natural Bridge at sunset",
+            "kind": "view",
+            "why": "Already on the route, but going late-day beats the midday crowds and lights Yoho's limestone cliffs gold.",
+            "tip": "Pair with a Field coffee stop."
+          }
+        ]
+      },
+      {
+        "base": "Harvie Heights · Banff / Canmore · 28–30 Sep",
+        "spots": [
+          {
+            "name": "Johnson Lake",
+            "kind": "nature",
+            "why": "Banff's best-kept-secret lake — calm water, forest loop, way fewer people than Lake Louise.",
+            "tip": "Easy flat trail, great morning."
+          },
+          {
+            "name": "Vermilion Lakes",
+            "kind": "view",
+            "why": "Classic mirror-like reflections of Mount Rundle at sunrise or sunset.",
+            "tip": "Scenic drive from Banff Ave, no hiking needed."
+          },
+          {
+            "name": "Cascade Ponds + Two Jack Lake",
+            "kind": "nature",
+            "why": "Quiet picnic-style spots with big mountain views minutes from Banff.",
+            "tip": "Great fall-colour photography."
+          },
+          {
+            "name": "Grassi Lakes (Canmore)",
+            "kind": "nature",
+            "why": "Vivid turquoise lakes under limestone cliffs; short hike from Canmore.",
+            "tip": "Take the easy 'easy route', steep route is slippery."
+          },
+          {
+            "name": "Policeman's Creek Boardwalk (Canmore)",
+            "kind": "nature",
+            "why": "Elevated wetland boardwalk with Three Sisters reflections from downtown.",
+            "tip": "Dawn = mirror water."
+          },
+          {
+            "name": "Canmore Engine Bridge",
+            "kind": "view",
+            "why": "Historic rail bridge turned pedestrian crossing; best vantage of Mount Rundle.",
+            "tip": "Golden-hour photo spot."
+          },
+          {
+            "name": "Quarry Lake (Canmore)",
+            "kind": "nature",
+            "why": "Local favourite for a calm lakeside sit and sunset.",
+            "tip": "Great with a picnic."
+          },
+          {
+            "name": "The Ink Pots",
+            "kind": "nature",
+            "why": "Secret alpine meadow with six colourful spring-fed pools, past Johnston Canyon's Upper Falls.",
+            "tip": "Moderate 6 km each way; larches in fall."
+          }
+        ]
+      },
+      {
+        "base": "Bragg Creek / Kananaskis + Calgary · 30 Sep–2 Oct",
+        "spots": [
+          {
+            "name": "Forgetmenot Pond",
+            "kind": "nature",
+            "why": "Genuine hidden gem: a serene reflection pond with an easy loop through aspen that glows gold in autumn.",
+            "tip": "Free, quiet in October; needs Kananaskis pass to park."
+          },
+          {
+            "name": "Elbow Falls & Elbow Valley",
+            "kind": "nature",
+            "why": "Short walkway to river falls with flame-coloured fall foliage.",
+            "tip": "Go early, popular on weekends."
+          },
+          {
+            "name": "West Bragg Creek trails",
+            "kind": "nature",
+            "why": "Tens of kilometres of foothills singletrack and forest trails from the village.",
+            "tip": "Easy loops near the trailhead."
+          },
+          {
+            "name": "Bass Pro Shops Calgary (Deerfoot Meadows, 11411 40 St SE)",
+            "kind": "shop",
+            "why": "The giant outdoor megastore you found — fish aquariums, boats, hunting/fishing gear and a wildlife display; an attraction in itself.",
+            "tip": "About 40 min from Bragg Creek; weekday is quieter."
+          },
+          {
+            "name": "MEC Calgary (830 10 Ave SW)",
+            "kind": "shop",
+            "why": "Serious outdoor gear — microspikes, layering, maps — if you need anything for the mountains.",
+            "tip": "Also downtown: make it a coffee + walk combo."
+          },
+          {
+            "name": "Bragg Creek village",
+            "kind": "shop",
+            "why": "One main street of boutiques, a bakery and café culture in the foothills.",
+            "tip": "Try the local bakery before heading out."
+          }
+        ]
+      },
+      {
+        "base": "Yellowhead County / Hinton · Jasper area · 2–3 Oct",
+        "spots": [
+          {
+            "name": "Hinton Beaver Boardwalk",
+            "kind": "nature",
+            "why": "Canada's longest freshwater boardwalk, winding through beaver wetland.",
+            "tip": "Easy, flat, great for wildlife."
+          },
+          {
+            "name": "Obed Lake Provincial Park",
+            "kind": "nature",
+            "why": "Hidden-gem lake ~20 min from Hinton; still water and golden reeds at sunset.",
+            "tip": "Go about an hour before sunset."
+          },
+          {
+            "name": "Pyramid Lake & Patricia Lake",
+            "kind": "view",
+            "why": "Quiet lakes with mountain backdrops; also your best dark-sky / aurora spot near Jasper.",
+            "tip": "Face north after midnight for aurora."
+          },
+          {
+            "name": "Athabasca Falls",
+            "kind": "nature",
+            "why": "Powerful canyon waterfall — open and worth the short walk.",
+            "tip": "On the Icefields Parkway route."
+          },
+          {
+            "name": "Maligne Lake road + Medicine Lake",
+            "kind": "nature",
+            "why": "The 'vanishing lake' in fall as it drains underground, then Maligne Lake and Moose Lake loop.",
+            "tip": "Maligne Canyon and Edith Cavell are CLOSED for 2026 — do this instead."
+          },
+          {
+            "name": "Miette Hot Springs",
+            "kind": "nature",
+            "why": "Remote mountain hot pools near the park's east edge.",
+            "tip": "Confirm early-October hours; entry after 3 pm is often cheaper."
+          }
+        ]
+      },
+      {
+        "base": "Revelstoke · 3–4 Oct",
+        "spots": [
+          {
+            "name": "Giant Cedars Boardwalk",
+            "kind": "nature",
+            "why": "500 m loop through ancient inland rainforest with huge cedars — magical light.",
+            "tip": "Boardwalk typically closes right after Thanksgiving; check the bulletin for 2026."
+          },
+          {
+            "name": "Skunk Cabbage Boardwalk",
+            "kind": "nature",
+            "why": "Marsh boardwalk with muskrat and beaver activity, great for wildlife.",
+            "tip": "Easy and family-friendly."
+          },
+          {
+            "name": "Meadows in the Sky Parkway",
+            "kind": "view",
+            "why": "26 km paved road to Mount Revelstoke's summit meadows and viewpoints.",
+            "tip": "High-elevation snow likely by 4 Oct; check if the road is open."
+          },
+          {
+            "name": "The Enchanted Forest + SkyTrek Adventure Park",
+            "kind": "culture",
+            "why": "Whimsical forest trail with fairy-tale scenes, then tree-canopy ziplines next door on Hwy 1.",
+            "tip": "32 km west of town, on the Kelowna route."
+          },
+          {
+            "name": "Halfway / Halcyon / Nakusp Hot Springs",
+            "kind": "nature",
+            "why": "Natural hot pools in forest settings within a short drive.",
+            "tip": "Best on the cold evening of 3 Oct."
+          }
+        ]
+      },
+      {
+        "base": "Kelowna / Glenmore · 4–5 Oct",
+        "spots": [
+          {
+            "name": "Myra Canyon Trestles",
+            "kind": "view",
+            "why": "18 historic Kettle Valley Rail trestles and tunnels over a deep canyon — the #1 fall pick, with golden western larches.",
+            "tip": "Free parking at Myra or Ruth station; flat 12 km trail; larch peak is mid-late Oct."
+          },
+          {
+            "name": "Knox Mountain + Paul's Tomb",
+            "kind": "view",
+            "why": "Panoramic views over Okanagan Lake and downtown from the city's signature hike, ending at a hidden beach.",
+            "tip": "1 hr return; sunsets are superb."
+          },
+          {
+            "name": "Crawford Falls",
+            "kind": "nature",
+            "why": "Hidden canyon waterfalls in East Kelowna.",
+            "tip": "Use the longer safe route, not the rope descent."
+          },
+          {
+            "name": "Mission Creek Greenway — salmon run",
+            "kind": "nature",
+            "why": "October's free natural spectacle: kokanee salmon spawning in the creek.",
+            "tip": "First three weeks of October are best."
+          },
+          {
+            "name": "Orchard Park Mall",
+            "kind": "mall",
+            "why": "The Okanagan's largest indoor mall with 170+ stores, food court and cinema.",
+            "tip": "Wet-day option; Kelowna Farmers Market also here on Wed/Sat mornings."
+          },
+          {
+            "name": "Wineries (Summerhill, CedarCreek, Tantalus)",
+            "kind": "food",
+            "why": "Harvest season tasting — golden vineyards, lake views.",
+            "tip": "Book tastings in advance in fall."
+          },
+          {
+            "name": "Davison Orchards (Vernon)",
+            "kind": "food",
+            "why": "U-pick apples, pumpkins, a bakery and farm animals — classic fall outing.",
+            "tip": "30 min north, on the way from Revelstoke."
+          }
+        ]
+      }
+    ],
+    "source_ids": [
+      35,
+      36,
+      37,
+      38,
+      39
+    ]
   }
 }

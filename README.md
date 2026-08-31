@@ -139,6 +139,20 @@ Inspect the tire tread, spare or proper puncture kit, brakes, wipers, windshield
 - **Dunbar Street area:** Pacific Spirit Regional Park, UBC, Museum of Anthropology, Kitsilano Beach, Jericho Beach and Granville Island are the nearby focus.
 - McArthurGlen is optional on arrival and is not the main final-day plan; do not schedule shopping before the 14:10 international departure on 7 Oct.
 
+## Hidden gems & cool spots
+
+53 hand-picked spots across all nine stays — nature, viewpoints, shops, malls and seasonal experiences for late September to early October (full details render on the site in the "Hidden gems" panel):
+
+**Vancouver · Clive (23–26 Sep):** Wang Shanghai soup dumplings, 3300-block Kingsway food walk, Burnaby Village Museum, Deer Lake Park, Vancouver Police Museum, Lynn Canyon suspension bridge.
+**Vancouver · Dunbar (5–7 Oct):** Pacific Spirit Park, UBC Museum of Anthropology, Queen Elizabeth Park & Quarry Garden, Kitsilano/Jericho beaches, Granville Island, Stanley Park Prospect Point.
+**Kamloops (26 Sep):** Paul Lake, Kenna Cartwright Park sunset, BC Wildlife Park, Thompson Valley wine trail.
+**Golden (27–28 Sep):** Wapta Falls, Takakkaw Falls, Thompson Falls, Golden Skybridge, Emerald Lake/Natural Bridge at sunset.
+**Harvie Heights (28–30 Sep):** Johnson Lake, Vermilion Lakes, Cascade Ponds & Two Jack Lake, Grassi Lakes, Policeman's Creek Boardwalk, Canmore Engine Bridge, Quarry Lake, the Ink Pots.
+**Bragg Creek / Calgary (30 Sep–2 Oct):** Forgetmenot Pond, Elbow Falls, West Bragg Creek trails, **Bass Pro Shops Calgary (Deerfoot Meadows)** + MEC Calgary, Bragg Creek village.
+**Yellowhead / Hinton / Jasper (2–3 Oct):** Hinton Beaver Boardwalk (Canada's longest freshwater boardwalk), Obed Lake, Pyramid & Patricia Lakes (aurora), Athabasca Falls, Maligne Lake road + Medicine Lake, Miette Hot Springs. *Maligne Canyon and Edith Cavell remain CLOSED for 2026.*
+**Revelstoke (3–4 Oct):** Giant Cedars Boardwalk, Skunk Cabbage Boardwalk, Meadows in the Sky Parkway, Enchanted Forest + SkyTrek, Halfway/Halcyon/Nakusp hot springs.
+**Kelowna (4–5 Oct):** Myra Canyon Trestles (golden larches — #1 fall pick), Knox Mountain & Paul's Tomb, Crawford Falls, Mission Creek salmon run, Orchard Park Mall, wineries, Davison Orchards.
+
 ## Park passes and entry
 
 For this 15-day route you only need two paid passes: a **Parks Canada Discovery Pass** (covers every national park on the route) and a separate **Kananaskis Conservation Pass** for the Alberta provincial foothills around Bragg Creek. Parks Canada's free-admission window ends **7 September 2026**, so a pass is required for the whole trip.
