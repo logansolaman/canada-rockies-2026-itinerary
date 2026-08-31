@@ -2375,6 +2375,31 @@
       "id": 34,
       "label": "XE · HKD to CAD exchange rate reference",
       "url": "https://www.xe.com/currencyconverter/convert?Amount=1&From=HKD&To=CAD"
+    },
+    {
+      "id": 35,
+      "label": "Parks Canada · Passes, permits and fees (Discovery Pass)",
+      "url": "https://parks.canada.ca/voyage-travel/admission"
+    },
+    {
+      "id": 36,
+      "label": "Parks Canada · Banff National Park fees",
+      "url": "https://parks.canada.ca/pn-np/ab/banff/visit/tarifs-fees"
+    },
+    {
+      "id": 37,
+      "label": "Parks Canada · Icefields Parkway gates and passes",
+      "url": "https://parks.canada.ca/pn-np/ab/banff/visit/promenadedesglaciers-icefieldsparkway"
+    },
+    {
+      "id": 38,
+      "label": "Alberta · Kananaskis Conservation Pass",
+      "url": "https://alberta.ca/kananaskis-conservation-pass.aspx"
+    },
+    {
+      "id": 39,
+      "label": "Parks Canada · Lake Louise and Moraine Lake shuttle reservations",
+      "url": "https://parks.canada.ca/pn-np/ab/banff/visit/parkbus/louise"
     }
   ],
   "airbnb_stays": [
@@ -2786,6 +2811,54 @@
       31,
       32,
       33
+    ]
+  },
+  "park_passes": {
+    "summary": "For this 15-day route you only need two paid passes: one Parks Canada Discovery Pass (covers every national park on the route) and a separate Kananaskis Conservation Pass for the Alberta provincial foothills around Bragg Creek. The Lake Louise / Moraine Lake shuttle is a required reservation that is separate from any pass. Parks Canada's free-admission window ends 7 September 2026, so the Discovery Pass is required for the whole trip.",
+    "parks_canada_discovery_pass": {
+      "name": "Parks Canada Discovery Pass (Family / Group)",
+      "price_cad": 167.5,
+      "price_note": "Family/Group covers up to 7 people in one vehicle, including both travelers; Adult CAD 83.50 each. Valid 12 months from purchase month.",
+      "covers": [
+        "Banff National Park",
+        "Jasper National Park",
+        "Yoho National Park",
+        "Glacier National Park",
+        "Mount Revelstoke National Park",
+        "Kootenay National Park",
+        "National historic sites"
+      ],
+      "days_used": "About 7 national-park days: 27, 28, 29 Sep, 30 Sep (Banff option), 2, 3 and 4 Oct (Mount Revelstoke option).",
+      "where_to_buy": "Online at reservation.pc.gc.ca before departure, or in person at park gates, visitor centres and select retailers. Online is recommended to skip gate line-ups.",
+      "how_to_display": "Print the PDF confirmation and display it on the left side of the dashboard or hang it from the rear-view mirror, printed date side visible. There is no digital-only pass.",
+      "buy_anytime_note": "Buying on the spot IS allowed at the gates (e.g. the Banff East Gate, Jasper East Gate, Niblock Gate north of Lake Louise and the Icefields Parkway Gate south of Jasper), but some gates on the route are unmanned and you do not pass a staffed gate when approaching from Vancouver via Golden. Buy online before you go."
+    },
+    "kananaskis_conservation_pass": {
+      "name": "Kananaskis Conservation Pass (Alberta provincial)",
+      "price_cad": "15 per day / 90 per year",
+      "covers": "Parking at provincial park and public-land sites in Kananaskis Country and the Bow Valley, including Elbow Falls, Elbow Valley and West Bragg Creek trailheads.",
+      "days_needed": "30 Sep and 1 Oct around the Bragg Creek base (Kananaskis option on 1 Oct and Elbow Falls stops).",
+      "where_to_buy": "Online at alberta.ca before 11:59 pm on the visit date, or in person / on Wi-Fi at Kananaskis Visitor Information Centres. Must register the rental car's licence plate.",
+      "note": "NOT covered by the Discovery Pass. Required only when you park at provincial sites, not when driving through on Highway 66."
+    },
+    "shuttle_reservation": {
+      "name": "Lake Louise / Moraine Lake Parks Canada shuttle (29 Sep)",
+      "price_cad": "Adult CAD 12.75 one-way",
+      "requirement": "Reservation is REQUIRED in advance. Moraine Lake Road is closed to private vehicles.",
+      "where_to_book": "reservation.pc.gc.ca, or by phone 1-877-737-3783. 60% of seats release 2 days before at 8:00 am MDT; plan a backup."
+    },
+    "not_required": [
+      "A Kootenay pass is not needed on this route.",
+      "A Waterton / Elk Island pass is not needed on this route.",
+      "Columbia Icefield Glacier Adventure or Skywalk is an optional paid tour, not covered by any pass."
+    ],
+    "budget_estimate_cad": "About CAD 210–225 total for two travelers: Discovery Pass CAD 167.50 + Kananaskis day pass(es) CAD 15–30 + Lake Louise/Moraine shuttle CAD 25.50.",
+    "source_ids": [
+      35,
+      36,
+      37,
+      38,
+      39
     ]
   }
 }

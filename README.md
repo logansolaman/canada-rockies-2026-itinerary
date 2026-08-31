@@ -139,6 +139,20 @@ Inspect the tire tread, spare or proper puncture kit, brakes, wipers, windshield
 - **Dunbar Street area:** Pacific Spirit Regional Park, UBC, Museum of Anthropology, Kitsilano Beach, Jericho Beach and Granville Island are the nearby focus.
 - McArthurGlen is optional on arrival and is not the main final-day plan; do not schedule shopping before the 14:10 international departure on 7 Oct.
 
+## Park passes and entry
+
+For this 15-day route you only need two paid passes: a **Parks Canada Discovery Pass** (covers every national park on the route) and a separate **Kananaskis Conservation Pass** for the Alberta provincial foothills around Bragg Creek. Parks Canada's free-admission window ends **7 September 2026**, so a pass is required for the whole trip.
+
+| Pass | Price | Covers | Buy |
+|---|---|---|---|
+| Parks Canada Discovery Pass (Family/Group) | **CAD 167.50** | Banff, Jasper, Yoho, Glacier, Mount Revelstoke, Kootenay + historic sites | Online at reservation.pc.gc.ca before departure, or in person at park gates / visitor centres |
+| Kananaskis Conservation Pass | **CAD 15/day or 90/year** | Parking at provincial sites: Elbow Falls, Elbow Valley, West Bragg Creek | Online at alberta.ca before 11:59 pm on the visit date (register rental licence plate), or in person at Kananaskis visitor centres |
+| Lake Louise / Moraine Lake shuttle | **CAD 12.75/adult** | Shuttle access on 29 Sep; Moraine Lake Road is closed to private vehicles | reservation.pc.gc.ca, or 1-877-737-3783. Reservation required in advance. |
+
+**Can you buy on the spot?** Yes for the Discovery Pass at the main staffed gates (Banff East Gate, Jasper East Gate, Niblock Gate north of Lake Louise, and the Icefields Parkway Gate south of Jasper), and for the Kananaskis pass in person at visitor information centres. But on this route you approach the national parks **from the west via Golden**, where you do not pass a staffed gate, and some gates are unmanned. **Buy the Discovery Pass online and print it before you leave.** For the Discovery Pass there is no digital-only option: the printed PDF must be displayed on the dashboard or hung from the rear-view mirror. The Kananaskis pass is registered to your rental car's licence plate, so buy it online after you pick up the car. The Lake Louise / Moraine Lake shuttle **cannot** be bought on the spot — it must be reserved in advance.
+
+**Estimated total for two travelers: about CAD 210–225** (Discovery Pass CAD 167.50 + Kananaskis day pass(es) CAD 15–30 + shuttle CAD 25.50). The Columbia Icefield Glacier Adventure / Skywalk is an optional paid tour, not covered by any pass.
+
 ## Weather and packing
 
 Late September and early October will cross several microclimates. Vancouver is generally mild and wet; Golden, Harvie Heights, Kananaskis and the Jasper/Yellowhead area can have frosty mornings, early snow and rapidly changing mountain conditions; Revelstoke is wetter at elevation; Kelowna is cooler and comparatively drier. These are climate-planning ranges, not a forecast. Check Environment Canada shortly before each day.[28][29][30][31]
