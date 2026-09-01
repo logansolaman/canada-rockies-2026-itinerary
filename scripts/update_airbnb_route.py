@@ -38,35 +38,35 @@ def day(date, label, base, route, focus, overnight, items):
 
 def build_days():
     d = []
-    d.append(day("2026-09-23", "Day 1 · Arrival in Vancouver · Clive Avenue", "Clive Avenue, Joyce-Collingwood", "CX814 · HKG 11:05 → YVR 07:40 · YVR → Clive Avenue", "Arrive gently and settle into the first Airbnb in East Vancouver's Joyce-Collingwood area. Keep the first afternoon close to home.", "Clive Avenue Airbnb · Joyce-Collingwood", [
+    d.append(day("2026-09-23", "Day 1 · Arrival in Vancouver · Clive Avenue", "Clive Avenue, Joyce-Collingwood", "CX814 · HKG 11:05 → YVR 07:40 · YVR → Clive Avenue", "Arrive gently, pick up the rental car at YVR, and settle into the first Airbnb in East Vancouver's Joyce-Collingwood area. Keep the first afternoon close to home.", "Clive Avenue Airbnb · Joyce-Collingwood", [
         ("08:00", "YVR arrival, immigration and bags", "CX814 is scheduled to arrive at 07:40 local time. Allow immigration, baggage, customs and a first coffee.", "travel"),
-        ("09:00", "Transfer to Clive Avenue", "Take the Canada Line to Joyce-Collingwood or a taxi/rideshare. The Airbnb is near Joyce Station; keep luggage secure.", "travel"),
+        ("09:00", "Collect rental car at YVR", "Pick up the Toyota RAV4 (FWD) at the airport rental centre. Inspect tires (winter-rated after 1 Oct rule), spare/puncture kit, insurance, roadside assistance and any mountain-road restrictions.", "travel"),
         ("10:00", "McArthurGlen option", "Use only if arrival is smooth; it is on the way from YVR but do not force shopping after a long flight.", "shop"),
         ("11:00", "Coffee / light lunch", "Keep the first meal easy and nearby.", "food"),
-        ("12:00", "Continue to Clive Avenue", "Head to the first three-night Airbnb in the Collingwood / Joyce-Collingwood area.", "travel"),
-        ("13:00", "Luggage drop / check-in", "Ask about early check-in or leave bags securely.", "rest"),
+        ("12:00", "Drive to Clive Avenue", "Head to the first three-night Airbnb in the Collingwood / Joyce-Collingwood area in the rental car.", "travel"),
+        ("13:00", "Luggage drop / check-in", "Ask about early check-in or leave bags securely. Confirm Airbnb parking.", "rest"),
         ("14:00", "Jet-lag reset", "Shower, nap and hydrate. No sightseeing obligation.", "rest"),
         ("15:00", "Collingwood neighbourhood walk", "Walk around Joyce-Collingwood, or rest at the Airbnb if needed.", "walk"),
         ("16:00", "Central Park / Metrotown option", "Only if alert: Central Park is close and Metrotown is a practical nearby outing.", "explore"),
         ("17:00", "Dinner nearby", "Choose somewhere close to the stay.", "food"),
         ("18:00", "Dinner", "Keep the first evening short.", "food"),
-        ("19:00", "Settle in", "Confirm tomorrow's city plan and rental-car timing.", "plan"),
+        ("19:00", "Settle in", "Confirm tomorrow's city plan; the rental car is now available for the whole trip.", "plan"),
         ("20:00", "Wind down", "Prepare for a normal 08:00 start.", "rest"),
         ("21:00", "Sleep", "Time-zone recovery.", "rest"),
         ("22:00", "Sleep", "Overnight recovery.", "rest"),
         ("23:00", "Sleep", "Overnight recovery.", "rest"),
     ]))
-    d.append(day("2026-09-24", "Day 2 · East Vancouver and downtown", "Clive Avenue, Joyce-Collingwood", "Joyce-Collingwood → Central Park / Metrotown → Gastown → Stanley Park → Joyce-Collingwood", "Use the SkyTrain from Joyce-Collingwood to make the downtown day easy without moving the Airbnb.", "Clive Avenue Airbnb · Joyce-Collingwood", [
-        ("08:00", "Breakfast near Joyce-Collingwood", "Start locally and use the SkyTrain rather than driving downtown.", "food"),
+    d.append(day("2026-09-24", "Day 2 · East Vancouver and downtown", "Clive Avenue, Joyce-Collingwood", "Joyce-Collingwood → Central Park / Metrotown → Gastown → Stanley Park → Joyce-Collingwood", "Use the rental car for the east-side stops and either SkyTrain or the car for downtown; parking downtown is pricey but manageable.", "Clive Avenue Airbnb · Joyce-Collingwood", [
+        ("08:00", "Breakfast near Joyce-Collingwood", "Start locally before heading out in the rental car.", "food"),
         ("09:00", "Joyce-Collingwood / Central Park", "Easy neighbourhood start or Central Park walk.", "walk"),
         ("10:00", "Metrotown", "Shopping, coffee and a practical rainy-day option close to the Airbnb.", "explore"),
         ("11:00", "Metrotown / lunch", "Keep the morning close to home.", "food"),
-        ("12:00", "SkyTrain to Waterfront", "Use Joyce Station for the direct Expo Line ride downtown.", "travel"),
+        ("12:00", "SkyTrain to Waterfront", "Use Joyce Station for the direct Expo Line ride downtown, or drive and pay for parking near Waterfront.", "travel"),
         ("13:00", "Gastown", "Water Street, galleries and historic streets.", "explore"),
         ("14:00", "Canada Place", "Waterfront views and harbour walk.", "walk"),
         ("15:00", "Stanley Park", "Walk the eastern seawall or use a bike rental.", "walk"),
         ("16:00", "Stanley Park / Coal Harbour", "Finish a comfortable loop; do not force the entire seawall.", "explore"),
-        ("17:00", "Return to Joyce-Collingwood", "SkyTrain back before dinner.", "travel"),
+        ("17:00", "Return to Joyce-Collingwood", "SkyTrain or drive back before dinner.", "travel"),
         ("18:00", "Dinner", "Choose one neighbourhood restaurant.", "food"),
         ("19:00", "Dinner", "Slow meal.", "food"),
         ("20:00", "Pack for road start", "Layers, snacks, documents and rental-car details.", "plan"),
@@ -83,8 +83,8 @@ def build_days():
         ("13:00", "Richmond option", "Optional Canada Line trip to Richmond Centre or Steveston; skip if you prefer a slower day.", "travel"),
         ("14:00", "Steveston village option", "Historic fishing village and waterfront if the Richmond option is chosen.", "explore"),
         ("15:00", "Return to Clive Avenue", "Allow transit time and rest before the road trip.", "travel"),
-        ("16:00", "Airbnb reset", "Prepare the car plan and luggage.", "rest"),
-        ("17:00", "Rental-car check", "Confirm pickup, AWD/SUV, tires and roadside cover.", "plan"),
+        ("16:00", "Airbnb reset", "Prepare the car plan and luggage for tomorrow's road start.", "rest"),
+        ("17:00", "Rental-car check", "Confirm the RAV4 tires (winter-rated for Oct 1+), spare/puncture kit, insurance and roadside assistance are all set.", "plan"),
         ("18:00", "Dinner", "Stay close to the Vancouver base.", "food"),
         ("19:00", "Dinner", "Keep the evening unhurried.", "food"),
         ("20:00", "Pack for Kamloops", "Layers, snacks, offline maps and documents.", "plan"),
@@ -93,8 +93,8 @@ def build_days():
         ("23:00", "Sleep", "Overnight recovery.", "rest"),
     ]))
     d.append(day("2026-09-26", "Day 4 · Clive Avenue to Kamloops via Sea-to-Sky", "Kamloops", "Clive Avenue, Joyce-Collingwood → Horseshoe Bay → Squamish → Whistler → Pemberton → Kamloops", "Take the scenic Sea-to-Sky and Duffey Lake route from East Vancouver, accepting that this is a long transfer day.", "Kamloops hotel", [
-        ("08:00", "Breakfast + check out", "Keep the 08:00 start; collect the rental car afterward.", "travel"),
-        ("09:00", "Collect rental car", "Inspect tires, winter-tire policy, insurance and roadside assistance.", "travel"),
+        ("08:00", "Breakfast + check out", "Keep the 08:00 start; the RAV4 is already in hand from Day 1.", "travel"),
+        ("09:00", "Load car and depart", "Load the RAV4, set the route on Highway 99 and check Sea-to-Sky conditions before leaving.", "travel"),
         ("10:00", "Drive to Horseshoe Bay", "Begin Highway 99 with a traffic buffer.", "travel"),
         ("11:00", "Howe Sound viewpoint", "Short photo stop.", "stop"),
         ("12:00", "Shannon Falls / Squamish", "Choose a short walk or viewpoint.", "explore"),
@@ -293,7 +293,7 @@ def build_days():
     d.append(day("2026-10-07", "Day 15 · Dunbar Street to Vancouver departure", "YVR", "Dunbar Street, Dunbar-Southlands → YVR · CX867 14:10 → HKG 19:20 on 8 Oct", "Keep the departure day calm. The 14:10 international flight gets a real airport buffer; no attraction is scheduled after check-in.", "CX867 in flight", [
         ("08:00", "Breakfast", "Hotel breakfast and final flight check.", "food"),
         ("09:00", "Pack and check out", "Confirm luggage, receipts and storage.", "travel"),
-        ("10:00", "Transfer to YVR", "Return the rental car if needed or use the confirmed airport transfer.", "travel"),
+        ("10:00", "Drive to YVR + return rental car", "Return the Toyota RAV4 at the airport rental centre, fuel it first, then take the shuttle to departures with a proper international-departure buffer.", "travel"),
         ("11:00", "CX867 check-in and bags", "Be at the airport with a proper international-departure buffer.", "travel"),
         ("12:00", "Security and immigration", "Complete airport formalities.", "travel"),
         ("13:00", "Gate buffer", "Water, final purchases and boarding buffer.", "travel"),
@@ -407,7 +407,7 @@ x["lodging_details"] = [
 ]
 x["meta"]["lodging_currency"] = "HKD"
 x["meta"]["exchange_rate_hkd_to_cad"] = 0.176799
-x["meta"]["rental_car"] = {"model": "Toyota RAV4", "drivetrain": "FWD / without 4-wheel drive", "mileage": "Unlimited", "days": 14, "price_hkd": 3507, "price_cad": 620.03, "note": "User-supplied rental price; exact trim, fuel type and tire specification must be confirmed with the rental company."}
+x["meta"]["rental_car"] = {"model": "Toyota RAV4", "drivetrain": "FWD / without 4-wheel drive", "mileage": "Unlimited", "days": 14, "price_hkd": 3507, "price_cad": 620.03, "pickup": "YVR airport rental centre on 23 Sep (Day 1)", "return": "YVR airport rental centre on 7 Oct (Day 15)", "note": "One rental car for the whole trip, picked up and returned at YVR. Confirm insurance, taxes, deposits, fuel policy, winter-rated tires and the spare/puncture kit at the counter."}
 
 # Make every calendar date display the actual booked address for that night's stay.
 from datetime import date
@@ -583,6 +583,33 @@ x["hidden_gems"] = {
     "source_ids": [35, 36, 37, 38, 39]
 }
 
+x["closures_and_safety"] = {
+    "summary": "Verified 2026 status (Parks Canada + Alberta official sources): everything on the driving route is open for the trip dates. Two famous Jasper sights are closed for the whole 2026 season and are intentionally NOT on this route. Several seasonal items end right around your travel window, so check status before each day.",
+    "closed_2026": [
+        {"name": "Maligne Canyon (Jasper NP)", "status": "Closed all 2026", "detail": "Parks Canada rehabilitation after the 2024 wildfire; picnic area and trail not permitted. Not on the route — the plan uses Maligne Lake Road + Medicine Lake instead."},
+        {"name": "Edith Cavell Road / Angel Glacier / Cavell Meadows (Jasper NP)", "status": "Closed all 2026", "detail": "Slope instability and landslide risk. Not on the route."},
+        {"name": "Valley of the Five Lakes trails (Jasper)", "status": "Closed until further notice", "detail": "Trails 9 and 9C closed for hazard tree removal. Not on the route."},
+        {"name": "Wabasso & Whirlpool campgrounds", "status": "Closed 2026", "detail": "Full infrastructure rebuilds. Irrelevant — the plan uses booked private accommodation."}
+    ],
+    "open_with_conditions": [
+        {"name": "Moraine Lake + Lake Louise (Sep 29)", "status": "Open to Oct 12", "detail": "Moraine Lake Road is CLOSED to personal vehicles year-round. You MUST have a reserved Parks Canada shuttle (reservation required; 60% released 8 am MDT two days before). Without a reservation you will be turned away."},
+        {"name": "Takakkaw Falls / Yoho Valley Road (Sep 28)", "status": "Open, season ends ~Oct 13", "detail": "Road open mid-June to mid-October, weather permitting. Parking is limited; arrive early."},
+        {"name": "Miette Hot Springs (Oct 2–3)", "status": "Open, season ends Oct 12", "detail": "Last operating day 2026 is Oct 12. Fall hours ~10:30 am–9 pm, last entry 30 min before close. First-come, first-served."},
+        {"name": "Giant Cedars Boardwalk (Oct 4)", "status": "Open, closes ~Oct 13", "detail": "Parkway snow possible at summit in early Oct; check the trail-conditions report and bulletins before driving up."},
+        {"name": "Meadows in the Sky Parkway (Oct 4)", "status": "Open, closes mid-Oct", "detail": "Snow possible at the summit ~1,600 m elevation gain. If the summit road is closed by snow, stay low — Golden Skybridge and Giant Cedars still work."}
+    ],
+    "winter_tire_rule": "From 1 October, BC law REQUIRES winter tires (M+S minimum, 3PMSF mountain/snowflake recommended) on designated routes including the Sea-to-Sky (Hwy 99), Coquihalla (Hwy 5), Okanagan Connector (Hwy 97C) and the Trans-Canada through the mountain sections. The booked RAV4 is FWD — confirm winter-rated tires and a spare/puncture kit at the rental counter BEFORE leaving Vancouver. The Oct 2–5 legs fall inside this window.",
+    "driving_rule": "The booked RAV4 is FWD, not AWD. If a mountain road is snowy or icy, do not continue just because it is in the itinerary — wait, reroute or shorten the day. Check DriveBC (drivebc.ca) and 511 Alberta (511.alberta.ca) before every mountain transfer.",
+    "verify_before_you_go": [
+        "Parks Canada bulletins (Banff, Jasper, Yoho, Mount Revelstoke)",
+        "DriveBC road conditions + 511 Alberta",
+        "Parks Canada shuttle reservation confirmation for Sep 29",
+        "Miette Hot Springs fall hours and last-entry time",
+        "Takakkaw / Yoho Valley Road and Giant Cedars / parkway status"
+    ],
+    "source_ids": [35, 36, 37, 39, 40, 41, 42]
+}
+
 x["park_passes"] = {
     "summary": "For this 15-day route you only need two paid passes: one Parks Canada Discovery Pass (covers every national park on the route) and a separate Kananaskis Conservation Pass for the Alberta provincial foothills around Bragg Creek. The Lake Louise / Moraine Lake shuttle is a required reservation that is separate from any pass. Parks Canada's free-admission window ends 7 September 2026, so the Discovery Pass is required for the whole trip.",
     "parks_canada_discovery_pass": {
@@ -618,7 +645,7 @@ x["park_passes"] = {
     "source_ids": [35, 36, 37, 38, 39]
 }
 
-x["sources"] = [s for s in x.get("sources", []) if s.get("id") not in {19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39}] + [
+x["sources"] = [s for s in x.get("sources", []) if s.get("id") not in {19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42}] + [
     {"id": 19, "label": "Fuel-price planning reference · CAA / NRCan context", "url": "https://natural-resources.canada.ca/energy-facts/energy-facts/transportation-energy-use/gasoline-prices"},
     {"id": 20, "label": "Rental-car planning reference", "url": "https://ca.kayak.com/Cheap-Vancouver-Car-Rentals.6668.cars.ksp"},
     {"id": 21, "label": "Canada travel-cost planning reference", "url": "https://www.budgetyourtrip.com/canada"},
@@ -640,6 +667,9 @@ x["sources"] = [s for s in x.get("sources", []) if s.get("id") not in {19, 20, 2
     {"id": 37, "label": "Parks Canada · Icefields Parkway gates and passes", "url": "https://parks.canada.ca/pn-np/ab/banff/visit/promenadedesglaciers-icefieldsparkway"},
     {"id": 38, "label": "Alberta · Kananaskis Conservation Pass", "url": "https://alberta.ca/kananaskis-conservation-pass.aspx"},
     {"id": 39, "label": "Parks Canada · Lake Louise and Moraine Lake shuttle reservations", "url": "https://parks.canada.ca/pn-np/ab/banff/visit/parkbus/louise"},
+    {"id": 40, "label": "Parks Canada · Jasper National Park road restrictions and seasonal closures 2026", "url": "https://parks.canada.ca/pn-np/ab/jasper/visit/routes-roads"},
+    {"id": 41, "label": "Parks Canada · Yoho National Park hours and seasonal closures", "url": "https://parks.canada.ca/pn-np/bc/yoho/visit/heures-hours"},
+    {"id": 42, "label": "Parks Canada · Miette Hot Springs hours of operation", "url": "https://parks.canada.ca/pn-np/ab/jasper/sources-miette-springs/heures-hours"},
 ]
 
 # Keep the supplementary candidate directory, but add the fixed-base labels so

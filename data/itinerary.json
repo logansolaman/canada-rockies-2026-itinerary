@@ -39,7 +39,9 @@
       "days": 14,
       "price_hkd": 3507,
       "price_cad": 620.03,
-      "note": "User-supplied rental price; exact trim, fuel type and tire specification must be confirmed with the rental company."
+      "pickup": "YVR airport rental centre on 23 Sep (Day 1)",
+      "return": "YVR airport rental centre on 7 Oct (Day 15)",
+      "note": "One rental car for the whole trip, picked up and returned at YVR. Confirm insurance, taxes, deposits, fuel policy, winter-rated tires and the spare/puncture kit at the counter."
     }
   },
   "route": [
@@ -120,7 +122,7 @@
       "label": "Day 1 · Arrival in Vancouver · Clive Avenue",
       "base": "Clive Avenue / Collingwood",
       "route": "CX814 · HKG 11:05 → YVR 07:40 · YVR → Clive Avenue",
-      "focus": "Arrive gently and settle into the first Airbnb in East Vancouver's Joyce-Collingwood area. Keep the first afternoon close to home.",
+      "focus": "Arrive gently, pick up the rental car at YVR, and settle into the first Airbnb in East Vancouver's Joyce-Collingwood area. Keep the first afternoon close to home.",
       "overnight": "Clive Avenue / Collingwood · 3264 Vanness Avenue, Vancouver, BC V5R 4V3",
       "blocks": [
         {
@@ -131,8 +133,8 @@
         },
         {
           "time": "09:00",
-          "title": "Transfer to Clive Avenue",
-          "detail": "Take the Canada Line to Joyce-Collingwood or a taxi/rideshare. The Airbnb is near Joyce Station; keep luggage secure.",
+          "title": "Collect rental car at YVR",
+          "detail": "Pick up the Toyota RAV4 (FWD) at the airport rental centre. Inspect tires (winter-rated after 1 Oct rule), spare/puncture kit, insurance, roadside assistance and any mountain-road restrictions.",
           "kind": "travel"
         },
         {
@@ -149,14 +151,14 @@
         },
         {
           "time": "12:00",
-          "title": "Continue to Clive Avenue",
-          "detail": "Head to the first three-night Airbnb in the Collingwood / Joyce-Collingwood area.",
+          "title": "Drive to Clive Avenue",
+          "detail": "Head to the first three-night Airbnb in the Collingwood / Joyce-Collingwood area in the rental car.",
           "kind": "travel"
         },
         {
           "time": "13:00",
           "title": "Luggage drop / check-in",
-          "detail": "Ask about early check-in or leave bags securely.",
+          "detail": "Ask about early check-in or leave bags securely. Confirm Airbnb parking.",
           "kind": "rest"
         },
         {
@@ -192,7 +194,7 @@
         {
           "time": "19:00",
           "title": "Settle in",
-          "detail": "Confirm tomorrow's city plan and rental-car timing.",
+          "detail": "Confirm tomorrow's city plan; the rental car is now available for the whole trip.",
           "kind": "plan"
         },
         {
@@ -226,13 +228,13 @@
       "label": "Day 2 · East Vancouver and downtown",
       "base": "Clive Avenue / Collingwood",
       "route": "Joyce-Collingwood → Central Park / Metrotown → Gastown → Stanley Park → Joyce-Collingwood",
-      "focus": "Use the SkyTrain from Joyce-Collingwood to make the downtown day easy without moving the Airbnb.",
+      "focus": "Use the rental car for the east-side stops and either SkyTrain or the car for downtown; parking downtown is pricey but manageable.",
       "overnight": "Clive Avenue / Collingwood · 3264 Vanness Avenue, Vancouver, BC V5R 4V3",
       "blocks": [
         {
           "time": "08:00",
           "title": "Breakfast near Joyce-Collingwood",
-          "detail": "Start locally and use the SkyTrain rather than driving downtown.",
+          "detail": "Start locally before heading out in the rental car.",
           "kind": "food"
         },
         {
@@ -256,7 +258,7 @@
         {
           "time": "12:00",
           "title": "SkyTrain to Waterfront",
-          "detail": "Use Joyce Station for the direct Expo Line ride downtown.",
+          "detail": "Use Joyce Station for the direct Expo Line ride downtown, or drive and pay for parking near Waterfront.",
           "kind": "travel"
         },
         {
@@ -286,7 +288,7 @@
         {
           "time": "17:00",
           "title": "Return to Joyce-Collingwood",
-          "detail": "SkyTrain back before dinner.",
+          "detail": "SkyTrain or drive back before dinner.",
           "kind": "travel"
         },
         {
@@ -386,13 +388,13 @@
         {
           "time": "16:00",
           "title": "Airbnb reset",
-          "detail": "Prepare the car plan and luggage.",
+          "detail": "Prepare the car plan and luggage for tomorrow's road start.",
           "kind": "rest"
         },
         {
           "time": "17:00",
           "title": "Rental-car check",
-          "detail": "Confirm pickup, AWD/SUV, tires and roadside cover.",
+          "detail": "Confirm the RAV4 tires (winter-rated for Oct 1+), spare/puncture kit, insurance and roadside assistance are all set.",
           "kind": "plan"
         },
         {
@@ -444,13 +446,13 @@
         {
           "time": "08:00",
           "title": "Breakfast + check out",
-          "detail": "Keep the 08:00 start; collect the rental car afterward.",
+          "detail": "Keep the 08:00 start; the RAV4 is already in hand from Day 1.",
           "kind": "travel"
         },
         {
           "time": "09:00",
-          "title": "Collect rental car",
-          "detail": "Inspect tires, winter-tire policy, insurance and roadside assistance.",
+          "title": "Load car and depart",
+          "detail": "Load the RAV4, set the route on Highway 99 and check Sea-to-Sky conditions before leaving.",
           "kind": "travel"
         },
         {
@@ -1621,8 +1623,8 @@
         },
         {
           "time": "10:00",
-          "title": "Transfer to YVR",
-          "detail": "Return the rental car if needed or use the confirmed airport transfer.",
+          "title": "Drive to YVR + return rental car",
+          "detail": "Return the Toyota RAV4 at the airport rental centre, fuel it first, then take the shuttle to departures with a proper international-departure buffer.",
           "kind": "travel"
         },
         {
@@ -2400,6 +2402,21 @@
       "id": 39,
       "label": "Parks Canada · Lake Louise and Moraine Lake shuttle reservations",
       "url": "https://parks.canada.ca/pn-np/ab/banff/visit/parkbus/louise"
+    },
+    {
+      "id": 40,
+      "label": "Parks Canada · Jasper National Park road restrictions and seasonal closures 2026",
+      "url": "https://parks.canada.ca/pn-np/ab/jasper/visit/routes-roads"
+    },
+    {
+      "id": 41,
+      "label": "Parks Canada · Yoho National Park hours and seasonal closures",
+      "url": "https://parks.canada.ca/pn-np/bc/yoho/visit/heures-hours"
+    },
+    {
+      "id": 42,
+      "label": "Parks Canada · Miette Hot Springs hours of operation",
+      "url": "https://parks.canada.ca/pn-np/ab/jasper/sources-miette-springs/heures-hours"
     }
   ],
   "airbnb_stays": [
@@ -3234,6 +3251,76 @@
       37,
       38,
       39
+    ]
+  },
+  "closures_and_safety": {
+    "summary": "Verified 2026 status (Parks Canada + Alberta official sources): everything on the driving route is open for the trip dates. Two famous Jasper sights are closed for the whole 2026 season and are intentionally NOT on this route. Several seasonal items end right around your travel window, so check status before each day.",
+    "closed_2026": [
+      {
+        "name": "Maligne Canyon (Jasper NP)",
+        "status": "Closed all 2026",
+        "detail": "Parks Canada rehabilitation after the 2024 wildfire; picnic area and trail not permitted. Not on the route — the plan uses Maligne Lake Road + Medicine Lake instead."
+      },
+      {
+        "name": "Edith Cavell Road / Angel Glacier / Cavell Meadows (Jasper NP)",
+        "status": "Closed all 2026",
+        "detail": "Slope instability and landslide risk. Not on the route."
+      },
+      {
+        "name": "Valley of the Five Lakes trails (Jasper)",
+        "status": "Closed until further notice",
+        "detail": "Trails 9 and 9C closed for hazard tree removal. Not on the route."
+      },
+      {
+        "name": "Wabasso & Whirlpool campgrounds",
+        "status": "Closed 2026",
+        "detail": "Full infrastructure rebuilds. Irrelevant — the plan uses booked private accommodation."
+      }
+    ],
+    "open_with_conditions": [
+      {
+        "name": "Moraine Lake + Lake Louise (Sep 29)",
+        "status": "Open to Oct 12",
+        "detail": "Moraine Lake Road is CLOSED to personal vehicles year-round. You MUST have a reserved Parks Canada shuttle (reservation required; 60% released 8 am MDT two days before). Without a reservation you will be turned away."
+      },
+      {
+        "name": "Takakkaw Falls / Yoho Valley Road (Sep 28)",
+        "status": "Open, season ends ~Oct 13",
+        "detail": "Road open mid-June to mid-October, weather permitting. Parking is limited; arrive early."
+      },
+      {
+        "name": "Miette Hot Springs (Oct 2–3)",
+        "status": "Open, season ends Oct 12",
+        "detail": "Last operating day 2026 is Oct 12. Fall hours ~10:30 am–9 pm, last entry 30 min before close. First-come, first-served."
+      },
+      {
+        "name": "Giant Cedars Boardwalk (Oct 4)",
+        "status": "Open, closes ~Oct 13",
+        "detail": "Parkway snow possible at summit in early Oct; check the trail-conditions report and bulletins before driving up."
+      },
+      {
+        "name": "Meadows in the Sky Parkway (Oct 4)",
+        "status": "Open, closes mid-Oct",
+        "detail": "Snow possible at the summit ~1,600 m elevation gain. If the summit road is closed by snow, stay low — Golden Skybridge and Giant Cedars still work."
+      }
+    ],
+    "winter_tire_rule": "From 1 October, BC law REQUIRES winter tires (M+S minimum, 3PMSF mountain/snowflake recommended) on designated routes including the Sea-to-Sky (Hwy 99), Coquihalla (Hwy 5), Okanagan Connector (Hwy 97C) and the Trans-Canada through the mountain sections. The booked RAV4 is FWD — confirm winter-rated tires and a spare/puncture kit at the rental counter BEFORE leaving Vancouver. The Oct 2–5 legs fall inside this window.",
+    "driving_rule": "The booked RAV4 is FWD, not AWD. If a mountain road is snowy or icy, do not continue just because it is in the itinerary — wait, reroute or shorten the day. Check DriveBC (drivebc.ca) and 511 Alberta (511.alberta.ca) before every mountain transfer.",
+    "verify_before_you_go": [
+      "Parks Canada bulletins (Banff, Jasper, Yoho, Mount Revelstoke)",
+      "DriveBC road conditions + 511 Alberta",
+      "Parks Canada shuttle reservation confirmation for Sep 29",
+      "Miette Hot Springs fall hours and last-entry time",
+      "Takakkaw / Yoho Valley Road and Giant Cedars / parkway status"
+    ],
+    "source_ids": [
+      35,
+      36,
+      37,
+      39,
+      40,
+      41,
+      42
     ]
   }
 }
