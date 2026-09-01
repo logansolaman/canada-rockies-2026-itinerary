@@ -109,7 +109,7 @@ The following booking information is now recorded in `data/itinerary.json` and d
 | Kelowna / Glenmore | 4 Oct 3:00 PM – 5 Oct 11:00 AM | 104 Clifton Road North | HKD 1,694 / CAD 299.50 |
 | Dunbar-Southlands | 5 Oct 3:00 PM – 7 Oct 11:00 AM | 3540 West 37th Avenue | HKD 4,445 / CAD 785.87 |
 
-**Accommodation total:** HKD 26,019 / approximately **CAD 4,600.13**. The Toyota RAV4 rental is **HKD 3,507 / approximately CAD 620.03**, for 14 days, unlimited mileage, FWD / without four-wheel drive. Confirm whether the rental quote includes insurance, taxes, deposits and the required tire specification.
+**Accommodation total:** HKD 26,019 / approximately **CAD 4,600.13**. The Toyota RAV4 rental is **HKD 3,507 / approximately CAD 620.03**, for 14 days, unlimited mileage, FWD / without four-wheel drive. One car for the whole trip: **pick up at YVR on 23 Sep (Day 1), return at YVR on 7 Oct (Day 15)**. Confirm whether the rental quote includes insurance, taxes, deposits and the required tire specification.
 
 
 **Toyota RAV4 FWD** is the car you have booked. It is practical and economical for two people, but it does not provide AWD traction on snow or steep unplowed access roads. For this route, tire quality and conservative driving are essential.
@@ -138,6 +138,23 @@ Inspect the tire tread, spare or proper puncture kit, brakes, wipers, windshield
 - **Clive Avenue area:** Joyce-Collingwood SkyTrain, Central Park, Metrotown, Deer Lake / Burnaby and optional Richmond / Steveston are the nearby focus.
 - **Dunbar Street area:** Pacific Spirit Regional Park, UBC, Museum of Anthropology, Kitsilano Beach, Jericho Beach and Granville Island are the nearby focus.
 - McArthurGlen is optional on arrival and is not the main final-day plan; do not schedule shopping before the 14:10 international departure on 7 Oct.
+
+## Safe route & closures (verified for your dates)
+
+**Everything on the driving route is open for 23 Sep – 7 Oct 2026** (Parks Canada + Alberta official status). Two famous Jasper sights are **closed for the whole 2026 season** and are intentionally NOT on this route:
+
+- ❌ **Maligne Canyon** (Jasper NP) — closed all 2026 (wildfire recovery)
+- ❌ **Edith Cavell Road / Angel Glacier / Cavell Meadows** — closed all 2026 (slope instability)
+- ❌ **Valley of the Five Lakes** trails — closed until further notice (hazard trees)
+- ✅ Swap: **Maligne Lake Road + Medicine Lake** instead (open)
+
+**Open but plan ahead:**
+- **Moraine Lake + Lake Louise (29 Sep):** open to **Oct 12** — Moraine Lake Road is closed to private vehicles year-round; you MUST have a reserved Parks Canada shuttle (60% released 8 am MDT two days before).
+- **Takakkaw Falls / Yoho Valley Rd (28 Sep):** open, season ends ~Oct 13.
+- **Miette Hot Springs (2–3 Oct):** open, last operating day Oct 12.
+- **Giant Cedars / Meadows-in-the-Sky (4 Oct):** open until mid-Oct; snow possible at summit.
+
+**Winter-tire rule:** From **1 October**, BC law requires winter tires (M+S minimum, 3PMSF recommended) on the Sea-to-Sky, Coquihalla, Okanagan Connector and Trans-Canada mountain sections. The booked RAV4 is **FWD** — confirm winter-rated tires + spare/puncture kit at the YVR counter **before** leaving. The Oct 2–5 legs fall inside this window. If a mountain road is snowy/icy, do not continue just because it's in the itinerary — wait, reroute or shorten the day. Check **DriveBC** and **511 Alberta** before every mountain transfer.
 
 ## Hidden gems & cool spots
 
